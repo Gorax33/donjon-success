@@ -1,14 +1,33 @@
 // Sommaire : volets dépliables par tranche de niveau, donjons et leurs succès, recherche.
-import { bracketOf } from './data.js';
+import { assetUrl, bracketOf, escapeHtml } from './data.js';
 import { isDone, setDone, countDone } from './progress.js';
 
 const OPEN_KEY = 'open-brackets';
 
-function escapeHtml(text) {
-  return String(text).replace(
-    /[&<>"']/g,
-    (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c],
-  );
+// Commande à coller dans le chat du jeu : téléportation au zaap le plus proche puis
+// autopilote jusqu'à l'entrée. Sans zaap utilisable (île, dimension…) : /travel seul.
+function travelCommand({ entrance, zaap }) {
+  if (!entrance) return null;
+  const travel = `/travel ${entrance.x},${entrance.y}`;
+  if (!zaap) return travel;
+  const toZaap = `/zaap ${zaap.x},${zaap.y}`;
+  return zaap.x === entrance.x && zaap.y === entrance.y ? toZaap : `${toZaap}; ${travel}`;
+}
+
+// Copie dans le presse-papiers du document de l'élément (la fenêtre flottante en est un autre)
+async function copyText(text, fromEl) {
+  const win = fromEl.ownerDocument.defaultView;
+  try {
+    await win.navigator.clipboard.writeText(text);
+  } catch {
+    // Repli si l'API presse-papiers est refusée
+    const area = fromEl.ownerDocument.createElement('textarea');
+    area.value = text;
+    fromEl.ownerDocument.body.append(area);
+    area.select();
+    fromEl.ownerDocument.execCommand('copy');
+    area.remove();
+  }
 }
 
 // Minuscules et sans accents : "Épave" trouve "epave"
@@ -63,12 +82,22 @@ function renderAchievement(achievement, dungeon) {
 }
 
 function renderDungeon(dungeon) {
+  const command = travelCommand(dungeon);
+  const bossImg = dungeon.boss
+    ? `<img class="boss-img" src="${assetUrl(dungeon.boss.img)}" alt="" title="${escapeHtml(dungeon.boss.name)}" loading="lazy" />`
+    : '<span class="boss-img"></span>';
+  const copyBtn = command
+    ? `<button type="button" class="copy-btn" data-command="${escapeHtml(command)}"
+         title="Copier : ${escapeHtml(command)}">📋</button>`
+    : '';
   return `
     <details class="dungeon" data-dungeon-id="${dungeon.id}">
       <summary>
+        ${bossImg}
         <span class="dungeon-name">${escapeHtml(dungeon.name)}</span>
         <span class="tag">niv. ${dungeon.level}</span>
         <span class="dungeon-progress"></span>
+        ${copyBtn}
       </summary>
       <ul class="achievements">
         ${dungeon.achievements.map((a) => renderAchievement(a, dungeon)).join('')}
@@ -117,6 +146,28 @@ export function renderSummary(container, searchInput, dungeons) {
     dungeonEl.classList.toggle('complete', done === total);
   }
   container.querySelectorAll('.dungeon').forEach(updateDungeonProgress);
+
+  // Après un changement de personnage : recoche les cases et recalcule les compteurs
+  function refreshProgress() {
+    for (const input of container.querySelectorAll('[data-achievement-id]')) {
+      input.checked = isDone(Number(input.dataset.achievementId));
+    }
+    container.querySelectorAll('.dungeon').forEach(updateDungeonProgress);
+  }
+
+  // Bouton de copie de la commande /zaap + /travel (sans plier/déplier le donjon)
+  container.addEventListener('click', async (e) => {
+    const btn = e.target.closest('.copy-btn');
+    if (!btn) return;
+    e.preventDefault();
+    await copyText(btn.dataset.command, btn);
+    btn.textContent = '✓';
+    btn.classList.add('copied');
+    setTimeout(() => {
+      btn.textContent = '📋';
+      btn.classList.remove('copied');
+    }, 1200);
+  });
 
   container.addEventListener('change', (e) => {
     const id = e.target.dataset.achievementId;
@@ -177,4 +228,6 @@ export function renderSummary(container, searchInput, dungeons) {
       applySearch();
     }
   });
+
+  return { refreshProgress };
 }

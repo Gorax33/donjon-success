@@ -57,6 +57,7 @@ button:hover {
 }
 
 .topbar h1 {
+  flex: 1;
   margin: 0;
   font-size: 16px;
   color: var(--accent);
@@ -168,7 +169,7 @@ details[open] > summary::before {
 }
 
 .dungeon > summary {
-  padding: 6px 8px;
+  padding: 4px 8px;
   border-radius: 6px;
 }
 
@@ -262,4 +263,315 @@ details[open] > summary::before {
 .achievement-desc {
   font-size: 12px;
   color: var(--text-muted);
+}
+
+/* ---- Boutons communs ---- */
+
+.icon-btn {
+  flex-shrink: 0;
+  min-width: 30px;
+  padding: 5px 8px;
+}
+
+.icon-btn:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+}
+
+.icon-btn.secondary {
+  color: var(--text);
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+}
+
+.icon-btn.secondary:hover:not(:disabled) {
+  border-color: var(--accent);
+}
+
+.icon-btn.danger {
+  color: #fff;
+  background: var(--warning);
+}
+
+.confirm-text {
+  flex: 1;
+  min-width: 0;
+  font-size: 13px;
+}
+
+/* ---- Vues (sommaire / personnages) ---- */
+
+.view {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-height: 0;
+}
+
+.view-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  border-bottom: 1px solid var(--border);
+}
+
+.view-header h2 {
+  margin: 0;
+  font-size: 15px;
+}
+
+.view-body {
+  flex: 1;
+  overflow-y: auto;
+  padding: 12px;
+}
+
+/* ---- Avatar ---- */
+
+.avatar-btn {
+  padding: 0;
+  background: none;
+  border-radius: 50%;
+}
+
+.avatar-btn:hover {
+  background: none;
+}
+
+.avatar-btn:hover .avatar {
+  box-shadow: 0 0 0 2px var(--accent);
+}
+
+.avatar {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid rgb(0 0 0 / 0.35);
+  overflow: hidden;
+  font-weight: 700;
+  color: #fff;
+  text-shadow: 0 1px 2px rgb(0 0 0 / 0.6);
+}
+
+.avatar img {
+  width: 78%;
+  height: 78%;
+  object-fit: contain;
+  filter: drop-shadow(0 1px 1px rgb(0 0 0 / 0.5));
+}
+
+.avatar.large {
+  width: 52px;
+  height: 52px;
+  font-size: 20px;
+}
+
+/* ---- Liste des personnages ---- */
+
+.character-list {
+  list-style: none;
+  margin: 0 0 12px;
+  padding: 0;
+}
+
+.character-card {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 6px;
+  padding: 6px;
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+
+.character-card.active {
+  border-color: var(--accent);
+}
+
+.character-pick {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex: 1;
+  min-width: 0;
+  padding: 2px;
+  color: var(--text);
+  background: none;
+  text-align: left;
+}
+
+.character-pick:hover {
+  background: none;
+}
+
+.character-info {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.character-name {
+  font-weight: 600;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.character-class {
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+.badge {
+  margin-left: auto;
+  padding: 1px 6px;
+  font-size: 11px;
+  color: var(--bg);
+  background: var(--accent);
+  border-radius: 10px;
+}
+
+.add-character {
+  width: 100%;
+}
+
+/* ---- Formulaire personnage ---- */
+
+.character-form h3 {
+  margin: 14px 0 6px;
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+.form-preview {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.form-preview input {
+  flex: 1;
+  min-width: 0;
+  font: inherit;
+  color: var(--text);
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 6px 10px;
+}
+
+.form-preview input:focus {
+  outline: none;
+  border-color: var(--accent);
+}
+
+.class-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(64px, 1fr));
+  gap: 6px;
+}
+
+.class-option {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  padding: 6px 2px;
+  font-size: 11px;
+  color: var(--text);
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+}
+
+.class-option:hover {
+  background: var(--bg-elevated);
+  border-color: var(--accent);
+}
+
+.class-option.selected {
+  background: var(--bg);
+  border-color: var(--accent);
+  box-shadow: inset 0 0 0 1px var(--accent);
+}
+
+.class-option img {
+  width: 40px;
+  height: 40px;
+}
+
+.color-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+}
+
+.color-swatch {
+  width: 26px;
+  height: 26px;
+  padding: 0;
+  border-radius: 50%;
+  border: 2px solid transparent;
+}
+
+.color-swatch.selected {
+  border-color: var(--text);
+}
+
+.color-custom {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 12px;
+  color: var(--text-muted);
+  cursor: pointer;
+}
+
+.color-custom input {
+  width: 28px;
+  height: 26px;
+  padding: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 6px;
+  margin-top: 16px;
+}
+
+/* ---- Donjon : image du boss et copie de l'itinéraire ---- */
+
+.boss-img {
+  flex-shrink: 0;
+  width: 44px;
+  height: 44px;
+  object-fit: contain;
+}
+
+.copy-btn {
+  flex-shrink: 0;
+  padding: 2px 6px;
+  font-size: 13px;
+  background: none;
+  border: 1px solid transparent;
+}
+
+.copy-btn:hover {
+  background: none;
+  border-color: var(--accent);
+}
+
+.copy-btn.copied {
+  color: var(--done);
+  border-color: var(--done);
 }

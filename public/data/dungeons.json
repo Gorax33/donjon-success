@@ -1,11 +1,24 @@
 {
-  "generatedAt": "2026-10-19T13:21:08.506Z",
+  "generatedAt": "2026-10-19T13:39:49.195Z",
   "source": "https://api.dofusdb.fr",
   "dungeons": [
     {
       "id": 90,
       "name": "Crypte de Kardorim",
       "level": 10,
+      "boss": {
+        "id": 4051,
+        "name": "Kardorim",
+        "img": "img/bosses/1287.png"
+      },
+      "entrance": {
+        "x": 5,
+        "y": -1
+      },
+      "zaap": {
+        "x": 3,
+        "y": 0
+      },
       "achievements": [
         {
           "id": 33,
@@ -64,6 +77,19 @@
       "id": 19,
       "name": "Château Ensablé",
       "level": 20,
+      "boss": {
+        "id": 928,
+        "name": "Mob l'Éponge",
+        "img": "img/bosses/513.png"
+      },
+      "entrance": {
+        "x": 13,
+        "y": -28
+      },
+      "zaap": {
+        "x": 1,
+        "y": -32
+      },
       "achievements": [
         {
           "id": 54,
@@ -122,6 +148,19 @@
       "id": 8,
       "name": "Grange du Tournesol Affamé",
       "level": 20,
+      "boss": {
+        "id": 799,
+        "name": "Tournesol Affamé",
+        "img": "img/bosses/445.png"
+      },
+      "entrance": {
+        "x": 7,
+        "y": -24
+      },
+      "zaap": {
+        "x": 5,
+        "y": -18
+      },
       "achievements": [
         {
           "id": 40,
@@ -180,6 +219,19 @@
       "id": 1,
       "name": "Cour du Bouftou Royal",
       "level": 30,
+      "boss": {
+        "id": 147,
+        "name": "Bouftou Royal",
+        "img": "img/bosses/74.png"
+      },
+      "entrance": {
+        "x": 2,
+        "y": -34
+      },
+      "zaap": {
+        "x": 1,
+        "y": -32
+      },
       "achievements": [
         {
           "id": 37,
@@ -238,6 +290,19 @@
       "id": 138,
       "name": "Akadémie des Gobs",
       "level": 40,
+      "boss": {
+        "id": 6903,
+        "name": "Directeur Grunob",
+        "img": "img/bosses/2279.png"
+      },
+      "entrance": {
+        "x": -5,
+        "y": 3
+      },
+      "zaap": {
+        "x": -2,
+        "y": 0
+      },
       "achievements": [
         {
           "id": 5213,
@@ -307,6 +372,19 @@
       "id": 88,
       "name": "Cache de Kankreblath",
       "level": 40,
+      "boss": {
+        "id": 3945,
+        "name": "Kankreblath",
+        "img": "img/bosses/1245.png"
+      },
+      "entrance": {
+        "x": 3,
+        "y": -17
+      },
+      "zaap": {
+        "x": 5,
+        "y": -18
+      },
       "achievements": [
         {
           "id": 1184,
@@ -376,6 +454,19 @@
       "id": 45,
       "name": "Donjon des Scarafeuilles",
       "level": 40,
+      "boss": {
+        "id": 797,
+        "name": "Scarabosse Doré",
+        "img": "img/bosses/443.png"
+      },
+      "entrance": {
+        "x": 1,
+        "y": 26
+      },
+      "zaap": {
+        "x": -1,
+        "y": 24
+      },
       "achievements": [
         {
           "id": 48,
@@ -434,6 +525,19 @@
       "id": 47,
       "name": "Donjon des Squelettes",
       "level": 40,
+      "boss": {
+        "id": 3238,
+        "name": "Chafer Rōnin",
+        "img": "img/bosses/916.png"
+      },
+      "entrance": {
+        "x": 10,
+        "y": 15
+      },
+      "zaap": {
+        "x": 10,
+        "y": 22
+      },
       "achievements": [
         {
           "id": 49,
@@ -503,6 +607,19 @@
       "id": 48,
       "name": "Donjon des Tofus",
       "level": 40,
+      "boss": {
+        "id": 800,
+        "name": "Batofu",
+        "img": "img/bosses/446.png"
+      },
+      "entrance": {
+        "x": 5,
+        "y": 6
+      },
+      "zaap": {
+        "x": 5,
+        "y": 7
+      },
       "achievements": [
         {
           "id": 50,
@@ -572,6 +689,19 @@
       "id": 34,
       "name": "Maison Fantôme",
       "level": 40,
+      "boss": {
+        "id": 2975,
+        "name": "Boostache",
+        "img": "img/bosses/846.png"
+      },
+      "entrance": {
+        "x": -13,
+        "y": -41
+      },
+      "zaap": {
+        "x": -11,
+        "y": -36
+      },
       "achievements": [
         {
           "id": 66,
@@ -641,6 +771,16 @@
       "id": 36,
       "name": "Donjon de Nowel",
       "level": 50,
+      "boss": {
+        "id": 1179,
+        "name": "Sapik",
+        "img": "img/bosses/476.png"
+      },
+      "entrance": {
+        "x": -32,
+        "y": -89
+      },
+      "zaap": null,
       "achievements": [
         {
           "id": 430,
@@ -710,6 +850,19 @@
       "id": 13,
       "name": "Donjon des Bworks",
       "level": 50,
+      "boss": {
+        "id": 792,
+        "name": "Bworkette",
+        "img": "img/bosses/265.png"
+      },
+      "entrance": {
+        "x": -5,
+        "y": 10
+      },
+      "zaap": {
+        "x": -1,
+        "y": 13
+      },
       "achievements": [
         {
           "id": 38,
@@ -779,6 +932,19 @@
       "id": 21,
       "name": "Donjon des Forgerons",
       "level": 50,
+      "boss": {
+        "id": 252,
+        "name": "Coffre des Forgerons",
+        "img": "img/bosses/98.png"
+      },
+      "entrance": {
+        "x": 13,
+        "y": 21
+      },
+      "zaap": {
+        "x": 10,
+        "y": 22
+      },
       "achievements": [
         {
           "id": 43,
@@ -848,6 +1014,19 @@
       "id": 33,
       "name": "Donjon des Larves",
       "level": 50,
+      "boss": {
+        "id": 457,
+        "name": "Shin Larve",
+        "img": "img/bosses/248.png"
+      },
+      "entrance": {
+        "x": -2,
+        "y": -5
+      },
+      "zaap": {
+        "x": -2,
+        "y": 0
+      },
       "achievements": [
         {
           "id": 34,
@@ -906,6 +1085,19 @@
       "id": 25,
       "name": "Grotte Hesque",
       "level": 50,
+      "boss": {
+        "id": 1027,
+        "name": "Corailleur Magistral",
+        "img": "img/bosses/563.png"
+      },
+      "entrance": {
+        "x": -59,
+        "y": 15
+      },
+      "zaap": {
+        "x": -54,
+        "y": 16
+      },
       "achievements": [
         {
           "id": 62,
@@ -975,6 +1167,19 @@
       "id": 32,
       "name": "Nid du Kwakwa",
       "level": 50,
+      "boss": {
+        "id": 2995,
+        "name": "Kwakwa",
+        "img": "img/bosses/854.png"
+      },
+      "entrance": {
+        "x": -4,
+        "y": -7
+      },
+      "zaap": {
+        "x": -5,
+        "y": -8
+      },
       "achievements": [
         {
           "id": 67,
@@ -1044,6 +1249,19 @@
       "id": 142,
       "name": "Refuge sylvestre",
       "level": 50,
+      "boss": {
+        "id": 7197,
+        "name": "Rakoopeur",
+        "img": "img/bosses/2319.png"
+      },
+      "entrance": {
+        "x": 40,
+        "y": -84
+      },
+      "zaap": {
+        "x": 39,
+        "y": -82
+      },
       "achievements": [
         {
           "id": 5911,
@@ -1113,6 +1331,19 @@
       "id": 52,
       "name": "Château du Wa Wabbit",
       "level": 60,
+      "boss": {
+        "id": 180,
+        "name": "Wa Wabbit",
+        "img": "img/bosses/101.png"
+      },
+      "entrance": {
+        "x": 24,
+        "y": -13
+      },
+      "zaap": {
+        "x": 27,
+        "y": -14
+      },
       "achievements": [
         {
           "id": 57,
@@ -1171,6 +1402,19 @@
       "id": 11,
       "name": "Clos des Blops",
       "level": 60,
+      "boss": {
+        "id": 1184,
+        "name": "Blop Coco Royal",
+        "img": "img/bosses/645.png"
+      },
+      "entrance": {
+        "x": -7,
+        "y": -43
+      },
+      "zaap": {
+        "x": -3,
+        "y": -42
+      },
       "achievements": [
         {
           "id": 36,
@@ -1229,6 +1473,16 @@
       "id": 113,
       "name": "Fonderie des Waddicts",
       "level": 60,
+      "boss": {
+        "id": 5653,
+        "name": "Mawabouaino",
+        "img": "img/bosses/1841.png"
+      },
+      "entrance": {
+        "x": -3,
+        "y": -4
+      },
+      "zaap": null,
       "achievements": [
         {
           "id": 2072,
@@ -1298,6 +1552,19 @@
       "id": 24,
       "name": "Gelaxième Dimension",
       "level": 60,
+      "boss": {
+        "id": 58,
+        "name": "Gelée Royale Bleuet",
+        "img": "img/bosses/20.png"
+      },
+      "entrance": {
+        "x": 10,
+        "y": 28
+      },
+      "zaap": {
+        "x": 13,
+        "y": 26
+      },
       "achievements": [
         {
           "id": 60,
@@ -1356,6 +1623,19 @@
       "id": 27,
       "name": "Village Kanniboul",
       "level": 60,
+      "boss": {
+        "id": 2960,
+        "name": "Kanniboul Ebil",
+        "img": "img/bosses/837.png"
+      },
+      "entrance": {
+        "x": 29,
+        "y": 9
+      },
+      "zaap": {
+        "x": 35,
+        "y": 12
+      },
       "achievements": [
         {
           "id": 56,
@@ -1414,6 +1694,19 @@
       "id": 39,
       "name": "Cale de l'Arche d'Otomaï",
       "level": 70,
+      "boss": {
+        "id": 1051,
+        "name": "Gourlo le Terrible",
+        "img": "img/bosses/575.png"
+      },
+      "entrance": {
+        "x": -55,
+        "y": -4
+      },
+      "zaap": {
+        "x": -54,
+        "y": 16
+      },
       "achievements": [
         {
           "id": 26,
@@ -1483,6 +1776,19 @@
       "id": 116,
       "name": "Épreuve de Draegnerys",
       "level": 70,
+      "boss": {
+        "id": 5823,
+        "name": "Draegnerys",
+        "img": "img/bosses/1915.png"
+      },
+      "entrance": {
+        "x": -4,
+        "y": 29
+      },
+      "zaap": {
+        "x": -1,
+        "y": 24
+      },
       "achievements": [
         {
           "id": 2128,
@@ -1552,6 +1858,19 @@
       "id": 35,
       "name": "Laboratoire de Brumen Tinctorias",
       "level": 70,
+      "boss": {
+        "id": 3100,
+        "name": "Nelween",
+        "img": "img/bosses/856.png"
+      },
+      "entrance": {
+        "x": -27,
+        "y": 17
+      },
+      "zaap": {
+        "x": -25,
+        "y": 12
+      },
       "achievements": [
         {
           "id": 64,
@@ -1621,6 +1940,19 @@
       "id": 18,
       "name": "Pitons Rocheux des Craqueleurs",
       "level": 70,
+      "boss": {
+        "id": 669,
+        "name": "Craqueleur Légendaire",
+        "img": "img/bosses/183.png"
+      },
+      "entrance": {
+        "x": -3,
+        "y": -7
+      },
+      "zaap": {
+        "x": -5,
+        "y": -8
+      },
       "achievements": [
         {
           "id": 41,
@@ -1679,6 +2011,19 @@
       "id": 100,
       "name": "Cimetière des Mastodontes",
       "level": 80,
+      "boss": {
+        "id": 4621,
+        "name": "Mantiscore",
+        "img": "img/bosses/1495.png"
+      },
+      "entrance": {
+        "x": 19,
+        "y": -61
+      },
+      "zaap": {
+        "x": 15,
+        "y": -58
+      },
       "achievements": [
         {
           "id": 1529,
@@ -1737,6 +2082,19 @@
       "id": 17,
       "name": "Terrier du Wa Wabbit",
       "level": 80,
+      "boss": {
+        "id": 3460,
+        "name": "Wa Wobot",
+        "img": "img/bosses/1006.png"
+      },
+      "entrance": {
+        "x": 28,
+        "y": -12
+      },
+      "zaap": {
+        "x": 27,
+        "y": -14
+      },
       "achievements": [
         {
           "id": 1003,
@@ -1795,6 +2153,19 @@
       "id": 89,
       "name": "Antre de la Reine Nyée",
       "level": 90,
+      "boss": {
+        "id": 3996,
+        "name": "Reine Nyée",
+        "img": "img/bosses/1267.png"
+      },
+      "entrance": {
+        "x": -6,
+        "y": -15
+      },
+      "zaap": {
+        "x": -5,
+        "y": -8
+      },
       "achievements": [
         {
           "id": 1195,
@@ -1864,6 +2235,19 @@
       "id": 91,
       "name": "Bateau du Chouque",
       "level": 90,
+      "boss": {
+        "id": 230,
+        "name": "Le Chouque",
+        "img": "img/bosses/126.png"
+      },
+      "entrance": {
+        "x": 33,
+        "y": 3
+      },
+      "zaap": {
+        "x": 35,
+        "y": 12
+      },
       "achievements": [
         {
           "id": 1398,
@@ -1922,6 +2306,19 @@
       "id": 105,
       "name": "Chapiteau des Magik Riktus",
       "level": 90,
+      "boss": {
+        "id": 4860,
+        "name": "Choudini",
+        "img": "img/bosses/1585.png"
+      },
+      "entrance": {
+        "x": -22,
+        "y": 12
+      },
+      "zaap": {
+        "x": -25,
+        "y": 12
+      },
       "achievements": [
         {
           "id": 1593,
@@ -1991,6 +2388,19 @@
       "id": 9,
       "name": "Domaine Ancestral",
       "level": 90,
+      "boss": {
+        "id": 173,
+        "name": "Abraknyde Ancestral",
+        "img": "img/bosses/97.png"
+      },
+      "entrance": {
+        "x": -9,
+        "y": -14
+      },
+      "zaap": {
+        "x": -5,
+        "y": -8
+      },
       "achievements": [
         {
           "id": 35,
@@ -2049,6 +2459,16 @@
       "id": 6,
       "name": "Antre du Dragon Cochon",
       "level": 100,
+      "boss": {
+        "id": 113,
+        "name": "Dragon Cochon",
+        "img": "img/bosses/60.png"
+      },
+      "entrance": {
+        "x": 5,
+        "y": 32
+      },
+      "zaap": null,
       "achievements": [
         {
           "id": 22,
@@ -2118,6 +2538,19 @@
       "id": 92,
       "name": "Arbre de Moon",
       "level": 100,
+      "boss": {
+        "id": 226,
+        "name": "Moon",
+        "img": "img/bosses/123.png"
+      },
+      "entrance": {
+        "x": 29,
+        "y": 6
+      },
+      "zaap": {
+        "x": 35,
+        "y": 12
+      },
       "achievements": [
         {
           "id": 485,
@@ -2187,6 +2620,19 @@
       "id": 30,
       "name": "Caverne du Koulosse",
       "level": 100,
+      "boss": {
+        "id": 670,
+        "name": "Koulosse",
+        "img": "img/bosses/358.png"
+      },
+      "entrance": {
+        "x": -17,
+        "y": 8
+      },
+      "zaap": {
+        "x": -16,
+        "y": 1
+      },
       "achievements": [
         {
           "id": 29,
@@ -2245,6 +2691,16 @@
       "id": 77,
       "name": "Fabrique de Malléfisk",
       "level": 100,
+      "boss": {
+        "id": 3652,
+        "name": "Malléfisk",
+        "img": "img/bosses/1109.png"
+      },
+      "entrance": {
+        "x": -6,
+        "y": -2
+      },
+      "zaap": null,
       "achievements": [
         {
           "id": 1088,
@@ -2314,6 +2770,19 @@
       "id": 66,
       "name": "Potager d'Halouine",
       "level": 100,
+      "boss": {
+        "id": 3306,
+        "name": "Halouine",
+        "img": "img/bosses/937.png"
+      },
+      "entrance": {
+        "x": -1,
+        "y": 22
+      },
+      "zaap": {
+        "x": -1,
+        "y": 24
+      },
       "achievements": [
         {
           "id": 6270,
@@ -2383,6 +2852,19 @@
       "id": 115,
       "name": "Repaire du Kharnozor",
       "level": 100,
+      "boss": {
+        "id": 5819,
+        "name": "Kharnozor",
+        "img": "img/bosses/1911.png"
+      },
+      "entrance": {
+        "x": -3,
+        "y": 25
+      },
+      "zaap": {
+        "x": -1,
+        "y": 24
+      },
       "achievements": [
         {
           "id": 2115,
@@ -2441,6 +2923,19 @@
       "id": 15,
       "name": "Tanière du Meulou",
       "level": 100,
+      "boss": {
+        "id": 232,
+        "name": "Meulou",
+        "img": "img/bosses/128.png"
+      },
+      "entrance": {
+        "x": -23,
+        "y": 0
+      },
+      "zaap": {
+        "x": -16,
+        "y": 1
+      },
       "achievements": [
         {
           "id": 39,
@@ -2510,6 +3005,16 @@
       "id": 72,
       "name": "Théâtre de Dramak",
       "level": 100,
+      "boss": {
+        "id": 3476,
+        "name": "Maître des Pantins",
+        "img": "img/bosses/1019.png"
+      },
+      "entrance": {
+        "x": 21,
+        "y": 7
+      },
+      "zaap": null,
       "achievements": [
         {
           "id": 1013,
@@ -2579,6 +3084,19 @@
       "id": 125,
       "name": "Bambusaie de Damadrya",
       "level": 110,
+      "boss": {
+        "id": 6326,
+        "name": "Damadrya",
+        "img": "img/bosses/2088.png"
+      },
+      "entrance": {
+        "x": 26,
+        "y": -30
+      },
+      "zaap": {
+        "x": 20,
+        "y": -29
+      },
       "achievements": [
         {
           "id": 3037,
@@ -2637,6 +3155,19 @@
       "id": 3,
       "name": "Bibliothèque du Maître Corbac",
       "level": 110,
+      "boss": {
+        "id": 289,
+        "name": "Maître Corbac",
+        "img": "img/bosses/177.png"
+      },
+      "entrance": {
+        "x": -15,
+        "y": -62
+      },
+      "zaap": {
+        "x": -17,
+        "y": -47
+      },
       "achievements": [
         {
           "id": 25,
@@ -2695,6 +3226,16 @@
       "id": 37,
       "name": "Caverne de Nowel",
       "level": 110,
+      "boss": {
+        "id": 872,
+        "name": "Papa Nowel",
+        "img": "img/bosses/487.png"
+      },
+      "entrance": {
+        "x": -36,
+        "y": -89
+      },
+      "zaap": null,
       "achievements": [
         {
           "id": 435,
@@ -2764,6 +3305,19 @@
       "id": 42,
       "name": "Garde-manger du Rat Blanc",
       "level": 110,
+      "boss": {
+        "id": 940,
+        "name": "Rat Blanc",
+        "img": "img/bosses/520.png"
+      },
+      "entrance": {
+        "x": -34,
+        "y": -59
+      },
+      "zaap": {
+        "x": -31,
+        "y": -56
+      },
       "achievements": [
         {
           "id": 5188,
@@ -2822,6 +3376,19 @@
       "id": 41,
       "name": "Goulet du Rasboul",
       "level": 110,
+      "boss": {
+        "id": 1071,
+        "name": "Silf le Rasboul Majeur",
+        "img": "img/bosses/595.png"
+      },
+      "entrance": {
+        "x": -51,
+        "y": 9
+      },
+      "zaap": {
+        "x": -54,
+        "y": 16
+      },
       "achievements": [
         {
           "id": 61,
@@ -2880,6 +3447,16 @@
       "id": 93,
       "name": "Miausolée du Pounicheur",
       "level": 110,
+      "boss": {
+        "id": 4278,
+        "name": "Pounicheur",
+        "img": "img/bosses/1351.png"
+      },
+      "entrance": {
+        "x": 3,
+        "y": -9
+      },
+      "zaap": null,
       "achievements": [
         {
           "id": 1409,
@@ -2938,6 +3515,19 @@
       "id": 43,
       "name": "Sousouricière du Rat Noir",
       "level": 110,
+      "boss": {
+        "id": 939,
+        "name": "Rat Noir",
+        "img": "img/bosses/519.png"
+      },
+      "entrance": {
+        "x": -28,
+        "y": 37
+      },
+      "zaap": {
+        "x": -26,
+        "y": 37
+      },
       "achievements": [
         {
           "id": 5194,
@@ -3007,6 +3597,19 @@
       "id": 7,
       "name": "Antre de Crocabulia",
       "level": 120,
+      "boss": {
+        "id": 854,
+        "name": "Crocabulia",
+        "img": "img/bosses/479.png"
+      },
+      "entrance": {
+        "x": -2,
+        "y": 25
+      },
+      "zaap": {
+        "x": -1,
+        "y": 24
+      },
       "achievements": [
         {
           "id": 51,
@@ -3065,6 +3668,19 @@
       "id": 49,
       "name": "Antre du Blop Multicolore Royal",
       "level": 120,
+      "boss": {
+        "id": 1188,
+        "name": "Blop Multicolore Royal",
+        "img": "img/bosses/649.png"
+      },
+      "entrance": {
+        "x": -7,
+        "y": -43
+      },
+      "zaap": {
+        "x": -3,
+        "y": -42
+      },
       "achievements": [
         {
           "id": 21,
@@ -3134,6 +3750,16 @@
       "id": 4,
       "name": "Centre du Labyrinthe du Minotoror",
       "level": 120,
+      "boss": {
+        "id": 121,
+        "name": "Minotoror",
+        "img": "img/bosses/67.png"
+      },
+      "entrance": {
+        "x": -38,
+        "y": -15
+      },
+      "zaap": null,
       "achievements": [
         {
           "id": 32,
@@ -3192,6 +3818,16 @@
       "id": 85,
       "name": "Mégalithe de Fraktale",
       "level": 120,
+      "boss": {
+        "id": 3852,
+        "name": "Fraktale",
+        "img": "img/bosses/1224.png"
+      },
+      "entrance": {
+        "x": 7,
+        "y": 3
+      },
+      "zaap": null,
       "achievements": [
         {
           "id": 1166,
@@ -3250,6 +3886,19 @@
       "id": 46,
       "name": "Repaire de Skeunk",
       "level": 120,
+      "boss": {
+        "id": 780,
+        "name": "Skeunk",
+        "img": "img/bosses/431.png"
+      },
+      "entrance": {
+        "x": -20,
+        "y": 10
+      },
+      "zaap": {
+        "x": -25,
+        "y": 12
+      },
       "achievements": [
         {
           "id": 69,
@@ -3308,6 +3957,19 @@
       "id": 54,
       "name": "Serre du Royalmouth",
       "level": 120,
+      "boss": {
+        "id": 2854,
+        "name": "Royalmouth",
+        "img": "img/bosses/775.png"
+      },
+      "entrance": {
+        "x": -84,
+        "y": -49
+      },
+      "zaap": {
+        "x": -78,
+        "y": -41
+      },
       "achievements": [
         {
           "id": 72,
@@ -3366,6 +4028,19 @@
       "id": 50,
       "name": "Tofulailler Royal",
       "level": 120,
+      "boss": {
+        "id": 382,
+        "name": "Tofu Royal",
+        "img": "img/bosses/204.png"
+      },
+      "entrance": {
+        "x": 5,
+        "y": 6
+      },
+      "zaap": {
+        "x": 5,
+        "y": 7
+      },
       "achievements": [
         {
           "id": 73,
@@ -3435,6 +4110,19 @@
       "id": 126,
       "name": "Atelier du Tanukouï San",
       "level": 130,
+      "boss": {
+        "id": 6218,
+        "name": "Tanukouï San",
+        "img": "img/bosses/2040.png"
+      },
+      "entrance": {
+        "x": 26,
+        "y": -24
+      },
+      "zaap": {
+        "x": 20,
+        "y": -29
+      },
       "achievements": [
         {
           "id": 3004,
@@ -3504,6 +4192,19 @@
       "id": 101,
       "name": "Caverne d'El Piko",
       "level": 130,
+      "boss": {
+        "id": 4609,
+        "name": "El Piko",
+        "img": "img/bosses/1483.png"
+      },
+      "entrance": {
+        "x": 15,
+        "y": -65
+      },
+      "zaap": {
+        "x": 15,
+        "y": -58
+      },
       "achievements": [
         {
           "id": 1536,
@@ -3562,6 +4263,16 @@
       "id": 112,
       "name": "Croquanterie",
       "level": 130,
+      "boss": {
+        "id": 5664,
+        "name": "Croqueleur",
+        "img": "img/bosses/1844.png"
+      },
+      "entrance": {
+        "x": -1,
+        "y": -7
+      },
+      "zaap": null,
       "achievements": [
         {
           "id": 2075,
@@ -3631,6 +4342,16 @@
       "id": 81,
       "name": "Ring du Capitaine Ekarlatte",
       "level": 130,
+      "boss": {
+        "id": 3753,
+        "name": "Capitaine Ekarlatte",
+        "img": "img/bosses/1167.png"
+      },
+      "entrance": {
+        "x": 6,
+        "y": 3
+      },
+      "zaap": null,
       "achievements": [
         {
           "id": 1123,
@@ -3700,6 +4421,19 @@
       "id": 123,
       "name": "Vallée de la Dame des eaux",
       "level": 130,
+      "boss": {
+        "id": 6256,
+        "name": "Nagate",
+        "img": "img/bosses/2055.png"
+      },
+      "entrance": {
+        "x": 22,
+        "y": -24
+      },
+      "zaap": {
+        "x": 20,
+        "y": -29
+      },
       "achievements": [
         {
           "id": 3020,
@@ -3769,6 +4503,19 @@
       "id": 80,
       "name": "Volière de la Haute Truche",
       "level": 130,
+      "boss": {
+        "id": 3618,
+        "name": "Haute Truche",
+        "img": "img/bosses/1096.png"
+      },
+      "entrance": {
+        "x": -10,
+        "y": -44
+      },
+      "zaap": {
+        "x": -3,
+        "y": -42
+      },
       "achievements": [
         {
           "id": 1061,
@@ -3827,6 +4574,19 @@
       "id": 10,
       "name": "Clairière du Chêne Mou",
       "level": 140,
+      "boss": {
+        "id": 257,
+        "name": "Chêne Mou",
+        "img": "img/bosses/147.png"
+      },
+      "entrance": {
+        "x": -14,
+        "y": -13
+      },
+      "zaap": {
+        "x": -20,
+        "y": -20
+      },
       "achievements": [
         {
           "id": 6202,
@@ -3885,6 +4645,19 @@
       "id": 122,
       "name": "Dojo du Vent",
       "level": 140,
+      "boss": {
+        "id": 6204,
+        "name": "Shihan",
+        "img": "img/bosses/2036.png"
+      },
+      "entrance": {
+        "x": 20,
+        "y": -37
+      },
+      "zaap": {
+        "x": 20,
+        "y": -29
+      },
       "achievements": [
         {
           "id": 3011,
@@ -3954,6 +4727,19 @@
       "id": 55,
       "name": "Excavation du Mansot Royal",
       "level": 140,
+      "boss": {
+        "id": 2848,
+        "name": "Mansot Royal",
+        "img": "img/bosses/769.png"
+      },
+      "entrance": {
+        "x": -64,
+        "y": -55
+      },
+      "zaap": {
+        "x": -67,
+        "y": -77
+      },
       "achievements": [
         {
           "id": 59,
@@ -4023,6 +4809,19 @@
       "id": 124,
       "name": "Fabrique de foux d'artifice",
       "level": 140,
+      "boss": {
+        "id": 6249,
+        "name": "Founoroshi",
+        "img": "img/bosses/2052.png"
+      },
+      "entrance": {
+        "x": 14,
+        "y": -32
+      },
+      "zaap": {
+        "x": 20,
+        "y": -29
+      },
       "achievements": [
         {
           "id": 3027,
@@ -4081,6 +4880,19 @@
       "id": 51,
       "name": "Laboratoire du Tynril",
       "level": 140,
+      "boss": {
+        "id": 1087,
+        "name": "Tynril Ahuri",
+        "img": "img/bosses/596.png"
+      },
+      "entrance": {
+        "x": -53,
+        "y": 20
+      },
+      "zaap": {
+        "x": -54,
+        "y": 16
+      },
       "achievements": [
         {
           "id": 65,
@@ -4139,6 +4951,19 @@
       "id": 56,
       "name": "Épave du Grolandais violent",
       "level": 150,
+      "boss": {
+        "id": 2877,
+        "name": "Ben le Ripate",
+        "img": "img/bosses/794.png"
+      },
+      "entrance": {
+        "x": -60,
+        "y": -84
+      },
+      "zaap": {
+        "x": -67,
+        "y": -77
+      },
       "achievements": [
         {
           "id": 58,
@@ -4208,6 +5033,16 @@
       "id": 79,
       "name": "Galerie du Phossile",
       "level": 150,
+      "boss": {
+        "id": 3651,
+        "name": "Phossile",
+        "img": "img/bosses/1108.png"
+      },
+      "entrance": {
+        "x": -2,
+        "y": -3
+      },
+      "zaap": null,
       "achievements": [
         {
           "id": 1083,
@@ -4266,6 +5101,19 @@
       "id": 44,
       "name": "Repaire de Sphincter Cell",
       "level": 150,
+      "boss": {
+        "id": 943,
+        "name": "Sphincter Cell",
+        "img": "img/bosses/523.png"
+      },
+      "entrance": {
+        "x": 3,
+        "y": -6
+      },
+      "zaap": {
+        "x": 3,
+        "y": -5
+      },
       "achievements": [
         {
           "id": 47,
@@ -4324,6 +5172,19 @@
       "id": 139,
       "name": "Tertre du long sommeil",
       "level": 150,
+      "boss": {
+        "id": 107,
+        "name": "Hell Mina",
+        "img": "img/bosses/55.png"
+      },
+      "entrance": {
+        "x": -3,
+        "y": 19
+      },
+      "zaap": {
+        "x": -1,
+        "y": 24
+      },
       "achievements": [
         {
           "id": 5211,
@@ -4393,6 +5254,19 @@
       "id": 28,
       "name": "Canopée du Kimbo",
       "level": 160,
+      "boss": {
+        "id": 1045,
+        "name": "Kimbo",
+        "img": "img/bosses/569.png"
+      },
+      "entrance": {
+        "x": -54,
+        "y": 16
+      },
+      "zaap": {
+        "x": -54,
+        "y": 16
+      },
       "achievements": [
         {
           "id": 27,
@@ -4451,6 +5325,19 @@
       "id": 75,
       "name": "Grotte de Kanigroula",
       "level": 160,
+      "boss": {
+        "id": 3556,
+        "name": "Kanigroula",
+        "img": "img/bosses/1066.png"
+      },
+      "entrance": {
+        "x": -5,
+        "y": -54
+      },
+      "zaap": {
+        "x": 0,
+        "y": -56
+      },
       "achievements": [
         {
           "id": 1055,
@@ -4520,6 +5407,19 @@
       "id": 57,
       "name": "Hypogée de l'Obsidiantre",
       "level": 160,
+      "boss": {
+        "id": 2924,
+        "name": "Obsidiantre",
+        "img": "img/bosses/825.png"
+      },
+      "entrance": {
+        "x": -71,
+        "y": -83
+      },
+      "zaap": {
+        "x": -67,
+        "y": -77
+      },
       "achievements": [
         {
           "id": 63,
@@ -4578,6 +5478,16 @@
       "id": 94,
       "name": "Plateau de Ush",
       "level": 160,
+      "boss": {
+        "id": 4264,
+        "name": "Ush Galesh",
+        "img": "img/bosses/1346.png"
+      },
+      "entrance": {
+        "x": 7,
+        "y": -3
+      },
+      "zaap": null,
       "achievements": [
         {
           "id": 1416,
@@ -4636,6 +5546,16 @@
       "id": 53,
       "name": "Salle du Minotot",
       "level": 160,
+      "boss": {
+        "id": 827,
+        "name": "Minotot",
+        "img": "img/bosses/459.png"
+      },
+      "entrance": {
+        "x": -39,
+        "y": -11
+      },
+      "zaap": null,
       "achievements": [
         {
           "id": 71,
@@ -4694,6 +5614,19 @@
       "id": 132,
       "name": "Tombe du Shogun Tofugawa",
       "level": 160,
+      "boss": {
+        "id": 6388,
+        "name": "Shogun Tofugawa",
+        "img": "img/bosses/2095.png"
+      },
+      "entrance": {
+        "x": 36,
+        "y": -44
+      },
+      "zaap": {
+        "x": 40,
+        "y": -44
+      },
       "achievements": [
         {
           "id": 3071,
@@ -4763,6 +5696,19 @@
       "id": 102,
       "name": "Boyau du Père Ver",
       "level": 170,
+      "boss": {
+        "id": 4726,
+        "name": "Père Ver",
+        "img": "img/bosses/1533.png"
+      },
+      "entrance": {
+        "x": 7,
+        "y": -70
+      },
+      "zaap": {
+        "x": 15,
+        "y": -58
+      },
       "achievements": [
         {
           "id": 1555,
@@ -4821,6 +5767,19 @@
       "id": 131,
       "name": "Demeure des Esprits",
       "level": 170,
+      "boss": {
+        "id": 6394,
+        "name": "Koumiho",
+        "img": "img/bosses/2097.png"
+      },
+      "entrance": {
+        "x": 39,
+        "y": -44
+      },
+      "zaap": {
+        "x": 40,
+        "y": -44
+      },
       "achievements": [
         {
           "id": 3062,
@@ -4890,6 +5849,16 @@
       "id": 86,
       "name": "Horologium de XLII",
       "level": 170,
+      "boss": {
+        "id": 3849,
+        "name": "XLII",
+        "img": "img/bosses/1222.png"
+      },
+      "entrance": {
+        "x": 7,
+        "y": -2
+      },
+      "zaap": null,
       "achievements": [
         {
           "id": 1161,
@@ -4948,6 +5917,16 @@
       "id": 163,
       "name": "Poste de contrôle du Supervizœuf",
       "level": 170,
+      "boss": {
+        "id": 8052,
+        "name": "Supervizœuf",
+        "img": "img/bosses/2507.png"
+      },
+      "entrance": {
+        "x": 24,
+        "y": 23
+      },
+      "zaap": null,
       "achievements": [
         {
           "id": 8839,
@@ -5006,6 +5985,19 @@
       "id": 58,
       "name": "Tanière Givrefoux",
       "level": 170,
+      "boss": {
+        "id": 2967,
+        "name": "Tengu Givrefoux",
+        "img": "img/bosses/840.png"
+      },
+      "entrance": {
+        "x": -76,
+        "y": -75
+      },
+      "zaap": {
+        "x": -77,
+        "y": -73
+      },
       "achievements": [
         {
           "id": 31,
@@ -5126,6 +6118,19 @@
       "id": 59,
       "name": "Antre du Korriandre",
       "level": 180,
+      "boss": {
+        "id": 2968,
+        "name": "Korriandre",
+        "img": "img/bosses/841.png"
+      },
+      "entrance": {
+        "x": -73,
+        "y": -69
+      },
+      "zaap": {
+        "x": -77,
+        "y": -73
+      },
       "achievements": [
         {
           "id": 23,
@@ -5184,6 +6189,19 @@
       "id": 31,
       "name": "Antre du Kralamoure Géant",
       "level": 180,
+      "boss": {
+        "id": 423,
+        "name": "Kralamoure Géant",
+        "img": "img/bosses/227.png"
+      },
+      "entrance": {
+        "x": -60,
+        "y": -8
+      },
+      "zaap": {
+        "x": -54,
+        "y": 16
+      },
       "achievements": [
         {
           "id": 24,
@@ -5253,6 +6271,16 @@
       "id": 82,
       "name": "Cave du Toxoliath",
       "level": 180,
+      "boss": {
+        "id": 3752,
+        "name": "Toxoliath",
+        "img": "img/bosses/1166.png"
+      },
+      "entrance": {
+        "x": 8,
+        "y": 8
+      },
+      "zaap": null,
       "achievements": [
         {
           "id": 1118,
@@ -5311,6 +6339,19 @@
       "id": 14,
       "name": "Grotte du Bworker",
       "level": 180,
+      "boss": {
+        "id": 478,
+        "name": "Bworker",
+        "img": "img/bosses/264.png"
+      },
+      "entrance": {
+        "x": -15,
+        "y": 14
+      },
+      "zaap": {
+        "x": -12,
+        "y": 19
+      },
       "achievements": [
         {
           "id": 52,
@@ -5369,6 +6410,16 @@
       "id": 38,
       "name": "Maison du Papa Nowel",
       "level": 180,
+      "boss": {
+        "id": 1194,
+        "name": "Père Fwetar",
+        "img": "img/bosses/651.png"
+      },
+      "entrance": {
+        "x": -34,
+        "y": -89
+      },
+      "zaap": null,
       "achievements": [
         {
           "id": 440,
@@ -5438,6 +6489,19 @@
       "id": 22,
       "name": "Temple du Grand Ougah",
       "level": 180,
+      "boss": {
+        "id": 1159,
+        "name": "Ougah",
+        "img": "img/bosses/640.png"
+      },
+      "entrance": {
+        "x": -9,
+        "y": 29
+      },
+      "zaap": {
+        "x": -15,
+        "y": 25
+      },
       "achievements": [
         {
           "id": 55,
@@ -5507,6 +6571,19 @@
       "id": 61,
       "name": "Antichambre des Gloursons",
       "level": 190,
+      "boss": {
+        "id": 2864,
+        "name": "Glourséleste",
+        "img": "img/bosses/785.png"
+      },
+      "entrance": {
+        "x": -63,
+        "y": -75
+      },
+      "zaap": {
+        "x": -67,
+        "y": -77
+      },
       "achievements": [
         {
           "id": 20,
@@ -5576,6 +6653,19 @@
       "id": 141,
       "name": "Bastion des Marteaux-Aigris",
       "level": 190,
+      "boss": {
+        "id": 7219,
+        "name": "Barbéryl Clochecuivre",
+        "img": "img/bosses/2331.png"
+      },
+      "entrance": {
+        "x": 32,
+        "y": -64
+      },
+      "zaap": {
+        "x": 39,
+        "y": -82
+      },
       "achievements": [
         {
           "id": 5821,
@@ -5645,6 +6735,19 @@
       "id": 104,
       "name": "Camp du Comte Razof",
       "level": 190,
+      "boss": {
+        "id": 4803,
+        "name": "Comte Razof",
+        "img": "img/bosses/1565.png"
+      },
+      "entrance": {
+        "x": -68,
+        "y": 30
+      },
+      "zaap": {
+        "x": -67,
+        "y": 29
+      },
       "achievements": [
         {
           "id": 1582,
@@ -5703,6 +6806,19 @@
       "id": 60,
       "name": "Cavernes du Kolosso",
       "level": 190,
+      "boss": {
+        "id": 2986,
+        "name": "Kolosso",
+        "img": "img/bosses/849.png"
+      },
+      "entrance": {
+        "x": -61,
+        "y": -69
+      },
+      "zaap": {
+        "x": -67,
+        "y": -77
+      },
       "achievements": [
         {
           "id": 30,
@@ -5750,6 +6866,16 @@
       "id": 62,
       "name": "Donjon de la mine de Sakaï",
       "level": 190,
+      "boss": {
+        "id": 2942,
+        "name": "Grolloum",
+        "img": "img/bosses/834.png"
+      },
+      "entrance": {
+        "x": -52,
+        "y": -45
+      },
+      "zaap": null,
       "achievements": [
         {
           "id": 486,
@@ -5819,6 +6945,16 @@
       "id": 74,
       "name": "Pyramide d'Ombre",
       "level": 190,
+      "boss": {
+        "id": 3564,
+        "name": "Ombre",
+        "img": "img/bosses/1002.png"
+      },
+      "entrance": {
+        "x": 5,
+        "y": 9
+      },
+      "zaap": null,
       "achievements": [
         {
           "id": 1040,
@@ -5888,6 +7024,19 @@
       "id": 73,
       "name": "Aquadôme de Merkator",
       "level": 200,
+      "boss": {
+        "id": 3534,
+        "name": "Merkator",
+        "img": "img/bosses/1054.png"
+      },
+      "entrance": {
+        "x": 22,
+        "y": 30
+      },
+      "zaap": {
+        "x": 13,
+        "y": 26
+      },
       "achievements": [
         {
           "id": 1019,
@@ -5957,6 +7106,16 @@
       "id": 117,
       "name": "Arbre de Mort",
       "level": 200,
+      "boss": {
+        "id": 6026,
+        "name": "Corruption",
+        "img": "img/bosses/1996.png"
+      },
+      "entrance": {
+        "x": 4,
+        "y": 0
+      },
+      "zaap": null,
       "achievements": [
         {
           "id": 2257,
@@ -6015,6 +7174,16 @@
       "id": 165,
       "name": "Autel de la Déchireuse",
       "level": 200,
+      "boss": {
+        "id": 8037,
+        "name": "Déchireuse",
+        "img": "img/bosses/2514.png"
+      },
+      "entrance": {
+        "x": 12,
+        "y": 2
+      },
+      "zaap": null,
       "achievements": [
         {
           "id": 8833,
@@ -6073,6 +7242,16 @@
       "id": 136,
       "name": "Bataille de l'Aurore Pourpre",
       "level": 200,
+      "boss": {
+        "id": 6792,
+        "name": "L'Éternel Conflit",
+        "img": "img/bosses/2236.png"
+      },
+      "entrance": {
+        "x": 1,
+        "y": 0
+      },
+      "zaap": null,
       "achievements": [
         {
           "id": 5166,
@@ -6131,6 +7310,19 @@
       "id": 107,
       "name": "Belvédère d'Ilyzaelle",
       "level": 200,
+      "boss": {
+        "id": 4967,
+        "name": "Ilyzaelle",
+        "img": "img/bosses/1628.png"
+      },
+      "entrance": {
+        "x": -73,
+        "y": -76
+      },
+      "zaap": {
+        "x": -77,
+        "y": -73
+      },
       "achievements": [
         {
           "id": 1623,
@@ -6200,6 +7392,19 @@
       "id": 110,
       "name": "Brasserie du roi Dazak",
       "level": 200,
+      "boss": {
+        "id": 5319,
+        "name": "Dazak Martegel",
+        "img": "img/bosses/1771.png"
+      },
+      "entrance": {
+        "x": -62,
+        "y": -70
+      },
+      "zaap": {
+        "x": -67,
+        "y": -77
+      },
       "achievements": [
         {
           "id": 1695,
@@ -6269,6 +7474,16 @@
       "id": 164,
       "name": "Breuil du Vénérable",
       "level": 200,
+      "boss": {
+        "id": 8047,
+        "name": "Vénérable Endormi",
+        "img": "img/bosses/2488.png"
+      },
+      "entrance": {
+        "x": 6,
+        "y": 9
+      },
+      "zaap": null,
       "achievements": [
         {
           "id": 8849,
@@ -6327,6 +7542,19 @@
       "id": 103,
       "name": "Chambre de Tal Kasha",
       "level": 200,
+      "boss": {
+        "id": 4744,
+        "name": "Tal Kasha",
+        "img": "img/bosses/1547.png"
+      },
+      "entrance": {
+        "x": 12,
+        "y": -77
+      },
+      "zaap": {
+        "x": 15,
+        "y": -58
+      },
       "achievements": [
         {
           "id": 1562,
@@ -6385,6 +7613,19 @@
       "id": 140,
       "name": "Chambre des maléfices",
       "level": 200,
+      "boss": {
+        "id": 7210,
+        "name": "Belladone",
+        "img": "img/bosses/2325.png"
+      },
+      "entrance": {
+        "x": 29,
+        "y": -88
+      },
+      "zaap": {
+        "x": 39,
+        "y": -82
+      },
       "achievements": [
         {
           "id": 5809,
@@ -6454,6 +7695,16 @@
       "id": 95,
       "name": "Défi du Chalœil",
       "level": 200,
+      "boss": {
+        "id": 4263,
+        "name": "Chalœil",
+        "img": "img/bosses/1345.png"
+      },
+      "entrance": {
+        "x": -9,
+        "y": -22
+      },
+      "zaap": null,
       "achievements": [
         {
           "id": 1437,
@@ -6523,6 +7774,19 @@
       "id": 71,
       "name": "Donjon du Comte Harebourg",
       "level": 200,
+      "boss": {
+        "id": 3416,
+        "name": "Comte Harebourg",
+        "img": "img/bosses/993.png"
+      },
+      "entrance": {
+        "x": -59,
+        "y": -89
+      },
+      "zaap": {
+        "x": -67,
+        "y": -77
+      },
       "achievements": [
         {
           "id": 892,
@@ -6592,6 +7856,16 @@
       "id": 118,
       "name": "Fers de la Tyrannie",
       "level": 200,
+      "boss": {
+        "id": 5955,
+        "name": "Servitude",
+        "img": "img/bosses/1958.png"
+      },
+      "entrance": {
+        "x": 4,
+        "y": -3
+      },
+      "zaap": null,
       "achievements": [
         {
           "id": 2271,
@@ -6650,6 +7924,19 @@
       "id": 69,
       "name": "Forgefroide de Missiz Frizz",
       "level": 200,
+      "boss": {
+        "id": 3391,
+        "name": "Missiz Frizz",
+        "img": "img/bosses/970.png"
+      },
+      "entrance": {
+        "x": -71,
+        "y": -88
+      },
+      "zaap": {
+        "x": -67,
+        "y": -77
+      },
       "achievements": [
         {
           "id": 872,
@@ -6719,6 +8006,19 @@
       "id": 70,
       "name": "Laboratoire de Nileza",
       "level": 200,
+      "boss": {
+        "id": 3397,
+        "name": "Nileza",
+        "img": "img/bosses/976.png"
+      },
+      "entrance": {
+        "x": -59,
+        "y": -74
+      },
+      "zaap": {
+        "x": -67,
+        "y": -77
+      },
       "achievements": [
         {
           "id": 887,
@@ -6788,6 +8088,19 @@
       "id": 106,
       "name": "Manoir des Katrepat",
       "level": 200,
+      "boss": {
+        "id": 4882,
+        "name": "Anerice la Shushess",
+        "img": "img/bosses/1600.png"
+      },
+      "entrance": {
+        "x": -14,
+        "y": 25
+      },
+      "zaap": {
+        "x": -15,
+        "y": 25
+      },
       "achievements": [
         {
           "id": 1605,
@@ -6857,6 +8170,16 @@
       "id": 133,
       "name": "Mémoire d'Orukam",
       "level": 200,
+      "boss": {
+        "id": 6472,
+        "name": "Roi Imagami",
+        "img": "img/bosses/2121.png"
+      },
+      "entrance": {
+        "x": -3,
+        "y": -1
+      },
+      "zaap": null,
       "achievements": [
         {
           "id": 3083,
@@ -6915,6 +8238,16 @@
       "id": 87,
       "name": "Œil de Vortex",
       "level": 200,
+      "boss": {
+        "id": 3835,
+        "name": "Vortex",
+        "img": "img/bosses/1208.png"
+      },
+      "entrance": {
+        "x": 7,
+        "y": -7
+      },
+      "zaap": null,
       "achievements": [
         {
           "id": 1156,
@@ -6973,6 +8306,16 @@
       "id": 99,
       "name": "Palais de Dantinéa",
       "level": 200,
+      "boss": {
+        "id": 4444,
+        "name": "Dantinéa",
+        "img": "img/bosses/1321.png"
+      },
+      "entrance": {
+        "x": 19,
+        "y": 26
+      },
+      "zaap": null,
       "achievements": [
         {
           "id": 1478,
@@ -7042,6 +8385,16 @@
       "id": 76,
       "name": "Palais du roi Nidas",
       "level": 200,
+      "boss": {
+        "id": 3648,
+        "name": "Roi Nidas",
+        "img": "img/bosses/1106.png"
+      },
+      "entrance": {
+        "x": -5,
+        "y": -5
+      },
+      "zaap": null,
       "achievements": [
         {
           "id": 1078,
@@ -7111,6 +8464,16 @@
       "id": 135,
       "name": "Rituel de Kabahal",
       "level": 200,
+      "boss": {
+        "id": 6654,
+        "name": "Kabahal",
+        "img": "img/bosses/2192.png"
+      },
+      "entrance": {
+        "x": 43,
+        "y": -57
+      },
+      "zaap": null,
       "achievements": [
         {
           "id": 5069,
@@ -7169,6 +8532,19 @@
       "id": 68,
       "name": "Salons privés de Klime",
       "level": 200,
+      "boss": {
+        "id": 3384,
+        "name": "Klime",
+        "img": "img/bosses/964.png"
+      },
+      "entrance": {
+        "x": -63,
+        "y": -93
+      },
+      "zaap": {
+        "x": -67,
+        "y": -77
+      },
       "achievements": [
         {
           "id": 882,
@@ -7238,6 +8614,19 @@
       "id": 114,
       "name": "Sanctuaire de Torkélonia",
       "level": 200,
+      "boss": {
+        "id": 5806,
+        "name": "Torkélonia",
+        "img": "img/bosses/1903.png"
+      },
+      "entrance": {
+        "x": -84,
+        "y": -16
+      },
+      "zaap": {
+        "x": -83,
+        "y": -15
+      },
       "achievements": [
         {
           "id": 2106,
@@ -7307,6 +8696,16 @@
       "id": 119,
       "name": "Sentence de la Balance",
       "level": 200,
+      "boss": {
+        "id": 5990,
+        "name": "Misère",
+        "img": "img/bosses/1966.png"
+      },
+      "entrance": {
+        "x": 1,
+        "y": 0
+      },
+      "zaap": null,
       "achievements": [
         {
           "id": 2278,
@@ -7365,6 +8764,16 @@
       "id": 134,
       "name": "Souvenir d'Imagiro",
       "level": 200,
+      "boss": {
+        "id": 6478,
+        "name": "Reine Amirukam",
+        "img": "img/bosses/2127.png"
+      },
+      "entrance": {
+        "x": 2,
+        "y": 0
+      },
+      "zaap": null,
       "achievements": [
         {
           "id": 3090,
@@ -7434,6 +8843,16 @@
       "id": 98,
       "name": "Temple de Koutoulou",
       "level": 200,
+      "boss": {
+        "id": 4453,
+        "name": "Larve de Koutoulou",
+        "img": "img/bosses/1423.png"
+      },
+      "entrance": {
+        "x": 27,
+        "y": 26
+      },
+      "zaap": null,
       "achievements": [
         {
           "id": 1471,
@@ -7503,6 +8922,16 @@
       "id": 111,
       "name": "Temple du dieu Kao",
       "level": 200,
+      "boss": {
+        "id": 5666,
+        "name": "Prêtresse de Kao",
+        "img": "img/bosses/1846.png"
+      },
+      "entrance": {
+        "x": -1,
+        "y": -10
+      },
+      "zaap": null,
       "achievements": [
         {
           "id": 2082,
@@ -7572,6 +9001,19 @@
       "id": 108,
       "name": "Tour de Bethel",
       "level": 200,
+      "boss": {
+        "id": 5110,
+        "name": "Bethel Akarna",
+        "img": "img/bosses/1670.png"
+      },
+      "entrance": {
+        "x": -48,
+        "y": -82
+      },
+      "zaap": {
+        "x": -67,
+        "y": -77
+      },
       "achievements": [
         {
           "id": 1641,
@@ -7641,6 +9083,19 @@
       "id": 109,
       "name": "Tour de Solar",
       "level": 200,
+      "boss": {
+        "id": 5100,
+        "name": "Solar",
+        "img": "img/bosses/1661.png"
+      },
+      "entrance": {
+        "x": -31,
+        "y": 15
+      },
+      "zaap": {
+        "x": -25,
+        "y": 12
+      },
       "achievements": [
         {
           "id": 1634,
@@ -7710,6 +9165,19 @@
       "id": 67,
       "name": "Transporteur de Sylargh",
       "level": 200,
+      "boss": {
+        "id": 3409,
+        "name": "Sylargh",
+        "img": "img/bosses/986.png"
+      },
+      "entrance": {
+        "x": -52,
+        "y": -87
+      },
+      "zaap": {
+        "x": -67,
+        "y": -77
+      },
       "achievements": [
         {
           "id": 877,
@@ -7779,6 +9247,16 @@
       "id": 83,
       "name": "Trône de la Cour Sombre",
       "level": 200,
+      "boss": {
+        "id": 3726,
+        "name": "Reine des Voleurs",
+        "img": "img/bosses/1141.png"
+      },
+      "entrance": {
+        "x": 8,
+        "y": -4
+      },
+      "zaap": null,
       "achievements": [
         {
           "id": 1108,
@@ -7848,6 +9326,16 @@
       "id": 120,
       "name": "Trône de Sang",
       "level": 200,
+      "boss": {
+        "id": 6014,
+        "name": "Guerre",
+        "img": "img/bosses/1985.png"
+      },
+      "entrance": {
+        "x": 4,
+        "y": -3
+      },
+      "zaap": null,
       "achievements": [
         {
           "id": 2264,
@@ -7906,6 +9394,16 @@
       "id": 97,
       "name": "Vaisseau du Capitaine Meno",
       "level": 200,
+      "boss": {
+        "id": 4460,
+        "name": "Capitaine Meno",
+        "img": "img/bosses/1430.png"
+      },
+      "entrance": {
+        "x": 24,
+        "y": 27
+      },
+      "zaap": null,
       "achievements": [
         {
           "id": 1464,
@@ -7975,6 +9473,19 @@
       "id": 84,
       "name": "Ventre de la Baleine",
       "level": 200,
+      "boss": {
+        "id": 3828,
+        "name": "Protozorreur",
+        "img": "img/bosses/1204.png"
+      },
+      "entrance": {
+        "x": -85,
+        "y": -59
+      },
+      "zaap": {
+        "x": -77,
+        "y": -73
+      },
       "achievements": [
         {
           "id": 1136,

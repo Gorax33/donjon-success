@@ -16,20 +16,27 @@
     <div id="app">
       <header class="topbar">
         <h1>Succès Donjons</h1>
-        <button id="pip-btn" type="button" title="Ouvrir dans une fenêtre toujours au premier plan">
-          ⧉ Détacher
-        </button>
+        <button id="pip-btn" type="button" class="icon-btn secondary"
+          title="Détacher dans une fenêtre toujours au premier plan">⧉</button>
+        <button id="avatar-btn" type="button" class="avatar-btn"></button>
       </header>
       <p id="pip-unsupported" class="warning" hidden>
         La fenêtre flottante nécessite Chrome ou Edge (version 116 ou plus récente).
       </p>
       <p id="pip-error" class="warning" hidden></p>
-      <div class="searchbar">
-        <input id="search" type="search" placeholder="Rechercher un donjon ou un boss…" autocomplete="off" />
+
+      <!-- Vue principale : recherche et sommaire -->
+      <div class="view" id="main-view">
+        <div class="searchbar">
+          <input id="search" type="search" placeholder="Rechercher un donjon ou un boss…" autocomplete="off" />
+        </div>
+        <main class="content" id="summary">
+          <p class="placeholder">Chargement des donjons…</p>
+        </main>
       </div>
-      <main class="content" id="summary">
-        <p class="placeholder">Chargement des donjons…</p>
-      </main>
+
+      <!-- Écran de gestion des personnages, affiché à la place de la vue principale -->
+      <div class="view" id="characters-view" hidden></div>
     </div>
 
     <script type="module" src="/src/main.js"></script>

@@ -1,7 +1,8 @@
 import './style.css';
 import { isPipSupported, openPip, closePip } from './pip.js';
-import { loadDungeonData } from './data.js';
+import { loadDungeonData, loadClasses } from './data.js';
 import { renderSummary } from './summary.js';
+import { renderAvatarButton, createCharactersView } from './characters.js';
 
 const appEl = document.getElementById('app');
 const pipBtn = appEl.querySelector('#pip-btn');
@@ -28,9 +29,39 @@ if (isPipSupported()) {
 }
 
 const summaryEl = appEl.querySelector('#summary');
+const mainView = appEl.querySelector('#main-view');
+const charactersViewEl = appEl.querySelector('#characters-view');
+const avatarBtn = appEl.querySelector('#avatar-btn');
+
 try {
-  const { dungeons } = await loadDungeonData();
-  renderSummary(summaryEl, appEl.querySelector('#search'), dungeons);
+  const [{ dungeons }, classes] = await Promise.all([loadDungeonData(), loadClasses()]);
+  const classById = new Map(classes.map((c) => [c.id, c]));
+
+  const { refreshProgress } = renderSummary(summaryEl, appEl.querySelector('#search'), dungeons);
+
+  // Changement de personnage actif ou de ses infos
+  const onCharacterChange = () => {
+    renderAvatarButton(avatarBtn, classById);
+    refreshProgress();
+  };
+
+  // L'écran des personnages remplace la vue principale tant qu'il est ouvert
+  const showCharacters = (visible) => {
+    mainView.hidden = visible;
+    charactersViewEl.hidden = !visible;
+  };
+  const charactersView = createCharactersView(charactersViewEl, {
+    classes,
+    onChange: onCharacterChange,
+    onClose: () => showCharacters(false),
+  });
+
+  avatarBtn.addEventListener('click', () => {
+    if (!charactersViewEl.hidden) return showCharacters(false);
+    charactersView.open();
+    showCharacters(true);
+  });
+  renderAvatarButton(avatarBtn, classById);
 } catch (err) {
   summaryEl.innerHTML = '<p class="warning"></p>';
   summaryEl.firstChild.textContent = err.message;

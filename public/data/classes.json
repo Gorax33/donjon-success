@@ -1,0 +1,97 @@
+[
+  {
+    "id": 8,
+    "name": "Iop",
+    "img": "img/classes/symbol_8.png"
+  },
+  {
+    "id": 9,
+    "name": "Crâ",
+    "img": "img/classes/symbol_9.png"
+  },
+  {
+    "id": 11,
+    "name": "Sacrieur",
+    "img": "img/classes/symbol_11.png"
+  },
+  {
+    "id": 7,
+    "name": "Eniripsa",
+    "img": "img/classes/symbol_7.png"
+  },
+  {
+    "id": 18,
+    "name": "Ouginak",
+    "img": "img/classes/symbol_18.png"
+  },
+  {
+    "id": 1,
+    "name": "Féca",
+    "img": "img/classes/symbol_1.png"
+  },
+  {
+    "id": 3,
+    "name": "Enutrof",
+    "img": "img/classes/symbol_3.png"
+  },
+  {
+    "id": 4,
+    "name": "Sram",
+    "img": "img/classes/symbol_4.png"
+  },
+  {
+    "id": 20,
+    "name": "Forgelance",
+    "img": "img/classes/symbol_20.png"
+  },
+  {
+    "id": 14,
+    "name": "Zobal",
+    "img": "img/classes/symbol_14.png"
+  },
+  {
+    "id": 12,
+    "name": "Pandawa",
+    "img": "img/classes/symbol_12.png"
+  },
+  {
+    "id": 10,
+    "name": "Sadida",
+    "img": "img/classes/symbol_10.png"
+  },
+  {
+    "id": 2,
+    "name": "Osamodas",
+    "img": "img/classes/symbol_2.png"
+  },
+  {
+    "id": 15,
+    "name": "Steamer",
+    "img": "img/classes/symbol_15.png"
+  },
+  {
+    "id": 17,
+    "name": "Huppermage",
+    "img": "img/classes/symbol_17.png"
+  },
+  {
+    "id": 6,
+    "name": "Ecaflip",
+    "img": "img/classes/symbol_6.png"
+  },
+  {
+    "id": 13,
+    "name": "Roublard",
+    "img": "img/classes/symbol_13.png"
+  },
+  {
+    "id": 16,
+    "name": "Eliotrope",
+    "img": "img/classes/symbol_16.png"
+  },
+  {
+    "id": 5,
+    "name": "Xélor",
+    "img": "img/classes/symbol_5.png"
+  }
+]
