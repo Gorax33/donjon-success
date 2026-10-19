@@ -16,10 +16,12 @@ function Test-Server {
   }
 }
 
+# Recompile à chaque lancement pour toujours servir la dernière version du code.
+# Le serveur relit dist/ à chaque requête : pas besoin de le redémarrer.
+Start-Process -FilePath 'cmd.exe' -ArgumentList '/c npm run build' -WorkingDirectory $root `
+  -WindowStyle Hidden -Wait
+
 if (-not (Test-Server)) {
-  # Recompile pour toujours servir la dernière version du code
-  Start-Process -FilePath 'cmd.exe' -ArgumentList '/c npm run build' -WorkingDirectory $root `
-    -WindowStyle Hidden -Wait
   # Serveur invisible ; il reste actif après la fermeture de la fenêtre (relance instantanée)
   Start-Process -FilePath 'cmd.exe' -ArgumentList "/c npx vite preview --port $port --strictPort" `
     -WorkingDirectory $root -WindowStyle Hidden

@@ -1,9 +1,10 @@
 import './style.css';
 import { isPipSupported, openPip, closePip } from './pip.js';
-import { loadDungeonData, loadClasses } from './data.js';
+import { loadDungeonData, loadClasses, loadMechanics } from './data.js';
 import { renderSummary } from './summary.js';
 import { renderAvatarButton, createCharactersView } from './characters.js';
 import { isTauri, setupPinButton } from './desktop.js';
+import { normalizeMechanic } from './mechanic-popover.js';
 
 const appEl = document.getElementById('app');
 const pipBtn = appEl.querySelector('#pip-btn');
@@ -39,10 +40,20 @@ const charactersViewEl = appEl.querySelector('#characters-view');
 const avatarBtn = appEl.querySelector('#avatar-btn');
 
 try {
-  const [{ dungeons }, classes] = await Promise.all([loadDungeonData(), loadClasses()]);
+  const [{ dungeons }, classes, mechanics] = await Promise.all([
+    loadDungeonData(),
+    loadClasses(),
+    loadMechanics(),
+  ]);
+  for (const d of dungeons) d.mechanic = normalizeMechanic(mechanics[d.id]);
   const classById = new Map(classes.map((c) => [c.id, c]));
 
-  const { refreshProgress } = renderSummary(summaryEl, appEl.querySelector('#search'), dungeons);
+  const { refreshProgress } = renderSummary(
+    summaryEl,
+    appEl.querySelector('#search'),
+    appEl.querySelector('#global-stats'),
+    dungeons,
+  );
 
   // Changement de personnage actif ou de ses infos
   const onCharacterChange = () => {

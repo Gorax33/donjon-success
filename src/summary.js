@@ -1,6 +1,7 @@
 // Sommaire : volets dépliables par tranche de niveau, donjons et leurs succès, recherche.
 import { assetUrl, bracketOf, escapeHtml } from './data.js';
-import { isDone, setDone, countDone } from './progress.js';
+import { isDone, setDone, setManyDone, countDone, getNote, setNote } from './progress.js';
+import { setupMechanicPopover } from './mechanic-popover.js';
 
 const OPEN_KEY = 'open-brackets';
 
@@ -83,6 +84,7 @@ function renderAchievement(achievement, dungeon) {
 
 function renderDungeon(dungeon) {
   const command = travelCommand(dungeon);
+  const note = getNote(dungeon.id);
   const bossImg = dungeon.boss
     ? `<img class="boss-img" src="${assetUrl(dungeon.boss.img)}" alt="" title="${escapeHtml(dungeon.boss.name)}" loading="lazy" />`
     : '<span class="boss-img"></span>';
@@ -90,25 +92,50 @@ function renderDungeon(dungeon) {
     ? `<button type="button" class="copy-btn" data-command="${escapeHtml(command)}"
          title="Copier : ${escapeHtml(command)}">📋</button>`
     : '';
+  // Logo des boss à mécanique particulière ; l'explication s'affiche dans une pop-up
+  const mechanicFlag = dungeon.mechanic
+    ? ` <button type="button" class="mechanic-flag" data-mechanic-for="${dungeon.id}"
+         aria-label="Mécanique du boss">⚙️</button>`
+    : '';
+  // Page du donjon sur Dofus pour les Noobs, ouverte dans le navigateur
+  const guideLink = dungeon.guide
+    ? `<a class="guide-link" href="${escapeHtml(dungeon.guide)}" target="_blank" rel="noopener"
+         title="Ouvrir le guide sur Dofus pour les Noobs">📖</a>`
+    : '';
   return `
     <details class="dungeon" data-dungeon-id="${dungeon.id}">
       <summary>
         ${bossImg}
-        <span class="dungeon-name">${escapeHtml(dungeon.name)}</span>
+        <span class="dungeon-name">${escapeHtml(dungeon.name)}${mechanicFlag}</span>
+        <span class="note-flag" title="Ce donjon a une note" ${note ? '' : 'hidden'}>📝</span>
         <span class="tag">niv. ${dungeon.level}</span>
         <span class="dungeon-progress"></span>
+        ${guideLink}
         ${copyBtn}
+        <input type="checkbox" class="dungeon-check" title="Valider tous les succès du donjon" />
       </summary>
       <ul class="achievements">
         ${dungeon.achievements.map((a) => renderAchievement(a, dungeon)).join('')}
       </ul>
+      <div class="dungeon-notes">
+        <textarea data-note-for="${dungeon.id}" rows="2"
+          placeholder="Notes : compo, placement, astuces…">${escapeHtml(note)}</textarea>
+      </div>
     </details>`;
 }
 
+// Arrondi vers le bas : 100 % seulement quand tout est fait
+const percent = (done, total) => (total ? Math.floor((done / total) * 100) : 0);
+// Avec une décimale pour la progression globale, qui avance lentement (0,7 %)
+const precisePercent = (done, total) =>
+  (total ? Math.floor((done / total) * 1000) / 10 : 0).toLocaleString('fr-FR');
+const formatNumber = (n) => n.toLocaleString('fr-FR');
+
 /**
- * Affiche le sommaire dans `container` et branche la recherche sur `searchInput`.
+ * Affiche le sommaire dans `container`, branche la recherche sur `searchInput`
+ * et affiche la progression globale dans `statsEl`.
  */
-export function renderSummary(container, searchInput, dungeons) {
+export function renderSummary(container, searchInput, statsEl, dungeons) {
   const brackets = new Map();
   for (const dungeon of dungeons) {
     const { start, end } = bracketOf(dungeon.level);
@@ -126,6 +153,8 @@ export function renderSummary(container, searchInput, dungeons) {
         <summary>
           <span>Niveaux ${b.start} – ${b.end}</span>
           <span class="count">${dungeonCount(b.dungeons.length)}</span>
+          <span class="bracket-stats"></span>
+          <span class="bar"><span></span></span>
         </summary>
         <div class="bracket-body">${b.dungeons.map(renderDungeon).join('')}</div>
       </details>`,
@@ -144,8 +173,49 @@ export function renderSummary(container, searchInput, dungeons) {
     const done = countDone(dungeon.achievements.map((a) => a.id));
     dungeonEl.querySelector('.dungeon-progress').textContent = `${done}/${total}`;
     dungeonEl.classList.toggle('complete', done === total);
+    // Case globale : cochée si tout est fait, "à moitié" si une partie seulement
+    const check = dungeonEl.querySelector('.dungeon-check');
+    check.checked = done === total;
+    check.indeterminate = done > 0 && done < total;
+    check.title = done === total
+      ? 'Tout décocher pour ce donjon'
+      : 'Valider tous les succès du donjon';
   }
   container.querySelectorAll('.dungeon').forEach(updateDungeonProgress);
+
+  setupMechanicPopover(container, container.closest('#app'), dungeonById);
+
+  // Statistiques : % de succès par tranche, et progression globale (succès, points, donjons)
+  const achievementsOf = (list) => list.flatMap((d) => d.achievements);
+  const pointsDone = (achievements) =>
+    achievements.reduce((sum, a) => sum + (isDone(a.id) ? a.points : 0), 0);
+
+  function updateStats() {
+    for (const bracketEl of bracketEls) {
+      const achievements = achievementsOf(brackets.get(Number(bracketEl.dataset.bracket)).dungeons);
+      const done = countDone(achievements.map((a) => a.id));
+      const pct = percent(done, achievements.length);
+      bracketEl.querySelector('.bracket-stats').textContent = `${pct} %`;
+      bracketEl.querySelector('.bar > span').style.width = `${pct}%`;
+      bracketEl.classList.toggle('complete', done === achievements.length);
+    }
+
+    const all = achievementsOf(dungeons);
+    const done = countDone(all.map((a) => a.id));
+    const totalPoints = all.reduce((sum, a) => sum + a.points, 0);
+    const completeDungeons = dungeons.filter(
+      (d) => countDone(d.achievements.map((a) => a.id)) === d.achievements.length,
+    ).length;
+    statsEl.innerHTML = `
+      <div class="stats-line">
+        <strong>${precisePercent(done, all.length)} %</strong>
+        <span>${formatNumber(done)} / ${formatNumber(all.length)} succès</span>
+        <span>${formatNumber(pointsDone(all))} / ${formatNumber(totalPoints)} pts</span>
+        <span>${completeDungeons} / ${dungeons.length} donjons</span>
+      </div>
+      <span class="bar"><span style="width:${(done / all.length) * 100}%"></span></span>`;
+  }
+  updateStats();
 
   // Après un changement de personnage : recoche les cases et recalcule les compteurs
   function refreshProgress() {
@@ -153,7 +223,43 @@ export function renderSummary(container, searchInput, dungeons) {
       input.checked = isDone(Number(input.dataset.achievementId));
     }
     container.querySelectorAll('.dungeon').forEach(updateDungeonProgress);
+    updateStats();
   }
+
+  // Notes : sauvegarde automatique pendant la frappe (avec un léger délai)
+  const noteTimers = new Map();
+  container.addEventListener('input', (e) => {
+    const dungeonId = e.target.dataset.noteFor;
+    if (!dungeonId) return;
+    const text = e.target.value;
+    e.target.closest('.dungeon').querySelector('.note-flag').hidden = !text.trim();
+    clearTimeout(noteTimers.get(dungeonId));
+    noteTimers.set(dungeonId, setTimeout(() => setNote(dungeonId, text), 400));
+  });
+  container.addEventListener('focusout', (e) => {
+    const dungeonId = e.target.dataset.noteFor;
+    if (!dungeonId) return;
+    clearTimeout(noteTimers.get(dungeonId));
+    setNote(dungeonId, e.target.value);
+  });
+
+  // Case globale d'un donjon : valide tout, ou décoche tout si tout était déjà fait.
+  // preventDefault évite de plier/déplier le donjon ; l'état de la case est remis à
+  // jour juste après, une fois que le navigateur a fini de traiter le clic.
+  container.addEventListener('click', (e) => {
+    const check = e.target.closest('.dungeon-check');
+    if (!check) return;
+    e.preventDefault();
+    const dungeonEl = check.closest('.dungeon');
+    const ids = dungeonById.get(dungeonEl.dataset.dungeonId).achievements.map((a) => a.id);
+    const done = countDone(ids) < ids.length;
+    setManyDone(ids, done);
+    for (const input of dungeonEl.querySelectorAll('[data-achievement-id]')) input.checked = done;
+    setTimeout(() => {
+      updateDungeonProgress(dungeonEl);
+      updateStats();
+    });
+  });
 
   // Bouton de copie de la commande /zaap + /travel (sans plier/déplier le donjon)
   container.addEventListener('click', async (e) => {
@@ -174,13 +280,14 @@ export function renderSummary(container, searchInput, dungeons) {
     if (!id) return;
     setDone(Number(id), e.target.checked);
     updateDungeonProgress(e.target.closest('.dungeon'));
+    updateStats();
   });
 
   // Texte indexé par donjon : son nom + les noms de ses succès (qui contiennent les boss)
   const searchIndex = new Map(
     dungeons.map((d) => [
       String(d.id),
-      normalize([d.name, ...d.achievements.map((a) => a.name)].join(' ')),
+      normalize([d.name, d.boss?.name ?? '', ...d.achievements.map((a) => a.name)].join(' ')),
     ]),
   );
 

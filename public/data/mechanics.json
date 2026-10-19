@@ -1,0 +1,859 @@
+{
+  "3": {
+    "summary": "Carapace d'Ailes : ne pas le frapper (renvoi de dégâts). Ignorer les Corbac invoqués.",
+    "details": [
+      "Sous Carapace (2 tours), il renvoie les dégâts et passe son tour : taper les autres monstres à la place.",
+      "Il est très résistant sauf en Terre : avoir un perso Terre, et gérer les monstres avant lui.",
+      "Le Corbac invoqué revient sans cesse : l'ignorer. Garder le boss à distance, il ne frappe qu'en mêlée.",
+      "Éloigner le Buveur de ses alliés dès le tour 1, éviter la ligne du Corbac Apprivoisé (poussée 12 cases)."
+    ]
+  },
+  "6": {
+    "summary": "Poison Étourderie Mortelle : ne dépenser aucun PA tant qu'il agit ; boss uniquement au corps à corps.",
+    "details": [
+      "Au tour 1, poison sur tout le monde : chaque PA dépensé inflige de gros dégâts, voire la mort. Passer le tour ou désenvoûter.",
+      "Il ne frappe qu'au contact et pousse : un obstacle derrière soi aggrave les dégâts. Lui retirer des PM le neutralise."
+    ]
+  },
+  "7": {
+    "summary": "Coquille invoquée : tuer la soigneuse/protectrice (à +8 PO), ignorer la brutale/véloce.",
+    "details": [
+      "Au tour 1 elle invoque une Coquille au hasard : soigneuse, protectrice, brutale ou véloce.",
+      "Soigneuse ou protectrice : la tuer vite, car elle ralentit le focus. Brutale ou véloce : l'ignorer, elle meurt seule.",
+      "À sa mort la Coquille explose en zone de 8 cases : l'achever en restant à plus de 8 PO pour éviter dégâts et malus.",
+      "Boss sans mécanique spéciale : tuer les monstres d'abord, la Crocabulia en dernier. Éviter de finir son tour dans le glyphe rouge."
+    ]
+  },
+  "11": {
+    "summary": "Résiste à 94 % à son élément : varier les éléments. Un Gloutoblop invoqué tue en mêlée.",
+    "details": [
+      "Chaque Blop Royal est quasi immunisé à son élément (Coco air, Griotte feu, Indigo eau, Reinette terre) et faible dans les autres.",
+      "Pour enchaîner les 4 Blops Royaux, avoir au moins deux éléments différents dans l'équipe.",
+      "Son invocation est aléatoire : un Gloutoblop tue en mêlée (jamais son invocateur), le tenir hors de portée.",
+      "Ne pas finir son tour sur les glyphes blancs du Blop ; le tuer dès le tour 1 évite de le courser."
+    ]
+  },
+  "15": {
+    "summary": "1re ligne de dégâts de chaque tour absorbée, chaque coup le booste. Ne pas tuer les Milimeulou.",
+    "details": [
+      "Chaque perso doit lui mettre une ligne de dégâts par tour pour lever sa réduction ; chaque ligne le booste. Peu de lignes, gros dégâts.",
+      "Tuer d'abord les autres monstres, à distance. Ne pas tuer les Milimeulou : leur mort booste tous les monstres en PM et puissance.",
+      "Il se soigne sous 80% de PV : éroder, lui mettre un malus de soin ou garder 2 persos au contact pour qu'il tape plutôt que se soigne.",
+      "Éviter d'invoquer : une invocation tuée au contact devient un Mulou. Seule faiblesse : le feu."
+    ]
+  },
+  "17": {
+    "summary": "Pousser le boss entre 2 Wobots Tamponneurs (≤6 cases) le fait rebondir jusqu'à la mort.",
+    "details": [
+      "Un Wobot Tamponneur qui subit une poussée renvoie tout ce qui le touche de 6 cases et téléporte le pousseur en symétrie.",
+      "Deux Wobots alignés, 6 cases d'écart max : une entité poussée rebondit de l'un à l'autre et meurt, quels que soient ses PV.",
+      "Pousser le Wa Wobot lui retire de la résistance poussée : il perd ses PV en un tour. Chaque Wobot ne sert qu'une fois.",
+      "Prendre un sort de poussée (ex. Libération) si la classe n'en a pas. Tuer d'abord le Black Wo Wabbit (pesanteur), puis le Tiwobot."
+    ]
+  },
+  "21": {
+    "summary": "Dégâts croissants quand ses PV baissent : ne le toucher qu'au focus, le tuer en un tour. Rester à 3 PO.",
+    "details": [
+      "Moins il a de PV, plus son sort de zone frappe fort : ne pas le toucher avant de vouloir le finir.",
+      "Son sort de zone ne touche pas à 3 PO ou moins ; mais en mêlée il vole beaucoup de PA.",
+      "Tuer les monstres d'abord, puis le burst juste après son tour pour le finir avant qu'il rejoue.",
+      "Sinon le bloquer entre 2 invocations avec l'équipe à 3 PO, ou l'entamer un peu un tour avant."
+    ]
+  },
+  "22": {
+    "summary": "Spore Hanchambre : un effet aléatoire le soigne à fond s'il est frappé ou subit un retrait PA/PM.",
+    "details": [
+      "Spore Hanchambre : l'effet tiré au hasard (dégâts, retrait PA ou retrait PM) le soigne entièrement s'il est déclenché.",
+      "L'aperçu des dégâts indique si l'action prévue le soignerait.",
+      "Se booster au tour 1, le désenvoûter au début du tour 2, puis taper au maximum.",
+      "Il invoque un monstre par tour dès le tour 2 et ses poisons montent vite : le tuer en premier."
+    ]
+  },
+  "24": {
+    "summary": "Résistances 70% : les faire baisser en plaçant la gelée dans un glyphe d'une autre couleur.",
+    "details": [
+      "Chaque Gelée Royale (Bleuet eau, Citron air, Fraise feu, Menthe terre) a 10% de faiblesse dans son élément et 70% de résistance ailleurs.",
+      "Dès le tour 2, les gelées posent des glyphes de leur couleur : une gelée d'une autre couleur qui y finit son tour perd 15% de résistance, cumulable.",
+      "Idéal : une équipe tapant dans 3 éléments ou plus, chacun sur la gelée de son élément. Ne pas jouer tous le même élément.",
+      "Chaque Royale invoque une gelée au tour 1 : le danger vient du nombre d'ennemis. Les dégâts de poussée marchent aussi (pas de résistance poussée)."
+    ]
+  },
+  "25": {
+    "summary": "Ne jamais aller en mêlée : sa frappe tue sur le coup. Inoffensif à distance (0 PM).",
+    "details": [
+      "Son sort Coraillement lui donne 12 PA (nécessaires à l'OS) mais lui retire ses PM : il ne peut pas vous rejoindre.",
+      "Rester loin dès le placement : toute cible en mêlée est tuée d'un coup, même un tank.",
+      "Palmifleurs prioritaires : leur malus de résistance de 100 % double les dégâts reçus (débuffable).",
+      "Finir par le Corailleur seul, à distance. Faible en terre et en air, mais beaucoup de PV."
+    ]
+  },
+  "27": {
+    "summary": "Poupée maudite : ses dégâts sont renvoyés au perso Maudit, ne pas la taper. Soins partagés entre proches.",
+    "details": [
+      "Le boss rend Maudit un perso (sort en ligne) : tout dégât sur la Poupée lui revient. L'ignorer, elle ressuscite.",
+      "Rester à distance du boss, qui ne frappe qu'en ligne : personne n'est Maudit.",
+      "Le Kanniboul Eth fait intercepter ses dégâts par sa cible en mêlée : garder ses PM à zéro et rester loin.",
+      "Les monstres proches se soignent entre eux : les focus un par un, ou les éloigner. Retirer la PO du Sarbak."
+    ]
+  },
+  "28": {
+    "summary": "400 % de résistances : le frapper (Terre/Eau ou Air/Feu), puis le faire jouer sur un glyphe du Disciple.",
+    "details": [
+      "Frapper Terre/Eau donne l'état impair, Air/Feu l'état pair ; choisir un duo et s'y tenir (neutre sans effet).",
+      "Le Disciple pose alors des glyphes à distance impaire (Terre/Eau) ou paire (Air/Feu) de lui. Commencer son tour dessus tue.",
+      "Se placer à distance paire du Disciple pour Terre/Eau, impaire pour Air/Feu, hors de sa mêlée (il tue aussi au contact).",
+      "Le Kimbo doit débuter son tour sur un glyphe pour perdre 400 % de résistances. Le Disciple bouge d'1 case : le repousser d'un nombre impair de cases."
+    ]
+  },
+  "30": {
+    "summary": "Éviter sa ligne (5 PO) : transformation en Boufcoul. Tuer vite tout Boufcoul invoqué.",
+    "details": [
+      "Il ne fait aucun dégât : son danger est le souffle qui transforme en Boufcoul en ligne jusqu'à 5 PO, et son attirance de 10 cases en ligne.",
+      "Rester hors de sa ligne et de sa vue, lui retirer PM et PO. Au placement, s'éloigner : il joue avant vous. Désenvoûter un perso transformé.",
+      "10% de chance qu'il invoque un Boufcoul à la place d'un Bouftou : le tuer vite, sinon il rend le boss invisible et lui donne 5 PM.",
+      "Prévoir 2 persos eau/feu pour le boss et 2 terre/air pour les Bouftous ; les débuffs sont très utiles."
+    ]
+  },
+  "31": {
+    "summary": "900% de résistances : 4 tentacules à invoquer, leur faire gober une invocation pour le rendre vulnérable.",
+    "details": [
+      "Il est fixe, ses cases voisines sont inaccessibles, et il ne tape que s'il a ligne de vue. Frapper dans un élément invoque le tentacule correspondant.",
+      "Tours 1 à 4 : eau, feu, terre, puis air (le primaire en dernier). Coincer les trois premiers autour d'une invocation à protéger.",
+      "Tour 5 : primaire devant le Krala (bloque sa vue), invocation derrière lui. Il la tue ; les trois autres la frappent sans la tuer.",
+      "Au tour 7 il perd ses résistances 1 tour (ne pas débuffer). Le tuer ce tour-là, sinon remettre le primaire devant lui."
+    ]
+  },
+  "32": {
+    "summary": "80% de résistance : tuer un monstre d'un élément la retire dans cet élément. La poussée l'aide aussi.",
+    "details": [
+      "Chaque monstre mort retire 40% de résistance au boss dans son élément, mais il gagne des dégâts de poussée.",
+      "Choisir l'élément de ses persos et tuer d'abord le Kwak et le Bwak de cet élément.",
+      "Les dégâts de poussée baissent aussi les résistances 3 tours : utile si tous tapent le même élément.",
+      "Éviter sa ligne (poussée de 4 cases) et le garder à distance ; ses sorts sont surtout à courte portée."
+    ]
+  },
+  "37": {
+    "summary": "Tue en mêlée et attire en ligne ; sous peu de PV il se soigne et se scinde : viser les jambes.",
+    "details": [
+      "La mêlée est mortelle et son attirance de 3 cases en ligne l'y amène : éviter l'alignement et rester loin.",
+      "Lui retirer des PM lui donne de la PO : peu efficace pour le tenir à distance.",
+      "Vers 20-25 % de PV il se soigne à fond puis se scinde : le finir en un tour, ou lui retirer la moitié de ses PV par tour.",
+      "Une fois scindé, cibler les jambes (moitié des PV) : leur mort finit le combat, inutile de frapper le buste."
+    ]
+  },
+  "38": {
+    "summary": "Ne pas retirer ses PM (il en gagne). Tuer le Poutch avant sa relance, sinon Tuerie OS tous.",
+    "details": [
+      "Chaque tentative de retrait de PM lui donne 1 PM définitif : ne jamais en retirer. Il OS au contact et attire de 3 cases.",
+      "Son Fwetage tape fort sans ligne de vue mais pas à moins de 8 PO ; s'approcher expose à l'OS au corps à corps.",
+      "Il invoque un Poutch Ingball tous les 3 tours, puis le transforme en marionnette (2/3) ou lui donne 2 PA (1/3).",
+      "Poutch boosté 2 fois = 4 PA : sort Tuerie qui OS tout le monde. Tuer le Poutch avant la relance. Marionnette la plus dangereuse : Dragon Cochon."
+    ]
+  },
+  "39": {
+    "summary": "Invulnérable : placer un tonneau (vieux de 3 tours) à son contact pour lui donner des faiblesses 3 tours.",
+    "details": [
+      "Il a 200 % de résistance partout ; seule une faiblesse posée par un tonneau permet de le blesser.",
+      "Garder un tonneau qui résiste à 100 % dans l'élément voulu : au contact du boss, il pose une faiblesse de 200 % sur les voisins.",
+      "Le tonneau doit exister depuis plus de 3 tours. Bloquer les autres côtés du boss avec des alliés ou obstacles : un seul tonneau suffit.",
+      "Tuer d'abord tous les monstres accompagnants. Les faiblesses durent 3 tours."
+    ]
+  },
+  "41": {
+    "summary": "200% de résistances : à 14 PA il lance Hololole, frapper alors dans un seul élément pour les faire tomber.",
+    "details": [
+      "Tuer d'abord tous les monstres et les Rasbouls Mineurs, puis s'occuper du boss.",
+      "Lui retirer des PA lui en rend autant : le monter à 14 PA ou plus, par retrait ou en le boostant.",
+      "À 14 PA il lance Hololole (2 tours) : chaque coup baisse sa résistance dans cet élément, hausse les autres.",
+      "Frapper toujours le même élément, sans arme multi-éléments, avec des sorts à petit coût en PA."
+    ]
+  },
+  "42": {
+    "summary": "Gagne vite 50 % de résistance à l'élément qui le frappe : le débuffer, varier les éléments.",
+    "details": [
+      "Rascasse : chaque coup lui donne 50 % de résistance à l'élément utilisé pendant 2 tours ; deux lignes dans un élément l'immunisent.",
+      "Le débuffer à son lancer l'en empêche ; le débuffer à 100 % le fait retomber à 0 %.",
+      "Peste Blanche : se faire soigner retire tous ses envoûtements, bonus compris.",
+      "L'Aloevée Rat le soigne : l'éloigner du boss ou la tuer d'abord (sauf succès Premier)."
+    ]
+  },
+  "43": {
+    "summary": "Kackitu : mort si dégâts terre/neutre. Peste Noire : ne pas soigner la cible.",
+    "details": [
+      "Kackitu (mêlée seulement) : l'état tue toute cible touchée par des dégâts terre ou neutre. Rester à distance ou lui offrir une invocation à tacle.",
+      "Peste Noire : tout soin reçu inflige la moitié des PV actuels du Rat Noir. Le vol de vie ne compte pas comme soin.",
+      "Kackisoigne soigne un allié entièrement s'il prend du terre ou neutre : éviter ces éléments. Le boss a 50% de résistance terre.",
+      "Jouer feu et air (faiblesse de 20%) ; il a peu de PV."
+    ]
+  },
+  "44": {
+    "summary": "200% de résistances : tortue au contact + perso au contact de la tortue ; Cell immobilisé (pesanteur, 0 PM).",
+    "details": [
+      "Chaque tortue (rouge feu, jaune agilité, verte terre, bleue eau) retire 200 % de résistance au boss, mais seulement collée à lui.",
+      "Il faut un personnage au contact de la tortue, sinon le sort n'est pas lancé. L'effet dure 2 tours.",
+      "Le Cell bondit : le mettre en pesanteur et à 0 PM (ou bloqué de tous côtés). Mettre aussi la tortue à 0 PM.",
+      "Tuer d'abord les rats, surtout Noir et Blanc, et les tortues dont l'élément est inutile."
+    ]
+  },
+  "46": {
+    "summary": "Tuer d'abord la poupée affamée (la nourrir d'invocations) ; la poupée mortelle tue au corps à corps.",
+    "details": [
+      "La poupée affamée soigne tout le monde à chaque tour : la nourrir d'invocations ou la booster en PA pour la faire exploser.",
+      "Diamantine invoque la poupée mortelle qui tue en un coup au corps à corps : rester à distance.",
+      "Rubise transforme un perso en totem : plus de PA ni de PM.",
+      "Après la poupée affamée, tuer Rubise et Diamantine en priorité, puis le reste."
+    ]
+  },
+  "47": {
+    "summary": "Illusions : trouver le vrai Chafer Rōnin (zone ou poison de fin de tour pour le révéler).",
+    "details": [
+      "Bunshin (dès le tour 2) crée 4 illusions : frapper une illusion la fait disparaître, trouver le vrai les supprime toutes.",
+      "Un sort de zone, ou un poison de fin de tour posé dès le tour 1, le révèle sans le chercher.",
+      "Les vrais dangers sont les 2 Chafer Draugr : les tuer d'abord, à distance, en leur retirant de la PO.",
+      "Sous poison Hel (dégâts par PM), limiter ses PM et ne jamais finir son tour dans le glyphe."
+    ]
+  },
+  "51": {
+    "summary": "4 Tynrils à 200% de résistances sauf un élément : frapper dans le bon élément, garder à 0 PM.",
+    "details": [
+      "Chaque Tynril n'est vulnérable que dans son seul élément : intelligence, chance, agilité ou force.",
+      "Ils vous donnent -2000 % de résistance dans leur élément puis frappent au contact : un OS direct. Garder les persos clés loin au départ.",
+      "Retirer les PM (ils n'en ont que 2) ou les repousser : tous à 0 PM, puis taper. Viser l'initiative sur les persos à retrait PM.",
+      "Au contact les uns des autres ils se soignent, et ils échangent leur place à chaque tour. Le soin est inutile ici."
+    ]
+  },
+  "54": {
+    "summary": "Invulnérable : le pousser le rend vulnérable 1 tour, mais ses dégâts de poussée tuent les persos alignés.",
+    "details": [
+      "Il est invulnérable en permanence ; le pousser le rend vulnérable jusqu'au prochain tour du pousseur.",
+      "Les dégâts de poussée sur lui tuent tous les persos en ligne avec lui et boostent ses alliés.",
+      "Pousser un allié contre lui compte aussi : même effet mortel.",
+      "Chaque poussée lui donne des PM ; il invoque un monstre du donjon qui lui apporte un bonus."
+    ]
+  },
+  "55": {
+    "summary": "Invulnérable : soigner un allié à son contact pour 6 tours. Ne pas laisser cet allié mourir.",
+    "details": [
+      "Faire soigner un allié (pas une invocation) au contact du boss le rend vulnérable 6 tours.",
+      "Le soin touche les alliés adjacents au soigné (environ 200 d'eau, 900 si c'est le soigneur) : isoler le soigné.",
+      "Si le perso soigné meurt, l'invulnérabilité revient.",
+      "Chaque monstre mort lui donne de la vitalité et des dégâts : certains préfèrent le tuer en premier."
+    ]
+  },
+  "56": {
+    "summary": "Invulnérable : amener le Hamrack au contact de Ben pour qu'il explose (vulnérable 5 tours, dégâts alliés).",
+    "details": [
+      "Ben est invulnérable et lourd en permanence. Il invoque un Hamrack (enraciné, lourd, inpoussable) qui explose au contact de Ben au bout de 3 tours.",
+      "Contact obtenu : Ben vulnérable 5 tours, et l'explosion blesse les alliés collés à lui. Tous les Hamrack du terrain explosent aussi.",
+      "Seul Ben peut être rapproché (poussée). Le bloquer avec des persos ou invocations pour qu'il ne s'éloigne pas avant le tour du Hamrack.",
+      "Retirer des PM au Hamrack lui en donne 3 : utile pour qu'il rejoigne Ben. Rester loin de l'explosion."
+    ]
+  },
+  "57": {
+    "summary": "Invulnérable : pousser un allié contre lui. Les Pougnettes explosent au tour 5 et tuent à plus de 7 PO.",
+    "details": [
+      "Pour le rendre vulnérable 3 tours : pousser un allié (ou soi-même) contre lui avec des dégâts de poussée. Pousser une invocation ne marche pas.",
+      "Ce coup le booste de 50 dommages. Ne pas pousser un monstre contre lui : il serait soigné de 2000 PV.",
+      "Une Pougnette apparaît tous les 3 tours et explose à son tour 5 : OS au-delà de 7 PO. Se placer à 7 PO ou moins, ou la rendre pacifiste.",
+      "La frapper renvoie des dégâts : mieux vaut la pousser pour la repositionner que la tuer."
+    ]
+  },
+  "58": {
+    "summary": "Invulnérable : taper le Yomi en ligne et pousser le Yokaï en diagonale du Tengu le même tour.",
+    "details": [
+      "Le même tour : frapper le Yomi à l'arme alors qu'il est en ligne avec le Tengu, et pousser le Yokaï dans sa diagonale.",
+      "Un seul des deux effets débloque un sort spécial (mort en mêlée ou érosion) : toujours poser les deux ensemble.",
+      "Garder Yomi et Yokaï en vie jusque-là ; un perso avec arme à distance aide. Éviter la ligne du Tengu (attirance).",
+      "Avec Fuji : chaque monstre tué lui donne PM et dégâts, ne pas être à portée ; elle frappe en diagonale seulement."
+    ]
+  },
+  "59": {
+    "summary": "Invulnérable : faire finir le tour de la Sporakne dans un glyphe. Glyphes des persos mortels.",
+    "details": [
+      "Chaque perso pose un glyphe sous lui à son début de tour ; commencer ou finir son tour dessus tue, pour tous.",
+      "Le boss devient vulnérable pour de bon quand la Sporakne invoquée finit son tour dans un glyphe.",
+      "La Sporakne perd 1 PM par coup reçu (3 max) : retrait PM et poussée/attirance pour la caler. Tuée, elle est réinvoquée 3 tours plus tard.",
+      "Il tape en ligne : lui retirer de la PO réduit beaucoup ses dégâts."
+    ]
+  },
+  "60": {
+    "summary": "Soins impossibles (-10000). Invulnérable, il ne devient vulnérable 1 tour que si une invocation le frappe.",
+    "details": [
+      "Dès le début : -10 000 aux soins pour les alliés, non désenvoûtable. Aucun soin possible, sauf via invocations comme Lapino.",
+      "Rendre le Kolosso vulnérable 1 tour : lui infliger des dégâts avec une invocation.",
+      "Son seul sort, Razepoutine, exige un perso ou monstre à son contact et fait très mal en cône, surtout à bas PV : ne pas rester au contact.",
+      "Le Professeur Xa ressuscite et fait soigner. Sa mort booste le Kolosso ; le frapper en mêlée augmente ses dégâts finaux."
+    ]
+  },
+  "61": {
+    "summary": "Invulnérable : le frapper au corps à corps. Poussée mortelle ; ne pas lui retirer PM/PO ni le déplacer.",
+    "details": [
+      "Le frapper au contact lui retire son invulnérabilité le temps du tour de l'attaquant : à refaire à chaque personnage.",
+      "Toute entité alignée à 4 PO est repoussée de 4 cases : si un obstacle bloque le recul, elle meurt. Tout dégât de poussée est mortel.",
+      "Lui retirer PM ou PO, ou le déplacer, ressuscite ses compagnons déjà tués. Attention au Glouragan qui l'attire s'il est frappé en ligne.",
+      "Premier coup sans dégâts : prendre un petit sort ou une arme multi-lignes. Tuer d'abord le Glourmand (OS de groupe)."
+    ]
+  },
+  "62": {
+    "summary": "Invulnérable : faire mourir en mêlée avec lui un monstre zombi ressuscité, sans retirer de PM.",
+    "details": [
+      "Il ressuscite le dernier monstre mort en zombi : le placer au contact du boss, puis le tuer lève l'invulnérabilité 1 tour.",
+      "Le Gobus est le monstre le plus simple à faire ressusciter ; réduire ses PV pour le finir avec peu de PA.",
+      "Ne pas retirer de PM au boss : il gagne une énorme résistance. Il est faible en Eau, à finir en un tour.",
+      "Si besoin, l'éroder pendant les phases vulnérables, sans le laisser jouer vulnérable avec peu de PV."
+    ]
+  },
+  "66": {
+    "summary": "Son bonus de vitalité de Moissonnage chute au début de son tour : désenvoûter pour le tuer.",
+    "details": [
+      "Moissonnage (mêlée) donne 20 % de vitalité bonus pour 3 tours, cumulable 5 fois : le garder à distance, lui retirer PO et PM.",
+      "Le bonus s'en va au début de son tour : s'il ne lui reste que ce bonus en PV, il meurt avant de jouer.",
+      "Désenvoûter retire le bonus d'un coup : frapper puis débuffer permet de l'achever.",
+      "Dès le tour 3 il ressuscite le dernier monstre mort (1 % PV, invulnérable 1 tour) : le tuer en dernier."
+    ]
+  },
+  "67": {
+    "summary": "Invulnérable : tuer un monstre réinvoqué (zombi) à 5-10 PO de lui. Rester sous 90% PV (pacifiste).",
+    "details": [
+      "Tout monstre tué est réinvoqué en zombi (10% PV) par le prochain monstre qui joue, à 6 PO de lui. Sylargh aussi, s'il reste des monstres.",
+      "Tuer un zombi à 5-10 PO de Sylargh le rend vulnérable 1 tour. L'explosion blesse alliés et ennemis et tue les autres zombis.",
+      "Rester sous 90% de PV : un zombi tué rend Pacifiste ceux au-dessus pour 1 tour.",
+      "Focus le premier monstre réinvoqué de la chaîne pour supprimer les suivants. Sylargh : retirer PO et PM, rester à distance."
+    ]
+  },
+  "68": {
+    "summary": "Invulnérable : pousser une entité contre lui. Finir son tour sur un glyphe blanc pour éviter l'état Pacifiste.",
+    "details": [
+      "Pousser un allié, une invocation ou un ennemi contre lui lui retire l'invulnérabilité 1 tour. Impossible avant le tour 3.",
+      "Ne pas le rendre vulnérable avant d'avoir tué les monstres : il lancerait Cuir à feu doux (boost et retour à sa position).",
+      "Dès le tour 3 il rend Pacifiste ceux qui n'ont pas fini le tour d'avant sur un glyphe blanc. Se placer dessus dès le tour 2.",
+      "Les glyphes sont limités : un perso qui joue après peut chasser l'occupant. Seuls ceux qui frappent ont besoin du glyphe."
+    ]
+  },
+  "69": {
+    "summary": "Tous invulnérables : pousser l'ennemi via les congères (glyphes) pour lever l'invulnérabilité 1 tour.",
+    "details": [
+      "Marcher sur une congère repousse le perso et les entités alentour : un ennemi poussé perd son invulnérabilité 1 tour.",
+      "Toute poussée soigne l'entité de 15% de ses PV max : l'état indéplaçable sur le boss évite ce soin.",
+      "Les dégâts de poussée sur un perso donnent 20% d'érosion et environ 800 de dégâts : ne pas pousser contre un mur.",
+      "Tuer le Verglasseur d'abord, Missiz Frizz en dernier, sans allié dans sa ligne ou diagonale."
+    ]
+  },
+  "70": {
+    "summary": "Jamais au contact d'un allié (OS). Rester près du boss (Pacifiste). Le frapper à distance renvoie ses dégâts.",
+    "details": [
+      "Finir son tour au contact d'un autre personnage le tue (invocations exclues).",
+      "Le frapper à distance : échange de place et renvoi de 200 % sur 2 cases (alliés inclus). Rester loin des alliés, y piéger les monstres.",
+      "Dès le tour 3, les persos trop loin de lui (11 PO, puis 9, 7, 5) deviennent Pacifistes : se rapprocher au fil des tours.",
+      "Mêlée utile aux tours 3, 6, 9... seulement : sinon il se soigne et se booste. Moins de PV, plus il frappe fort."
+    ]
+  },
+  "71": {
+    "summary": "Invulnérable : l'échanger de place avec une entité (tour pair) le rend vulnérable. Sorts redirigés.",
+    "details": [
+      "Chaque début de tour, vos sorts sont redirigés (90, 180 ou 270 degrés selon votre % de vie). Cible invalide = échec critique.",
+      "Tour impair, le frapper vous fait pivoter à 180 degrés autour de lui. Tour pair, c'est lui qui est renvoyé à 180 degrés de vous.",
+      "Vulnérabilité : provoquer un échange de place avec une entité pendant ce mouvement. Sur invocation alliée, les alliés à 3 cases meurent.",
+      "Son glyphe en croix (centre compris) tue qui commence son tour dedans. Si la rotation est impossible (case occupée), le combat est perdu."
+    ]
+  },
+  "72": {
+    "summary": "Invulnérable : tuer les 5 Marionnettes avant le tour 5. Bunraku : se faire frapper par un allié.",
+    "details": [
+      "Il devient vulnérable 2 tours quand les 5 Marionnettes sont mortes. Il est fixe, sans PM, et seul sur le terrain.",
+      "À partir du tour 5, il réinvoque celles qui manquent : tout tuer avant, sinon il faut recommencer.",
+      "Bunraku : la cible reçoit une Petite Marionnette à ses côtés, copie de ses stats. Un allié doit la frapper avant le tour du boss.",
+      "Au départ, se placer sur les 5 cases marquées d'une croix rouge pour ne pas être touché au tour 1."
+    ]
+  },
+  "73": {
+    "summary": "Retirer des PM aux monstres blesse le perso ; -50 % aux dégâts à distance ; attirance les tours impairs.",
+    "details": [
+      "Tout retrait de PM sur un monstre inflige des dégâts au lanceur : se protéger (Féca) avant de le faire.",
+      "Dégâts à distance réduits de 50% sur lui : le finir en mêlée, ou patiemment à distance.",
+      "Tours impairs dès le tour 3, il attire tous les persos en ligne : ne pas être aligné avec lui.",
+      "Ne pas le taper sous Baphe Thysca (son sort de ligne gagne en puissance) ; tuer Eskoglyphe puis Harpo d'abord."
+    ]
+  },
+  "74": {
+    "summary": "Invulnérable : Silhouette dans le glyphe du Globilum et Ombre hors du glyphe.",
+    "details": [
+      "Ombre est vulnérable seulement si la Silhouette est dans le glyphe blanc du Globilum et lui-même en dehors.",
+      "Ombre et la Silhouette ne se déplacent qu'une fois par tour (Encrage) : un seul coup de placement chacun.",
+      "La Silhouette fuit après avoir frappé : lui retirer des PM pour qu'elle reste dans le glyphe. Le Globilum avance d'une case par tour.",
+      "Tuer d'abord les monstres, puis garder Ombre loin du Globilum, sans PM."
+    ]
+  },
+  "75": {
+    "summary": "Chaque mort de monstre affaiblit les persos : tuer les monstres d'abord, Kanigroula (fuyarde) en dernier.",
+    "details": [
+      "Pas d'invulnérabilité. Chaque monstre mort fait perdre 10% de résistance et 50 de puissance aux persos. Sa mort booste tous les monstres.",
+      "Plus sûr : monstres d'abord. Ordre conseillé : Kaniblou (soigne), Orfélin (garder à distance), Kanihilan, puis Kanigroula.",
+      "Les ennemis près de vous gagnent critique et puissance : rester à distance limite les dégâts.",
+      "Kanigroula est fuyarde, laisser faire. L'achever à distance pour éviter son Rugissement."
+    ]
+  },
+  "76": {
+    "summary": "Combat à vagues. Zizanie : rester à plus de 2 PO du Roi. La Boubourse change de camp à 1 PV.",
+    "details": [
+      "Une nouvelle vague de monstres arrive tous les 5 tours, avec 25 % de PV en moins et invulnérable jusqu'à leur premier tour.",
+      "Confusion donne Zizanie : ces persos frappent autour d'eux au tour du Roi. Rester à plus de 2 PO les uns des autres à ce moment.",
+      "Garder le Roi à distance : il attire, échange de place avec la Boubourse et frappe fort au contact.",
+      "Boubourse à 1 PV : alliée 2 tours (bouclier 500 pour l'équipe), puis elle revient. Côté ennemi, elle booste tous les monstres."
+    ]
+  },
+  "77": {
+    "summary": "Sous 50 % de PV, gagne du bouclier par ligne de dégâts : préférer de gros coups en peu de lignes.",
+    "details": [
+      "Sous la moitié de ses PV, chaque ligne de dégâts reçue lui donne du bouclier : jouer peu de lignes, très fortes.",
+      "S'il devient trop blindé, le débuffer lui retire ce bouclier.",
+      "Des vagues arrivent tous les 5 tours : possible de le tuer dès la première vague.",
+      "Pour l'achever en dernier, finir d'abord les 5 vagues."
+    ]
+  },
+  "79": {
+    "summary": "Abîme : OS rayon 3 aux tours 5, 9, 13... S'éloigner. Rester à moins de 8 PO (Centrage).",
+    "details": [
+      "Abîme tue tous les persos à 3 cases ou moins de lui au tour 5, puis tous les 4 tours : s'écarter avant son tour.",
+      "Centrage : finir son tour à plus de 8 PO des ennemis leur donne 1 PM et un bouclier ; rester plus près.",
+      "Jouer à distance et le tuer en premier, idéalement avant le tour 5.",
+      "Toute poussée ou attirance laisse un glyphe rouge (+30 % dégâts subis). Nouvelle vague tous les 5 tours."
+    ]
+  },
+  "80": {
+    "summary": "La frapper au corps à corps avec une arme la rend invulnérable 2 tours : privilégier les sorts.",
+    "details": [
+      "Frapper la Haute Truche avec une arme au corps à corps la rend invulnérable pendant 2 tours : utiliser des sorts."
+    ]
+  },
+  "82": {
+    "summary": "Chaque coup reçu donne un poison de 700 par PM utilisé : ne pas bouger, tuer avant le tour 6.",
+    "details": [
+      "Toxmose : frapper le Toxoliath donne un poison de 700 par PM dépensé pendant 2 tours. Ne pas bouger après l'avoir tapé.",
+      "Le tuer avant le tour 6 : Poison Volatile (perte de PA, poison, glyphe qui augmente les dégâts subis) ne se lance qu'à partir de là.",
+      "Tuer un monstre ou deux d'abord, puis le finir en un tour : le poison disparaît à sa mort. Prévoir sorts de dépoison et jeu à distance.",
+      "Pousser la Lucrane avant de la taper pour lever son renvoi. Éperfides prioritaires (portée, retrait PA/PM)."
+    ]
+  },
+  "83": {
+    "summary": "Bonbombes rouges mortelles en ligne, bleues soignantes : bien placer. Reine invisible dans la brume.",
+    "details": [
+      "Chaque perso invoque une Bonbombe par tour ; rouge, elle tue tout perso en ligne à l'explosion, bleue elle soigne.",
+      "Une bombe qui explose fait exploser celles en ligne avec elle et rend bleues celles en diagonale.",
+      "Ne jamais finir son tour dans la ligne d'une bombe rouge ; poussée et attirance déplacent les bombes.",
+      "Sa brume la cache sur 3 cases seulement du haut du glyphe ; son poison punit chaque PM dépensé."
+    ]
+  },
+  "84": {
+    "summary": "Invulnérable : l'attirer dans un glyphe violet tous les 2 tours pour l'infecter ; il meurt après 6 tours.",
+    "details": [
+      "Un glyphe violet apparaît sous quiconque subit des dégâts. Attiré dedans (coup en ligne), le boss est infecté 3 tours.",
+      "Renouveler l'infection au moins tous les 2 tours : 6 tours d'affilée infecté, il meurt à la fin de son tour.",
+      "Seul le 1er dégât du tour l'attire : confier l'attirance au perso qui joue en premier (Enutrof conseillé).",
+      "Il joue encore son dernier tour infecté : sécuriser l'équipe (retrait PM, distance)."
+    ]
+  },
+  "85": {
+    "summary": "Horloge : le sens de l'Auroraire (distance du boss) fait que vos coups blessent ou soignent.",
+    "details": [
+      "Au tour 1, Fraktale invoque une Auroraire sur le I d'un cadran géant. Horaire : vos coups blessent. Anti-horaire : ils soignent ennemis et alliés.",
+      "Boss à plus de 50% PV : à moins de 4 PO de l'Auroraire elle recule (soin), au-delà elle avance (dégâts).",
+      "Sous 50% PV, c'est l'inverse. Gérer la distance entre boss et Auroraire avant de frapper.",
+      "Combat à vagues toutes les 5 tours (tours 6, 11, 16, 21), plus tôt si la vague est tuée."
+    ]
+  },
+  "86": {
+    "summary": "Auroraire : dégâts infligés/subis variables selon l'heure ; tuer XLII avant la 12e heure.",
+    "details": [
+      "L'Auroraire avance d'une heure à chaque tour d'allié. De 12 h à 5 h, vos dégâts et ceux des monstres sont réduits ; de 6 h à 11 h, accrus.",
+      "Se booster pendant les heures faibles, puis frapper aux heures fortes pour finir XLII avant la 12e heure. Sa mort supprime l'effet.",
+      "Garder XLII à plus de 3 PO (Pacifiste). Le repousser lui donne Dérèglement : il échange sa place avec un allié.",
+      "Trantroa à traiter en priorité. Sous 50 % de PV, le frapper en une seule ligne, sinon il récupère des PV."
+    ]
+  },
+  "87": {
+    "summary": "Invulnérable : retuer chaque monstre ressuscité à la même heure de l'Auroraire qu'à la 1re mort.",
+    "details": [
+      "Il ressuscite chaque monstre tué ; l'heure de l'Auroraire à la mort donne un bonus au monstre ressuscité.",
+      "Pour l'achever définitivement, le retuer à la même heure ; une étoile jaune l'indique.",
+      "À 2, 3, 4 ou 6 persos, l'Auroraire fait des cycles réguliers : le même perso retue le même monstre.",
+      "Une fois tous les monstres morts, un tour de répit : se booster, puis rester loin de la ligne et de l'Auroraire."
+    ]
+  },
+  "91": {
+    "summary": "Rester au-dessus de 50% de PV (30% pour la malédiction) : OS en mêlée sous ce seuil.",
+    "details": [
+      "Coup de Sabre (mêlée) donne l'état Maudit ; en début de tour, les Maudits et le perso le plus proche subissent sa Malédiction.",
+      "Malédiction : dégâts minimisés et mort instantanée si le perso est à 30 % de PV ou moins.",
+      "Sous 50 % de PV, le Nakunbra tue en mêlée et le Chouque invoque un pirate : rester au-dessus ou à distance.",
+      "Il échange de place avec un allié pour avancer : Pesanteur sur lui, ou aucun monstre à 6 cases ou moins."
+    ]
+  },
+  "92": {
+    "summary": "100% de résistances : attirer chaque totem sur le glyphe de sa couleur pour ouvrir l'élément correspondant.",
+    "details": [
+      "Moon a 100% de résistance partout. Darkli Moon invoque des totems (rouge feu, vert air, bleu eau, jaune terre) avec un glyphe de même couleur.",
+      "Frapper un totem dans son élément l'attire au contact, en ligne. Il faut l'amener sur son glyphe : Moon perd alors la résistance de cet élément.",
+      "Les totems ont 100% dans leur élément : ils ne meurent pas, mais plusieurs frappes peuvent être nécessaires. Poussée impossible.",
+      "Frapper Darkli échange de place avec lui et donne 100 puissance à Moon. Glyphes sur la même case ou au bord de map = parfois impossible."
+    ]
+  },
+  "93": {
+    "summary": "Renvoi de dégâts : aligner les 3 puces sur le même état en les frappant au corps à corps (+1 / -1).",
+    "details": [
+      "Il renvoie presque le double des dégâts à toute l'équipe, sauf si ses trois puces ont le même numéro d'état (I, II ou III).",
+      "Frapper une puce depuis la case voisine la fait passer à l'état suivant et vous repousse de 2 cases. Les deux autres reculent d'un état.",
+      "Il change l'état de ses puces à chaque tour. Si les trois sont identiques à son tour, il lance Pourrification, qui retire un tour d'effets aux alliés."
+    ]
+  },
+  "94": {
+    "summary": "Deux Ush liés : frapper au corps à corps s'il est rouge, à distance s'il est noir, en alternant.",
+    "details": [
+      "Les deux Ush se partagent les dégâts reçus, divisés par deux sur chacun.",
+      "Rouge : frapper au corps à corps. Noir : frapper à distance. Frapper dans le mauvais mode ne fait rien.",
+      "L'état change à chaque coup encaissé : alterner distance et mêlée à chaque coup.",
+      "Sortir de la mêlée est dur (bon tacle, état lourd partagé) : prévoir de la mobilité ou du placement."
+    ]
+  },
+  "95": {
+    "summary": "Invulnérable jusqu'au tour 21 : survivre. Dés et glyphes selon la case où il finit son tour.",
+    "details": [
+      "Il devient vulnérable seul au tour 21, avec la 5e vague : tout le combat consiste à survivre jusque-là.",
+      "Selon le chiffre (1 à 6) de la case où il finit son tour, il pose des Dés (invocations) et des glyphes blancs soignants sur les cases de même chiffre.",
+      "Il n'a que 4 PM : retrait PM pour choisir où il termine son tour.",
+      "Chaque monstre frappe (~450) les persos de même chiffre que lui : surveiller son chiffre. Tuer d'abord les Cavaliers Chanceux."
+    ]
+  },
+  "97": {
+    "summary": "Monstres invulnérables mourant en 4 tours ; survivre ~10 tours, Meno à -50% dégâts (sauf poisons).",
+    "details": [
+      "Meno réduit ses dégâts subis de 50% (poisons exclus), mais vos dégâts finaux montent de 20% par tour : survivre environ 10 tours.",
+      "Il invoque des monstres dès le tour 2 ; invulnérables, ils perdent 25% PV par tour et meurent en 4 tours. Moins de PV, plus dangereux.",
+      "Il se soigne des dégâts infligés à vos persos. Utiliser retrait PM et placement à distance pour tenir.",
+      "Se placer sur ses glyphes de Crystalisation (bouclier) en diagonale entre persos : son déclenchement touche les persos alignés."
+    ]
+  },
+  "98": {
+    "summary": "Chaque coup échange de place ; 2 échanges avec la même entité = Folie (OS à 10). Utiliser des poisons.",
+    "details": [
+      "Chaque dégât direct vous fait échanger de place avec l'entité la plus proche. Deux échanges avec la même : Folie, et l'ennemi devient invulnérable.",
+      "Folie 10 est un OS. Elle baisse de 1 à chaque début de tour, ou en frappant un allié. Finir en ligne de vue du boss en ajoute aussi.",
+      "Les poisons n'échangent pas de place : les utiliser pour frapper à volonté. À Folie 2 ou plus, rester à 3 PO des alliés.",
+      "Dès le tour 2, le boss téléporte à son contact tous ceux en ligne de vue. Bloquer sa vue avec une invocation. Klûtiste en premier."
+    ]
+  },
+  "99": {
+    "summary": "Grokillages liés à chaque perso : dégâts divisés par 2 tant que vivants ; mort au tour 6, 11…",
+    "details": [
+      "Chaque perso est lié à un Grokillage : ses dégâts sont réduits de moitié et il perd 1 PM par tour tant qu'il vit.",
+      "Tuer en premier le Grokillage des plus gros dégâts pour les libérer.",
+      "Au tour 6, 11, 16... les Grokillages encore vivants meurent avec leur perso lié : tous les tuer avant.",
+      "Tuer Tryde, Rilur puis Diondin ; Dantinéa frappe tous les persos alignés avec un Grokillage."
+    ]
+  },
+  "100": {
+    "summary": "Taper à distance le téléporte ; en mêlée il ne bouge pas. Éviter le Sursis qui le soigne.",
+    "details": [
+      "Garde-Bouclier : frappé à distance, il se téléporte sur une case adjacente ; en mêlée il reste en place.",
+      "Si ses 4 cases voisines sont prises, il perd 50 % de résistance mais gagne en puissance 2 tours.",
+      "Darmoclès en mêlée pose Sursis ; le relancer sur un Sursis le soigne de 600 PV : éviter deux tours de mêlée d'affilée.",
+      "Provocaspion attire tous les ennemis de 3 cases (tours 1, 6, 11...) : se cacher derrière un obstacle. Tuer les Léolhyènes en premier."
+    ]
+  },
+  "101": {
+    "summary": "Ne jamais finir son tour au contact d'un allié (dégâts). Renvoi de dégâts, états Tactique aléatoires.",
+    "details": [
+      "Finir son tour au contact d'un allié inflige des dégâts à celui-ci : ne jamais terminer collé à un allié.",
+      "El Piko renvoie des dégâts à chaque ligne subie, pendant tout le combat.",
+      "Chaque tour, boss et monstres prennent au hasard un état Tactique A à D (bonus et élément de sorts changent). Pas besoin de les connaître par coeur.",
+      "Tuer en priorité les Lévitos (retrait PA/PM, états gênants), puis El Piko seul. Jouer à distance."
+    ]
+  },
+  "102": {
+    "summary": "Invulnérable à distance : le frapper au corps à corps. Chaque monstre tué lui retire 10% de résistances.",
+    "details": [
+      "Il est fixe et seuls les dégâts en mêlée le touchent. Il attire tous ceux en ligne de vue de 4 cases à chaque tour.",
+      "Chaque monstre qui meurt frappe toute l'équipe en ligne de vue et fait perdre 10 % de résistances au boss, mais le soigne de 20 %.",
+      "Ne pas se faire déplacer : les déplacements forcés infligent des dégâts d'eau. Finir son tour sur son glyphe soigne.",
+      "À sa mort, un poison d'eau apparaît sur tous les persos : le tuer sans traîner une fois lancé."
+    ]
+  },
+  "103": {
+    "summary": "Invulnérable : la faire passer sur 3 glyphes de monstres morts ; en ligne avec un monstre = très gros coup.",
+    "details": [
+      "Un monstre tué laisse un glyphe et ressuscite ; faire passer Tal Kasha sur 3 glyphes de monstres différents la rend vulnérable.",
+      "Lui retirer des PM échange sa place avec le perso : s'en servir pour la placer sur les glyphes.",
+      "Elle frappe comme si elle était à la place d'un allié : ne jamais être en ligne avec un monstre ou elle.",
+      "Éroder les monstres : ressuscités avec peu de PV, ils meurent d'un coup. Compo conseillée : Enutrof retrait PM et Crâ."
+    ]
+  },
+  "104": {
+    "summary": "Résistances >100% : chaque invocation en vie en fin de tour lui en retire 20%. Protéger la Minikrone.",
+    "details": [
+      "Chaque invocation non statique en vie à la fin de son tour lui retire 20 % de résistance jusqu'à son prochain tour.",
+      "Placer les invocations hors de sa ligne de vue et dispersées (Archi-Pelle frappe en zone).",
+      "La Minikrone est invulnérable : seul le Comte la tue, en mêlée, dès le tour 2. Sa mort retire 20 % de résistance et 2 PA aux persos.",
+      "Elle compte comme invocation et suit son invocateur : la confier à un perso qui reste hors mêlée."
+    ]
+  },
+  "106": {
+    "summary": "-90% de dégâts subis : se faire transformer en goules (3 ou plus) ou l'éroder jusqu'à 1 PV max.",
+    "details": [
+      "Anerice réduit les dégâts reçus de 90%. Tuer d'abord tous les monstres, en commençant par la Kérigoule qui partage les dégâts.",
+      "Stratégie goules : plus il y a de goules (persos ou invocations) alliées, plus Anerice reçoit ; dès 3, dégâts normaux, idéal 4. Prévoir tank et soin.",
+      "Stratégie érosion : l'érosion n'est pas réduite par les 90%. L'éroder à distance jusqu'à 1 PV max, puis la finir (Crâ idéal).",
+      "Rester à plus de 14 PO d'elle, sinon elle se téléporte et transforme en goule. Garder le Gouligane à distance (PO)."
+    ]
+  },
+  "107": {
+    "summary": "À 75 % et 50 % de PV, elle passe chez vous 2 tours, invulnérable : frapper fort dans son glyphe.",
+    "details": [
+      "Objectif : lui enlever la moitié de ses PV. Passé 75 %, puis 50 %, elle se téléporte dans votre camp 2 tours et ne frappe plus.",
+      "Elle est alors invulnérable mais son glyphe augmente beaucoup vos dégâts. Les monstres qui y entrent prennent de gros dégâts.",
+      "Tous les monstres gagnent 2 PM pendant cet effet. À 50 %, survivre 2 tours suffit : elle élimine les monstres et le combat se termine.",
+      "Vers les ténèbres attire tout le monde vers elle. Éviter le stuff critique (250 de résistance critique)."
+    ]
+  },
+  "108": {
+    "summary": "Appliquer Nécronyx avant chaque mort sinon OS général. Bethel vulnérable via le Dagon allié.",
+    "details": [
+      "Lancer Nécronyx sur chaque monstre, et sur Bethel, avant sa mort, sinon toute l'équipe meurt.",
+      "Nécronyx de Bethel retiré après 3 tours : le relancer ; l'appliquer dès le tour 1 évite ses poussées vers le glyphe de bord.",
+      "Tuer le Monolithe en mêlée (invulnérable à distance) : le Dagon passe alors dans le camp allié.",
+      "Seul le Dagon allié blesse Bethel, en mêlée ; pousser le Dagon ennemi chaque tour pour qu'il ne s'attire pas."
+    ]
+  },
+  "109": {
+    "summary": "Invulnérable sauf en état Nadir (tour 10+) ; lancer Nécronyx avant chaque mort sinon l'équipe est tuée.",
+    "details": [
+      "Il enchaîne Aurore, Zénith, Crépuscule (3 tours chacun) puis Nadir dès le tour 10 : son seul état vulnérable.",
+      "Nécronyx sur lui le fait passer à l'état suivant à son tour (un seul état par lancer).",
+      "Lancer Nécronyx sur Solar et sur chaque monstre avant de les tuer, sinon toute l'équipe est tuée.",
+      "En Nadir il renvoie les dégâts en carré de 1 : ne pas se coller. Nécronyx retire ce renvoi mais il faut alors le finir avant son tour."
+    ]
+  },
+  "110": {
+    "summary": "Plus de 100% de résistances : après son état Nimpatience 3, le pousser ou l'attirer baisse ses résistances.",
+    "details": [
+      "Dazak a plus de 100% de résistance partout. Il gagne un niveau de Nimpatience chaque tour où il ne tape personne.",
+      "À Nimpatience 3, pendant 2 tours, chaque poussée ou attirance lui retire 5% de résistance (définitif). Contre un obstacle : +10%.",
+      "Les résistances perdues restent : répéter le cycle jusqu'à pouvoir le tuer.",
+      "Il frappe très fort au contact et bondit de 5 cases tous les 2 tours : garder 5 cases de sécurité en plus. Tuer le Tanklume avant sa Nimpatience 3."
+    ]
+  },
+  "111": {
+    "summary": "Invulnérable : tuer 3 éclats de Kao ; les achever en un coup évite l'état Chocolathée.",
+    "details": [
+      "Chaque éclat tué ajoute un chiffre au-dessus du boss ; à III elle est vulnérable pour toute la fin du combat, mais frappe de plus en plus fort.",
+      "Blesser un éclat sans le tuer d'un coup donne Chocolathée, qui renforce Cloches du Kao. Tuer en une ligne, au poison ou à la bombe.",
+      "Hors succès, laisser les éclats en vie et tuer d'abord les monstres : la Prêtresse reste peu dangereuse. Ne pas laisser un éclat mourir seul.",
+      "Soin et protection sont très utiles. Pesanteur sur le Chocoligarque pour bloquer ses échanges de place."
+    ]
+  },
+  "112": {
+    "summary": "Invulnérable : taper dans l'élément de l'état, le pousser, tuer la pépite invoquée (x4).",
+    "details": [
+      "Taper le Croqueleur dans l'élément voulu (feu, air, eau, puis terre ou neutre), puis le pousser : il invoque une pépite.",
+      "Tuer la pépite dans le temps imparti (1 tour la première, 2 ensuite), sinon elle disparaît.",
+      "Les pépites résistent à distance : privilégier la mêlée. Le boss meurt avec la 4e pépite.",
+      "Tuer d'abord les autres monstres ; mieux vaut que le perso juste après le boss invoque, pour avoir plus de temps."
+    ]
+  },
+  "114": {
+    "summary": "Invulnérables : frapper depuis le glyphe bleu. Le tueur du boss est OS sauf en lune nouvelle ou pleine.",
+    "details": [
+      "La Lunorbe rend tous les monstres invulnérables ; un glyphe bleu tourne d'un cran par tour autour d'elle.",
+      "Debout sur le glyphe, une première ligne de dégâts (sort à peu de PA) retire l'invulnérabilité, puis frapper. Elle revient en fin de tour.",
+      "Frapper la Lunorbe avance le cadran ; tuer un monstre donne alors aux autres les bonus lunaires en cours, sans limite de durée.",
+      "Le tueur de Torkélonia meurt, sauf en nouvelle ou pleine lune ; une invocation peut porter le coup."
+    ]
+  },
+  "115": {
+    "summary": "Le frapper à moins de 2 PO vous attire à son contact et déclenche Mort sûre ; se boost à chaque mort.",
+    "details": [
+      "Frapper Kharnozor depuis moins de 2 PO vous attire à son contact, et il vous frappe avec Mort sûre à chaque coup reçu.",
+      "Il est indéplaçable. Chaque monstre qui meurt lui donne de la vitalité et des dégâts finaux définitifs.",
+      "Son cri rend Assourdi ; Assourdi + Mort sûre ajoute insoignable et pesanteur 2 tours. Frapper à plus de 2 PO."
+    ]
+  },
+  "117": {
+    "summary": "Poison à chaque coup donné : soigner un allié au contact d'un monstre pour lever l'état. Maladies à gérer.",
+    "details": [
+      "Kissiphrot Sipique : chaque coup porté à un monstre vous inflige un gros poison terre. À retirer sur chaque monstre avant de le frapper.",
+      "Retrait : soigner un allié, une invocation ou soi-même au contact du monstre. Définitif pour ce monstre. Le vol de vie compte comme soin.",
+      "Le retirer sur Corruption le fait descendre de monture 3 tours, puis l'effet revient. Le faire en dernier, une fois les monstres morts.",
+      "Maladies : éviter le glyphe et Bombe Bactériologique. Garder Peau pourrissante sur les persos qui ne frappent pas. Surtout Gangrainyte et Brutalyte."
+    ]
+  },
+  "118": {
+    "summary": "Renvoi 200% : état Traître via glyphe blanc puis taper un allié. Phases, rollback à 1 PV, Armécréantes.",
+    "details": [
+      "Il renvoie 200% des dégâts : finir son tour sur un glyphe blanc donne Traître 1, puis taper un allié l'augmente.",
+      "Chaque ligne de dégât sur le boss consomme un Traître ; les protections du Féca évitent le renvoi.",
+      "Armécréantes invoquées les tours impairs : les tuer vite (faibles en Eau).",
+      "À 1 PV il remet la map à zéro et se soigne : le rendre insoignable (ou poison) avant. Phase 2 à 50% de PV."
+    ]
+  },
+  "119": {
+    "summary": "À 50 % de PV, passe sur sa monture (invulnérable 1 tour) ; charognes à gérer, attirance croissante.",
+    "details": [
+      "À chaque début de tour et à chaque ligne de dégâts reçue, elle attire tout le monde de 1 à 4 cases (plus ses PV baissent, plus c'est fort).",
+      "Sous 50 % de PV elle monte sur sa monture : invulnérable 1 tour, +4 PM, d'autres sorts.",
+      "Balance-Fléau lui vole de la puissance : la garder à distance et tuer les monstres d'abord. Les stuffs eau sont conseillés.",
+      "Chaque mort laisse une charogne : les monstres s'y soignent (1200 PV), elle les détruit pour se protéger."
+    ]
+  },
+  "120": {
+    "summary": "Invulnérable tant qu'il reste des monstres. Seul le perso Brave peut le taper sans devenir Pacifiste.",
+    "details": [
+      "Guerre est invulnérable et indéplaçable tant qu'il reste des monstres. Elle devient vulnérable le tour suivant la mort du dernier.",
+      "Bravoure (tous les 3 tours) : un perso Brave 2 tours, seule cible de Guerre. Les autres qui la frappent deviennent Pacifistes ; le Brave non.",
+      "À chaque tranche de 20% de PV perdus, elle invoque une arme géante (zone lourde). Tuer l'arme avant le tour de Guerre, sinon sa mort la renforce.",
+      "Se placer hors de portée des armes avant de franchir un seuil ; son PV se bloque au seuil. Érosion forte : désenvoûter."
+    ]
+  },
+  "122": {
+    "summary": "Deux boss partageant leurs PV : Shihan -50% à distance, Hanshi -50% en mêlée. Adapter son placement.",
+    "details": [
+      "Hanshi et Shihan se partagent les dégâts subis. Shihan réduit de moitié les dégâts à distance, Hanshi ceux de mêlée.",
+      "Chacun gagne des PM en passant des seuils de PV. Tuer les monstres avant les deux gardiens.",
+      "Jufang de Hanshi vous bloque à son contact (pesanteur, indéplaçable) : garder de la fuite pour vous détacler.",
+      "Pour tuer Shihan sans achever Hanshi : frapper Shihan en mêlée. Vents contraires : mêlée sur Shihan, distance sur Hanshi."
+    ]
+  },
+  "123": {
+    "summary": "Invulnérable à distance sur son îlot : s'y téléporter via une Bombombre à Eau blessée sans la tuer.",
+    "details": [
+      "Nagate reste sur un îlot, invulnérable à distance : il faut la frapper au corps à corps sur l'îlot.",
+      "Placer une Bombombre à Eau sur une case de bord de map devant l'îlot, le perso au contact.",
+      "Blesser cette bombe sans la tuer (petit sort) téléporte le perso sur l'îlot.",
+      "Tuer Nagate en un tour : sinon, hors de son contact, elle le renvoie sur la map de départ."
+    ]
+  },
+  "124": {
+    "summary": "Invulnérable : éteindre les 8 feux après avoir pris l'état Extinction via un glyphe noir.",
+    "details": [
+      "Lui et ses monstres sont invulnérables tant que les 8 feux ne sont pas éteints ; une fois vulnérables, ils le restent.",
+      "Marcher dans un glyphe noir (posé à la fin de son tour) donne l'état Extinction ; marcher dans le glyphe marron d'un feu l'éteint.",
+      "L'état se consomme à chaque feu et ne se cumule pas. Il coûte 3 PO et 20 esquive PA/PM.",
+      "Un feu éteint se rallume après 8 tours. Mobilité conseillée (Pandawa, Iop, 6 PM) ; les invocations non statiques peuvent éteindre."
+    ]
+  },
+  "126": {
+    "summary": "Invulnérable dans son glyphe : le frapper pour le déplacer. 3 phases à enchaîner sinon il se soigne.",
+    "details": [
+      "Invulnérables dans leur géoglyphe : frappé à distance, un Tanuki est attiré de 2 cases ; en mêlée, repoussé de 2 (donc hors glyphe).",
+      "3 phases par seuils de PV ; entre deux phases, s'il n'a pas changé de seuil avant son tour, il se soigne d'environ 20%.",
+      "Éloigner les monstres les uns des autres pour ne pas cumuler les glyphes. Son glyphe grandit à chaque phase.",
+      "Tuer les monstres d'abord, sauf pour le succès Premier : préparer alors ses dégâts pour passer chaque palier avant son tour."
+    ]
+  },
+  "131": {
+    "summary": "Invulnérable : tuer les 2 flammes Kitsounebi (invisibles) dans le même tour, sinon dégâts air sur le tueur.",
+    "details": [
+      "Les 2 flammes doivent mourir dans le même tour, avant que Koumiho rejoue. Si une seule meurt, elle frappe en air le tueur.",
+      "Elles deviennent invisibles dès le tour 2. Marcher sur un glyphe bleu qu'elles posent fait échanger Koumiho avec la flamme : ça la localise.",
+      "La Lanterne des Spiritueurs les rend visibles et leur inflige des dégâts d'eau : de quoi les finir ensemble.",
+      "Une fois vulnérable, elle le reste jusqu'à la fin du combat."
+    ]
+  },
+  "132": {
+    "summary": "Invulnérable : poser la lanterne à 3 PO du boss ; la brume le rend invisible s'il est repoussé.",
+    "details": [
+      "Le sort Lanterne le rend vulnérable 2 tours s'il est à 3 PO ou moins, mais il invoque alors 2 Assaïshin et une brume.",
+      "La lanterne repousse les monstres de son glyphe ; hors glyphe, la brume les rend invisibles.",
+      "Poser un obstacle derrière le boss pour qu'il reste dans le glyphe, donc visible.",
+      "Garder les Kabushido à distance, éviter la ligne du Shogun (attirance) et tuer le Tambouraï en premier."
+    ]
+  },
+  "133": {
+    "summary": "Aux seuils de PV : Lotus invulnérable 5 tours, Reine à jouer. Rester au centre d'un glyphe blanc.",
+    "details": [
+      "À 75, 50 et 25 % de PV : forme Lotus 5 tours (invulnérable, enraciné, soigné à fond) et la Reine Amirukam, jouée par un allié, apparaît.",
+      "À la fin du Lotus, son glyphe blanc tue les monstres d'encre dedans : les y placer (le roi doit y être encore).",
+      "Papetuerie (tour 2, puis tous les 3 tours) : rester sur la case centrale d'un glyphe blanc pour éviter 700 de dégâts.",
+      "Passer les seuils vite pour profiter de la Reine ; un Pandawa peut porter le roi et les monstres en Lotus."
+    ]
+  },
+  "134": {
+    "summary": "Aux seuils de PV : forme Lotus invulnérable 5 tours, Roi Imagami invoqué ; glyphe tuant le papier.",
+    "details": [
+      "Combat à 3 vagues. À 75, 50 et 25% de PV, la Reine passe en forme Lotus : enracinée, invulnérable et soignée à fond pendant 5 tours.",
+      "Un Roi Imagami est alors invoqué, contrôlé par un allié : l'utiliser pour faire un maximum de dégâts. S'il meurt, la Reine redevient normale.",
+      "Un glyphe noir autour d'elle tue les monstres de papier qui y sont à son retour (sauf si un Pandawa l'a déplacée). Il rétrécit à chaque seuil.",
+      "Éviter les glyphes de Brouillard d'Encre. Atteindre les seuils vite pour avoir le Roi tôt. Pandawa, Roublard, Eniripsa, Féca conseillés."
+    ]
+  },
+  "135": {
+    "summary": "Invulnérable : seuls les Bras démoniaques le blessent (glyphe ou contrôle des Bras via une rune).",
+    "details": [
+      "Son invulnérabilité est permanente. Seuls ses Bras démoniaques le blessent, quand il se trouve dans leur glyphe (une fois par tour).",
+      "Finir son tour sur un glyphe de Bras donne leur contrôle : 2 sorts par tour sur Kabahal, bien plus fort que le glyphe seul.",
+      "Les Bras sortent de runes posées aux tours pairs, sur 5 cases fixes. Une rune spéciale permet de les contrôler même si ces cases sont pleines.",
+      "Ne pas rester dans un glyphe de Bras quand il joue : il frappe plusieurs fois. Un monstre placé sur une rune meurt, mais le boss se booste."
+    ]
+  },
+  "136": {
+    "summary": "Tuer le Bonraphin (distance) ou le Brâklotin (mêlée) lève une invulnérabilité ; états 10/10 = état X.",
+    "details": [
+      "Le boss est invulnérable en mêlée et à distance : tuer le Brâklotin lève la mêlée, le Bonraphin la distance. Ils reviennent 2 tours plus tard.",
+      "Il a un seuil à 4000 PV infranchissable, sauf sous l'état X.",
+      "Taper le Bonraphin à distance et le Brâklotin en mêlée baisse leurs états, ce qui monte ceux du boss.",
+      "Boss à 10 Colère et 10 Haine : état X, vulnérable 2 tours avec gros bouclier et plus de seuil."
+    ]
+  },
+  "139": {
+    "summary": "Invulnérable : chaque perso doit lancer un sort dans l'élément de son état de Rage (6 fois) sinon dégâts.",
+    "details": [
+      "Elle est invulnérable tout le combat, jusqu'à ce que les persos aient placé 6 attaques élémentaires.",
+      "Chaque tour elle assigne un élément (Rage) à chaque perso : un sort de dégâts dans cet élément, même lancé dans le vide, incrémente son compteur.",
+      "Sans sort dans l'élément assigné, le perso subit 500 de dégâts de cet élément.",
+      "Devenue vulnérable elle gagne PM, dégâts et critique : tuer les monstres avant le dernier incrément. Elle résiste au feu."
+    ]
+  },
+  "140": {
+    "summary": "Invulnérable sur son îlot : tuer tous les monstres pour la faire descendre. Glyphes noirs mortels.",
+    "details": [
+      "Sur son îlot elle est invulnérable, sans dégât direct. Chaque monstre tué lui donne un Ensorcellement (max III) qui renforce ses soutiens.",
+      "Monstres tous morts : elle descend, invulnérable jusqu'à la fin de son tour. Éroder les monstres avant : ils reviennent avec les mêmes PV max.",
+      "Ses glyphes noirs tuent qui commence son tour dedans (étoile infinie, case sous le perso). Son îlot vide reste mortel.",
+      "Il faut répéter le cycle une seconde fois pour lui retirer la moitié de PV restante."
+    ]
+  },
+  "141": {
+    "summary": "Pousser Barbéryl la rend plus résistante ; état Clochecuivre à lever en la tapant en mêlée ; OS en mêlée.",
+    "details": [
+      "Le premier perso blessé du tour reçoit Clochecuivre : elle échange de place avec lui et lui retire 100 PM. Lever l'état en la frappant en mêlée.",
+      "Contrer par pesanteur, enracinement, indéplaçable ou portage, avant qu'elle ne consomme l'état. Une invocation peut frapper pour lever l'état.",
+      "Chaque poussée lui donne 20 % de résistance cumulable : préférer le retrait PM pour la tenir à distance.",
+      "Dès Nimpatience III elle peut OS en mêlée (une fois par tour à partir du niveau V). Rester hors de portée des 8 PO de Nimparabilité."
+    ]
+  },
+  "163": {
+    "summary": "Invulnérable : tuer 4 Zoeufs près de lui. Phase 2 : double qui explose, téléportation sur le perso proche.",
+    "details": [
+      "Tuer un Zoeuf quand le boss est dans sa zone d'explosion lui donne un état ; à 4 états il devient vulnérable pour de bon.",
+      "Les Zoeufs viennent des monstres qui frappent un perso : garder des invocations proches d'eux pour les faire invoquer.",
+      "Phase 2 : il crée un double qui explose en 2 tours dans un rayon de 3 ; tuer le double le rend plus vulnérable.",
+      "Il se téléporte sur le perso proche chaque tour. À sa mort, il inflige des dégâts en zone : rester loin."
+    ]
+  },
+  "164": {
+    "summary": "Endormi, invulnérable : ne pas alerter un monstre à 3 PO de lui. Tuer sa Monture le rend vulnérable.",
+    "details": [
+      "Il se réveille 2 tours si un monstre devient Alerté à 3 PO ou moins de lui ; les frapper ou les tuer (avec leur bébé) les alerte.",
+      "Éloigner les monstres de lui et ne jamais frapper un monstre à 3 PO ou moins de lui.",
+      "Au tour 3 les monstres deviennent Alertés d'eux-mêmes : les tuer en zone, ou isolés à plus de 3 PO les uns des autres.",
+      "Tuer sa Monture le réveille et le rend vulnérable pour de bon. Réveillé, son cri touche toute la ligne de vue : se cacher derrière un obstacle."
+    ]
+  },
+  "165": {
+    "summary": "Invulnérable : exploiter Réaction Saisonnière copiée par l'Autel ; 2e téléportation sur même perso = mort.",
+    "details": [
+      "Elle se téléporte sur le perso le plus proche en vue : 1re fois, Espèce menacée ; 2e fois sur le même perso, mort. Elle ignore les invocations.",
+      "Invulnérable. 5 lignes de dégâts sur un monstre précis déclenchent sa Réaction Saisonnière, que l'Autel copie sur l'entité la plus proche de lui.",
+      "Naissances : Voracle invisible, copié sur la Déchireuse puis la frapper. Chasse : échange de place avec elle à 4 PO. Placer la cible près de l'Autel.",
+      "Placer la Déchireuse (ou la cible) juste à côté de l'Autel avant son tour. Les vagues arrivent aux tours 1, 6, 11, 16, 21."
+    ]
+  }
+}

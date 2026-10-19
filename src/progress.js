@@ -3,6 +3,7 @@
 //   version, activeCharacterId,
 //   characters: [{ id, name, classId, color }],
 //   done: { [characterId]: { [achievementId]: true } },
+//   notes: { [dungeonId]: "texte" },   // communes à tous les personnages
 // }
 
 const STORAGE_KEY = 'dofus-success-state';
@@ -54,9 +55,32 @@ export function setDone(achievementId, done) {
   save();
 }
 
+// Valide (ou dévalide) plusieurs succès d'un coup, avec une seule sauvegarde
+export function setManyDone(achievementIds, done) {
+  const map = activeDone();
+  for (const id of achievementIds) {
+    if (done) map[id] = true;
+    else delete map[id];
+  }
+  save();
+}
+
 export function countDone(achievementIds) {
   const map = activeDone();
   return achievementIds.filter((id) => map[id]).length;
+}
+
+// ---- Notes par donjon ----
+
+export function getNote(dungeonId) {
+  return state.notes?.[dungeonId] ?? '';
+}
+
+export function setNote(dungeonId, text) {
+  state.notes ??= {};
+  if (text.trim()) state.notes[dungeonId] = text;
+  else delete state.notes[dungeonId];
+  save();
 }
 
 // ---- Personnages ----

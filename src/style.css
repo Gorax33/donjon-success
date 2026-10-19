@@ -558,7 +558,8 @@ details[open] > summary::before {
   object-fit: contain;
 }
 
-.copy-btn {
+.copy-btn,
+.guide-link {
   flex-shrink: 0;
   padding: 2px 6px;
   font-size: 13px;
@@ -566,7 +567,8 @@ details[open] > summary::before {
   border: 1px solid transparent;
 }
 
-.copy-btn:hover {
+.copy-btn:hover,
+.guide-link:hover {
   background: none;
   border-color: var(--accent);
 }
@@ -587,4 +589,214 @@ details[open] > summary::before {
   opacity: 1;
   filter: none;
   border-color: var(--accent);
+}
+
+/* ---- Notes par donjon ---- */
+
+.note-flag {
+  flex-shrink: 0;
+  font-size: 12px;
+}
+
+.dungeon-notes {
+  padding: 0 8px 8px 26px;
+}
+
+.dungeon-notes textarea {
+  display: block;
+  width: 100%;
+  min-height: 2.6em;
+  field-sizing: content; /* La zone grandit avec le texte */
+  resize: vertical;
+  font: inherit;
+  font-size: 13px;
+  color: var(--text);
+  background: var(--bg);
+  border: 1px dashed var(--border);
+  border-radius: 6px;
+  padding: 5px 8px;
+}
+
+.dungeon-notes textarea:focus {
+  outline: none;
+  border-style: solid;
+  border-color: var(--accent);
+}
+
+/* ---- Statistiques ---- */
+
+.bar {
+  display: block;
+  height: 4px;
+  overflow: hidden;
+  background: var(--border);
+  border-radius: 2px;
+}
+
+.bar > span {
+  display: block;
+  height: 100%;
+  background: var(--accent);
+  transition: width 0.3s;
+}
+
+.global-stats {
+  margin-top: 8px;
+}
+
+.stats-line {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 4px 10px;
+  margin-bottom: 4px;
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+.stats-line strong {
+  font-size: 14px;
+  color: var(--accent);
+}
+
+/* Barre fine en bas de l'en-tête de chaque tranche */
+.bracket > summary {
+  position: relative;
+}
+
+.bracket > summary .bar {
+  position: absolute;
+  left: 10px;
+  right: 10px;
+  bottom: 3px;
+  height: 3px;
+}
+
+.bracket-stats {
+  min-width: 38px;
+  text-align: right;
+  font-weight: normal;
+  font-size: 12px;
+  color: var(--accent);
+}
+
+.bracket.complete .bracket-stats,
+.bracket.complete > summary .bar > span {
+  color: var(--done);
+  background: var(--done);
+}
+
+.bracket.complete .bracket-stats {
+  background: none;
+}
+
+/* ---- Case globale d'un donjon ---- */
+
+.dungeon-check {
+  flex-shrink: 0;
+  width: 16px;
+  height: 16px;
+  margin: 0;
+  accent-color: var(--done);
+  cursor: pointer;
+}
+
+.guide-link {
+  font-size: 13px;
+  line-height: 1.5;
+  text-decoration: none;
+  border-radius: 6px;
+}
+
+/* ---- Logo des boss à mécanique ---- */
+
+.mechanic-flag {
+  padding: 0 2px;
+  font-size: 12px;
+  line-height: 1;
+  vertical-align: baseline;
+  background: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  cursor: help;
+}
+
+.mechanic-flag:hover,
+.mechanic-flag.active {
+  background: none;
+  border-color: var(--accent);
+}
+
+.mechanic-popover {
+  position: fixed;
+  z-index: 100;
+  max-height: 60vh;
+  overflow-y: auto;
+  padding: 10px 12px;
+  font-size: 13px;
+  color: var(--text);
+  background: var(--bg-elevated);
+  border: 1px solid var(--accent);
+  border-radius: 8px;
+  box-shadow: 0 8px 24px rgb(0 0 0 / 0.5);
+}
+
+.popover-head {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.popover-title {
+  flex: 1;
+  font-weight: 600;
+  color: var(--accent);
+}
+
+.popover-close {
+  padding: 0 6px;
+  color: var(--text-muted);
+  background: none;
+}
+
+.popover-close:hover {
+  color: var(--text);
+  background: none;
+}
+
+.popover-summary {
+  margin: 6px 0;
+  font-weight: 600;
+}
+
+.mechanic-popover ul {
+  margin: 0;
+  padding-left: 18px;
+}
+
+.mechanic-popover li {
+  margin-bottom: 4px;
+  color: var(--text);
+}
+
+.popover-foot {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  margin-top: 8px;
+  font-size: 12px;
+}
+
+.popover-foot a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.popover-foot a:hover {
+  text-decoration: underline;
+}
+
+.popover-hint {
+  color: var(--text-muted);
 }

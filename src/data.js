@@ -9,6 +9,10 @@ async function loadJson(path) {
 export const loadDungeonData = () => loadJson('data/dungeons.json');
 export const loadClasses = () => loadJson('data/classes.json');
 
+// Donjons dont le boss a une mécanique à connaître : { [dungeonId]: { summary, details: [] } }.
+// Fichier rédigé à la main (d'après les guides Dofus pour les Noobs), non régénéré.
+export const loadMechanics = () => loadJson('data/mechanics.json').catch(() => ({}));
+
 // URL absolue d'un fichier de public/ (ou d'une image distante). Absolue pour rester
 // valable une fois l'app déplacée dans la fenêtre flottante, qui a un autre document.
 export function assetUrl(path) {

@@ -1,8 +1,10 @@
 // Génère les données depuis DofusDB : npm run fetch-data
 // - public/data/dungeons.json et public/data/classes.json
 // - les images (boss, emblèmes de classe) dans public/img/, pour fonctionner hors ligne
+// - le lien de chaque donjon vers sa page Dofus pour les Noobs
 import { access, mkdir, writeFile } from 'node:fs/promises';
 import { fetchDungeonData, fetchClasses } from '../src/dofusdb.js';
+import { fetchGuideLinks } from './dpln.mjs';
 
 const PUBLIC = new URL('../public/', import.meta.url);
 
@@ -52,6 +54,17 @@ await forEachLimited(bosses, 8, async (boss) => {
 await forEachLimited(classes, 8, async (c) => {
   c.img = await downloadImage(c.img, 'img/classes');
 });
+
+console.log('Recherche des pages Dofus pour les Noobs…');
+try {
+  const guides = await fetchGuideLinks(data.dungeons);
+  for (const d of data.dungeons) d.guide = guides.get(d.id) ?? null;
+  const missing = data.dungeons.filter((d) => !d.guide).map((d) => d.name);
+  if (missing.length) console.warn(`Sans page DPLN : ${missing.join(', ')}`);
+} catch (err) {
+  // Le site est indisponible : on génère quand même les données, sans les liens
+  console.warn(`Liens Dofus pour les Noobs ignorés : ${err.message}`);
+}
 
 await writeJson('data/dungeons.json', data);
 await writeJson('data/classes.json', classes);

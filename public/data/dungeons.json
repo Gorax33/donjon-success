@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-19T13:39:49.195Z",
+  "generatedAt": "2026-10-19T14:49:14.465Z",
   "source": "https://api.dofusdb.fr",
   "dungeons": [
     {
@@ -71,7 +71,8 @@
             "description": "Kardorim ne doit jamais terminer son tour au contact d'un combattant. \nLes Kardoribs ne doivent pas subir de dommages, ni être poussés."
           }
         }
-      ]
+      ],
+      "guide": "https://www.dofuspourlesnoobs.com/crypte-de-kardorim.html"
     },
     {
       "id": 19,
@@ -142,7 +143,8 @@
             "description": "À partir du tour 2, Mob l'éponge doit être poussé ou attiré au moins une fois à chaque tour global."
           }
         }
-      ]
+      ],
+      "guide": "https://www.dofuspourlesnoobs.com/chateau-ensable.html"
     },
     {
       "id": 8,
@@ -213,7 +215,8 @@
             "description": "Les invocations du Tournesol Affamé doivent systématiquement être achevées avant le début de leur deuxième tour de jeu."
           }
         }
-      ]
+      ],
+      "guide": "https://www.dofuspourlesnoobs.com/grange-du-tournesol-affame.html"
     },
     {
       "id": 1,
@@ -284,7 +287,8 @@
             "description": "Les ennemis ne doivent pas recevoir de soin."
           }
         }
-      ]
+      ],
+      "guide": "https://www.dofuspourlesnoobs.com/cour-du-bouftou-royal.html"
     },
     {
       "id": 138,
@@ -366,7 +370,8 @@
             "description": "À partir du tour 2, les combattants ennemis doivent commencer leur tour sur une cellule adjacente à celle d'un allié ou d'un ennemi."
           }
         }
-      ]
+      ],
+      "guide": "https://www.dofuspourlesnoobs.com/akademie-des-gobs.html"
     },
     {
       "id": 88,
@@ -448,7 +453,8 @@
             "description": "Les alliés (hors invocations statiques) ne doivent terminer leur tour ni en ligne d'un ennemi, ni en ligne d'un autre allié."
           }
         }
-      ]
+      ],
+      "guide": "https://www.dofuspourlesnoobs.com/cache-de-kankreblath.html"
     },
     {
       "id": 45,
@@ -519,7 +525,8 @@
             "description": "Les invocations ennemies ne doivent subir aucun dommage."
           }
         }
-      ]
+      ],
+      "guide": "https://www.dofuspourlesnoobs.com/donjon-des-scarafeuilles.html"
     },
     {
       "id": 47,
@@ -601,7 +608,8 @@
             "description": "Vaincre tous les monstres avec 4 personnages minimum, dont au moins un des compagnons éligibles à la réalisation de ce succès :\n• Kocksis\n• Kubitus\n• Kalkanéus\n• Hectaupe\n• Hichète"
           }
         }
-      ]
+      ],
+      "guide": "https://www.dofuspourlesnoobs.com/donjon-des-squelettes.html"
     },
     {
       "id": 48,
@@ -683,7 +691,8 @@
             "description": "Vaincre tous les monstres avec 4 personnages minimum, dont au moins un des compagnons éligibles à la réalisation de ce succès :\n• Rapiat\n• Rapine\n• Ougicle\n• Hulkrap"
           }
         }
-      ]
+      ],
+      "guide": "https://www.dofuspourlesnoobs.com/donjon-des-tofus.html"
     },
     {
       "id": 34,
@@ -765,7 +774,8 @@
             "description": "Aucun Ashi-magari ne doit être achevé pendant toute la durée du combat."
           }
         }
-      ]
+      ],
+      "guide": "https://www.dofuspourlesnoobs.com/maison-fantome.html"
     },
     {
       "id": 36,
@@ -844,7 +854,8 @@
             "description": "À la fin du tour du Sapik, il ne doit pas y avoir plus d'un Kipik."
           }
         }
-      ]
+      ],
+      "guide": "https://www.dofuspourlesnoobs.com/donjon-de-nowel.html"
     },
     {
       "id": 13,
@@ -926,7 +937,8 @@
             "description": "Vaincre tous les monstres avec 4 personnages minimum, dont au moins un des compagnons éligibles à la réalisation de ce succès :\n• Mirh\n• Rekto Topi\n• Traçon\n• Logram"
           }
         }
-      ]
+      ],
+      "guide": "https://www.dofuspourlesnoobs.com/donjon-des-bworks.html"
     },
     {
       "id": 21,
@@ -1008,7 +1020,8 @@
             "description": "Les ennemis doivent être achevés uniquement lorsque le Coffre des Forgerons possède moins de 50 % de sa vie.\nLe challenge échoue si le Coffre des Forgerons n'est pas achevé en dernier."
           }
         }
-      ]
+      ],
+      "guide": "https://www.dofuspourlesnoobs.com/donjon-des-forgerons.html"
     },
     {
       "id": 33,
@@ -1079,7 +1092,8 @@
             "description": "Les alliés ne doivent infliger des dégats qu'au Shin Larve lorsqu'ils sont sous l'effet du sort Enlisement."
           }
         }
-      ]
+      ],
+      "guide": "https://www.dofuspourlesnoobs.com/donjon-des-larves.html"
     },
     {
       "id": 25,
@@ -1161,7 +1175,8 @@
             "description": "À partir du tour global 2, les combattants alliés doivent commencer leur tour au contact du Corailleur Magistral.\nLe challenge échoue si le Corailleur Magistral n'est pas achevé en dernier."
           }
         }
-      ]
+      ],
+      "guide": "https://www.dofuspourlesnoobs.com/grotte-hesque.html"
     },
     {
       "id": 32,
@@ -1243,7 +1258,8 @@
             "description": "Les ennemis ne doivent pas subir de dommages de poussée."
           }
         }
-      ]
+      ],
+      "guide": "https://www.dofuspourlesnoobs.com/nid-du-kwakwa.html"
     },
     {
       "id": 142,
@@ -1325,7 +1341,8 @@
             "description": "Les alliés ne doivent pas cumuler plus de deux faiblesses élémentaires différentes au début de leur tour."
           }
         }
-      ]
+      ],
+      "guide": "https://www.dofuspourlesnoobs.com/refuge-sylvestre.html"
     },
     {
       "id": 52,
@@ -1396,7 +1413,8 @@
             "description": "Lorsqu'une Cawotte Woyale est présente, seul le Wa Wabbit doit recevoir des dommages."
           }
         }
-      ]
+      ],
+      "guide": "https://www.dofuspourlesnoobs.com/chateau-du-wa-wabbit.html"
     },
     {
       "id": 11,
@@ -1467,7 +1485,8 @@
             "description": "Les invocations ennemies ne doivent subir aucun dommage."
           }
         }
-      ]
+      ],
+      "guide": "https://www.dofuspourlesnoobs.com/clos-des-blops.html"
     },
     {
       "id": 113,
@@ -1546,7 +1565,8 @@
             "description": "Tous les combattants alliés doivent entrer dans l'état Chocomatose au moins une fois au cours du combat."
           }
         }
-      ]
+      ],
+      "guide": "https://www.dofuspourlesnoobs.com/fonderie-des-waddicts.html"
     },
     {
       "id": 24,
@@ -1617,7 +1637,8 @@
             "description": "Les invocations ennemies ne doivent subir aucun dommage."
           }
         }
-      ]
+      ],
+      "guide": "https://www.dofuspourlesnoobs.com/gelaxieme-dimension.html"
     },
     {
       "id": 27,
@@ -1688,7 +1709,8 @@
             "description": "Lorsqu'un combattant ennemi subit des dommages, il doit être sur une cellule adjacente à celle d'au moins une entité, qu'elle soit alliée ou ennemie."
           }
         }
-      ]
+      ],
+      "guide": "https://www.dofuspourlesnoobs.com/village-kanniboul.html"
     },
     {
       "id": 39,
@@ -1770,7 +1792,8 @@
             "description": "Vaincre tous les monstres avec 4 personnages minimum, dont au moins un des compagnons éligibles à la réalisation de ce succès :\n• Kocksis\n• Kubitus\n• Kalkanéus\n• Hectaupe\n• Hichète"
           }
         }
-      ]
+      ],
+      "guide": "https://www.dofuspourlesnoobs.com/arche-dotomaiuml.html"
     },
     {
       "id": 116,
@@ -1852,7 +1875,8 @@
             "description": "Les ennemis ne doivent être achevés que lorsqu'au moins l'un d'eux se trouve dans l'état Intrépide (évolution maximale)."
           }
         }
-      ]
+      ],
+      "guide": "https://www.dofuspourlesnoobs.com/epreuve-de-draegnerys.html"
     },
     {
       "id": 35,
@@ -1934,7 +1958,8 @@
             "description": "Vaincre tous les monstres avec 4 personnages minimum, dont au moins un des compagnons éligibles à la réalisation de ce succès :\n• Kloug\n• Klüme\n• Grizou\n• Laikteur"
           }
         }
-      ]
+      ],
+      "guide": "https://www.dofuspourlesnoobs.com/laboratoire-de-brumen-tinctorias.html"
     },
     {
       "id": 18,
@@ -2005,7 +2030,8 @@
             "description": "Aucun combattant ennemi ne doit subir de dommages lorsque des invocations ennemies sont en vie."
           }
         }
-      ]
+      ],
+      "guide": "https://www.dofuspourlesnoobs.com/pitons-rocheux-des-craqueleurs.html"
     },
     {
       "id": 100,
@@ -2076,7 +2102,8 @@
             "description": "Le Mantiscore ne doit pas recevoir de dommages à distance."
           }
         }
-      ]
+      ],
+      "guide": "https://www.dofuspourlesnoobs.com/cimetiere-des-mastodontes.html"
     },
     {
       "id": 17,
@@ -2147,7 +2174,8 @@
             "description": "Les alliés ne doivent pas recevoir de dommages de poussée."
           }
         }
-      ]
+      ],
+      "guide": "https://www.dofuspourlesnoobs.com/terrier-du-wa-wabbit.html"
     },
     {
       "id": 89,
@@ -2229,7 +2257,8 @@
             "description": "Lorsque la Reine Nyée invoque un Oeuf de Trégénaire, celui-ci doit être achevé avant le début de son prochain tour."
           }
         }
-      ]
+      ],
+      "guide": "https://www.dofuspourlesnoobs.com/antre-de-la-reine-nyeacutee.html"
     },
     {
       "id": 91,
@@ -2300,7 +2329,8 @@
             "description": "Lorsque le Chouque échange de place avec un de ses alliés, ce dernier doit être achevé en moins de deux tours."
           }
         }
-      ]
+      ],
+      "guide": "https://www.dofuspourlesnoobs.com/bateau-du-chouque.html"
     },
     {
       "id": 105,
@@ -2382,7 +2412,8 @@
             "description": "Lorsqu'un ennemi déplace un allié, cet ennemi doit être lui-même déplacé par un allié avant le début de son prochain tour."
           }
         }
-      ]
+      ],
+      "guide": "https://www.dofuspourlesnoobs.com/chapiteau-des-magik-riktus.html"
     },
     {
       "id": 9,
@@ -2453,7 +2484,8 @@
             "description": "Les combattants alliés ne doivent avoir aucun ennemi situé à 3 cases ou moins d'eux lorsqu'ils occasionnent des dommages à un ennemi."
           }
         }
-      ]
+      ],
+      "guide": "https://www.dofuspourlesnoobs.com/domaine-ancestral.html"
     },
     {
       "id": 6,
@@ -2532,7 +2564,8 @@
             "description": "Les alliés ne doivent pas recevoir de dommages de poussée."
           }
         }
-      ]
+      ],
+      "guide": "https://www.dofuspourlesnoobs.com/antre-du-dragon-cochon.html"
     },
     {
       "id": 92,
@@ -2614,7 +2647,8 @@
             "description": "Les totems de Darkli Moon ne doivent jamais perdre de vie."
           }
         }
-      ]
+      ],
+      "guide": "https://www.dofuspourlesnoobs.com/arbre-de-moon.html"
     },
     {
       "id": 30,
@@ -2685,7 +2719,8 @@
             "description": "Aucun allié ne doit être transformé en Boufcool."
           }
         }
-      ]
+      ],
+      "guide": "https://www.dofuspourlesnoobs.com/caverne-du-koulosse.html"
     },
     {
       "id": 77,
@@ -2764,7 +2799,8 @@
             "description": "Tuer Malléfisk en dernier."
           }
         }
-      ]
+      ],
+      "guide": "https://www.dofuspourlesnoobs.com/fabrique-mallefisk.html"
     },
     {
       "id": 66,
@@ -2846,7 +2882,8 @@
             "description": "Vaincre tous les monstres avec 2 personnages maximum et en moins de 20 tours."
           }
         }
-      ]
+      ],
+      "guide": "https://www.dofuspourlesnoobs.com/potager-dhalouine.html"
     },
     {
       "id": 115,
@@ -2917,7 +2954,8 @@
             "description": "À partir du deuxième tour, tous les ennemis doivent avoir au moins un allié en ligne de vue au début de leur tour."
           }
         }
-      ]
+      ],
+      "guide": "https://www.dofuspourlesnoobs.com/repaire-du-kharnozor.html"
     },
     {
       "id": 15,
@@ -2999,7 +3037,8 @@
             "description": "Les ennemis ne doivent pas subir plus de trois attaques par tour de la part du même allié."
           }
         }
-      ]
+      ],
+      "guide": "https://www.dofuspourlesnoobs.com/taniere-du-meulou.html"
     },
     {
       "id": 72,
@@ -3078,7 +3117,8 @@
             "description": "Les marionnettes doivent être achevées dans l'ordre dans lequel elles ont été invoquées."
           }
         }
-      ]
+      ],
+      "guide": "https://www.dofuspourlesnoobs.com/theacuteacirctre-de-dramak.html"
     },
     {
       "id": 125,
@@ -3149,7 +3189,8 @@
             "description": "Un allié ne doit pas subir plus d'une fois l'explosion d'un Bourgeon de Damadrya."
           }
         }
-      ]
+      ],
+      "guide": "https://www.dofuspourlesnoobs.com/bambusaie-de-damadrya.html"
     },
     {
       "id": 3,
@@ -3220,7 +3261,8 @@
             "description": "Les combattants alliés doivent terminer leur tour à 5 cases ou moins d'un ennemi."
           }
         }
-      ]
+      ],
+      "guide": "https://www.dofuspourlesnoobs.com/bibliotheque-du-maitre-corbac.html"
     },
     {
       "id": 37,
@@ -3299,7 +3341,8 @@
             "description": "Les alliés doivent achever le Demi Papa Nowel sans occasionner de dommages au Papa Nowel une fois qu'il entre dans l'état Séparé.\nLe challenge échoue si le Papa Nowel est achevé avant d'entrer dans cet état."
           }
         }
-      ]
+      ],
+      "guide": "https://www.dofuspourlesnoobs.com/caverne-de-nowel.html"
     },
     {
       "id": 42,
@@ -3370,7 +3413,8 @@
             "description": "Chaque ennemi doit subir des dégâts au moins une fois entre chacun de ses tours."
           }
         }
-      ]
+      ],
+      "guide": "https://www.dofuspourlesnoobs.com/garde-manger-du-rat-blanc.html"
     },
     {
       "id": 41,
@@ -3441,7 +3485,8 @@
             "description": "Il ne doit jamais y avoir plus de 2 Rasbouls mineurs sur le terrain au début du tour de Silf le Rasboul Majeur."
           }
         }
-      ]
+      ],
+      "guide": "https://www.dofuspourlesnoobs.com/goulet-du-rasboul.html"
     },
     {
       "id": 93,
@@ -3509,7 +3554,8 @@
             "description": "Chaque pupuce invoquée par le Pounicheur ne doit pas changer d'état plus d'une fois par tour.\nCette limitation se réinitialise au début du tour du Pounicheur."
           }
         }
-      ]
+      ],
+      "guide": "https://www.dofuspourlesnoobs.com/miausoleacutee-du-pounicheur.html"
     },
     {
       "id": 43,
@@ -3591,7 +3637,8 @@
             "description": "Vaincre tous les monstres avec 4 personnages minimum, dont au moins un des compagnons éligibles à la réalisation de ce succès :\n• Rapiat\n• Rapine\n• Ougicle\n• Hulkrap"
           }
         }
-      ]
+      ],
+      "guide": "https://www.dofuspourlesnoobs.com/sousouriciere-du-rat-noir.html"
     },
     {
       "id": 7,
@@ -3662,7 +3709,8 @@
             "description": "Les coquilles invoquées doivent être achevées avant le début de leur troisième tour et aucun allié ne doit subir de dommages causés par leur explosion."
           }
         }
-      ]
+      ],
+      "guide": "https://www.dofuspourlesnoobs.com/antre-de-crocabulia.html"
     },
     {
       "id": 49,
@@ -3744,7 +3792,8 @@
             "description": "Vaincre tous les monstres avec 4 personnages minimum, dont au moins un des compagnons éligibles à la réalisation de ce succès :\n• Haku\n• Manitou Zoth\n• Karotz\n• Grouillot\n• Phong Huss"
           }
         }
-      ]
+      ],
+      "guide": "https://www.dofuspourlesnoobs.com/antre-du-blop-multicolore-royal.html"
     },
     {
       "id": 4,
@@ -3812,7 +3861,8 @@
             "description": "Le Minotoror ne doit pas subir de dommages si au moins un de ses tofus est présent sur le terrain."
           }
         }
-      ]
+      ],
+      "guide": "https://www.dofuspourlesnoobs.com/centre-du-labyrinthe-du-minotoror.html"
     },
     {
       "id": 85,
@@ -3880,7 +3930,8 @@
             "description": "Les ennemis ne doivent pas infliger de dommages aux autres ennemis."
           }
         }
-      ]
+      ],
+      "guide": "https://www.dofuspourlesnoobs.com/meacutegalithe-de-fraktale.html"
     },
     {
       "id": 46,
@@ -3951,7 +4002,8 @@
             "description": "Les poupées doivent être achevées dans l'ordre défini. Au début du combat, l'une d'elles est choisie, puis détermine la prochaine à sa mort.\nToutes les poupées doivent être achevées avant que Skeunk ne puisse subir de dégâts."
           }
         }
-      ]
+      ],
+      "guide": "https://www.dofuspourlesnoobs.com/repaire-de-skeunk.html"
     },
     {
       "id": 54,
@@ -4022,7 +4074,8 @@
             "description": "Durant son tour de jeu, si un allié déplace un ennemi, il ne doit plus occasionner de dommages à cet ennemi pendant le reste de son tour."
           }
         }
-      ]
+      ],
+      "guide": "https://www.dofuspourlesnoobs.com/serre-du-royalmouth.html"
     },
     {
       "id": 50,
@@ -4104,7 +4157,8 @@
             "description": "Chaque combattant ennemi doit jouer au moins un tour de jeu sans utiliser de PM avant d'être achevé."
           }
         }
-      ]
+      ],
+      "guide": "https://www.dofuspourlesnoobs.com/tofulailler-royal.html"
     },
     {
       "id": 126,
@@ -4186,7 +4240,8 @@
             "description": "Un ennemi ne doit pas être déplacé plus d'une fois entre chacun de ses tours."
           }
         }
-      ]
+      ],
+      "guide": "https://www.dofuspourlesnoobs.com/atelier-du-tanukoui-san.html"
     },
     {
       "id": 101,
@@ -4257,7 +4312,8 @@
             "description": "Les alliés ne doivent pas infliger de dommages à un autre allié par le biais du sort Guerillero."
           }
         }
-      ]
+      ],
+      "guide": "https://www.dofuspourlesnoobs.com/caverne-d-el-piko.html"
     },
     {
       "id": 112,
@@ -4336,7 +4392,8 @@
             "description": "Les combattants ennemis ne doivent subir aucune tentative de dommages à distance."
           }
         }
-      ]
+      ],
+      "guide": "https://www.dofuspourlesnoobs.com/croquanterie.html"
     },
     {
       "id": 81,
@@ -4415,7 +4472,8 @@
             "description": "Les combattants alliés doivent terminer leur tour sur leur cellule de début de combat."
           }
         }
-      ]
+      ],
+      "guide": "https://www.dofuspourlesnoobs.com/ring-du-capitaine-ekarlatte.html"
     },
     {
       "id": 123,
@@ -4497,7 +4555,8 @@
             "description": "Les Bombombres ne doivent subir aucun dommage."
           }
         }
-      ]
+      ],
+      "guide": "https://www.dofuspourlesnoobs.com/vallee-de-la-dame-des-eaux.html"
     },
     {
       "id": 80,
@@ -4568,7 +4627,8 @@
             "description": "Les ennemis doivent être déplacés avant de subir des dommages. Un ennemi déplacé est considéré comme tel jusqu'au début de son prochain tour."
           }
         }
-      ]
+      ],
+      "guide": "https://www.dofuspourlesnoobs.com/voliegravere-de-la-haute-truche.html"
     },
     {
       "id": 10,
@@ -4639,7 +4699,8 @@
             "description": "Vaincre tous les monstres avec 2 personnages maximum et en moins de 20 tours."
           }
         }
-      ]
+      ],
+      "guide": "https://www.dofuspourlesnoobs.com/clairiegravere-du-checircne-mou.html"
     },
     {
       "id": 122,
@@ -4721,7 +4782,8 @@
             "description": "Les ennemis qui maitrisent le souffle du Wukin ne doivent subir que des dommages en mêlée et les ennemis qui maitrisent le souffle du Wukang ne doivent subir que des dommages à distance."
           }
         }
-      ]
+      ],
+      "guide": "https://www.dofuspourlesnoobs.com/dojo-du-vent.html"
     },
     {
       "id": 55,
@@ -4803,7 +4865,8 @@
             "description": "Chaque début de tour, le Mansot Royal désigne un combattant allié. Seul le combattant désigné peut recevoir des soins."
           }
         }
-      ]
+      ],
+      "guide": "https://www.dofuspourlesnoobs.com/excavation-du-mansot-royal.html"
     },
     {
       "id": 124,
@@ -4874,7 +4937,8 @@
             "description": "Aucun feu ne doit se rallumer, une fois éteint."
           }
         }
-      ]
+      ],
+      "guide": "https://www.dofuspourlesnoobs.com/fabrique-de-foux-d-artifice.html"
     },
     {
       "id": 51,
@@ -4945,7 +5009,8 @@
             "description": "Les ennemis ne doivent ni être déplacés, ni subir de tentative de retrait PM par les alliés."
           }
         }
-      ]
+      ],
+      "guide": "https://www.dofuspourlesnoobs.com/laboratoire-du-tynril.html"
     },
     {
       "id": 56,
@@ -5027,7 +5092,8 @@
             "description": "Les alliés ne doivent pas subir de dommages provenant d'un Hamrack."
           }
         }
-      ]
+      ],
+      "guide": "https://www.dofuspourlesnoobs.com/epave-du-grolandais-violent.html"
     },
     {
       "id": 79,
@@ -5095,7 +5161,8 @@
             "description": "Les alliés (hors invocations statiques) ne doivent pas terminer leur tour en étant placés en diagonale d'un ennemi ou d'un allié."
           }
         }
-      ]
+      ],
+      "guide": "https://www.dofuspourlesnoobs.com/galerie-du-phossile.html"
     },
     {
       "id": 44,
@@ -5166,7 +5233,8 @@
             "description": "Aucun allié ne doit subir les effets du sort Kawabunga."
           }
         }
-      ]
+      ],
+      "guide": "https://www.dofuspourlesnoobs.com/donjon-des-rats-du-chacircteau-damakna.html"
     },
     {
       "id": 139,
@@ -5248,7 +5316,8 @@
             "description": "Les alliés doivent obligatoirement occasionner des dommages à Hell Mina correspondant à l'état élémentaire qu'elle attribue à chaque tour."
           }
         }
-      ]
+      ],
+      "guide": "https://www.dofuspourlesnoobs.com/tertre-du-long-sommeil.html"
     },
     {
       "id": 28,
@@ -5319,7 +5388,8 @@
             "description": "Chaque combattant ennemi doit être sous les effets d'un des glyphes du Disciple du Kimbo avant de recevoir des dégâts."
           }
         }
-      ]
+      ],
+      "guide": "https://www.dofuspourlesnoobs.com/canopeacutee-du-kimbo.html"
     },
     {
       "id": 75,
@@ -5401,7 +5471,8 @@
             "description": "Vaincre tous les monstres avec 4 personnages minimum, dont au moins un des compagnons éligibles à la réalisation de ce succès :\n• Riktus fine-lame\n• Riktus archer\n• Riktus baroudeur\n• Riktus ensorceleuse"
           }
         }
-      ]
+      ],
+      "guide": "https://www.dofuspourlesnoobs.com/grotte-de-kanigroula.html"
     },
     {
       "id": 57,
@@ -5472,7 +5543,8 @@
             "description": "Les ennemis ne doivent être ni attirés, ni poussés."
           }
         }
-      ]
+      ],
+      "guide": "https://www.dofuspourlesnoobs.com/hypogeacutee-de-lobsidiantre.html"
     },
     {
       "id": 94,
@@ -5540,7 +5612,8 @@
             "description": "Les alliés ne doivent pas attaquer plusieurs fois dans le même tour un même ennemi."
           }
         }
-      ]
+      ],
+      "guide": "https://www.dofuspourlesnoobs.com/plateau-de-ush.html"
     },
     {
       "id": 53,
@@ -5608,7 +5681,8 @@
             "description": "Aucun combattant allié ne doit subir l'effet du sort Destinos."
           }
         }
-      ]
+      ],
+      "guide": "https://www.dofuspourlesnoobs.com/minotot.html"
     },
     {
       "id": 132,
@@ -5690,7 +5764,8 @@
             "description": "Vaincre tous les monstres avec 4 personnages minimum, dont au moins un des compagnons éligibles à la réalisation de ce succès :\n• Mirh\n• Rekto Topi\n• Traçon\n• Logram"
           }
         }
-      ]
+      ],
+      "guide": "https://www.dofuspourlesnoobs.com/tombe-du-shogun-tofugawa.html"
     },
     {
       "id": 102,
@@ -5761,7 +5836,8 @@
             "description": "Les combattants alliés doivent terminer leur tour en diagonale d'un ennemi."
           }
         }
-      ]
+      ],
+      "guide": "https://www.dofuspourlesnoobs.com/boyau-du-pere-ver.html"
     },
     {
       "id": 131,
@@ -5843,7 +5919,8 @@
             "description": "Vaincre tous les monstres avec 4 personnages minimum, dont au moins un des compagnons éligibles à la réalisation de ce succès :\n• Kocksis\n• Kubitus\n• Kalkanéus\n• Hectaupe\n• Hichète"
           }
         }
-      ]
+      ],
+      "guide": "https://www.dofuspourlesnoobs.com/demeure-des-esprits.html"
     },
     {
       "id": 86,
@@ -5911,7 +5988,8 @@
             "description": "Tous les ennemis d'une vague doivent être achevés avant l'arrivée d'une nouvelle vague."
           }
         }
-      ]
+      ],
+      "guide": "https://www.dofuspourlesnoobs.com/horologium-de-xlii.html"
     },
     {
       "id": 163,
@@ -5979,7 +6057,8 @@
             "description": "Le Supervizœuf ne doit plus être invulnérable à l'arrivée de la deuxième vague."
           }
         }
-      ]
+      ],
+      "guide": "https://www.dofuspourlesnoobs.com/poste-de-controle-du-supervizoeuf.html"
     },
     {
       "id": 58,
@@ -6112,7 +6191,8 @@
             "description": "Les combattants alliés ne doivent jamais terminer leur tour en ligne d'un ennemi."
           }
         }
-      ]
+      ],
+      "guide": "https://www.dofuspourlesnoobs.com/taniegravere-givrefoux.html"
     },
     {
       "id": 59,
@@ -6183,7 +6263,8 @@
             "description": "Les combattants alliés doivent terminer leur tour à plus de 3 cases d'un allié."
           }
         }
-      ]
+      ],
+      "guide": "https://www.dofuspourlesnoobs.com/antre-du-korriandre.html"
     },
     {
       "id": 31,
@@ -6265,7 +6346,8 @@
             "description": "Les combattants ne doivent pas terminer leur tour en ligne d'un allié."
           }
         }
-      ]
+      ],
+      "guide": "https://www.dofuspourlesnoobs.com/antre-du-kralamoure-geacuteant.html"
     },
     {
       "id": 82,
@@ -6333,7 +6415,8 @@
             "description": "Tuer Toxoliath en dernier."
           }
         }
-      ]
+      ],
+      "guide": "https://www.dofuspourlesnoobs.com/cave-du-toxoliath.html"
     },
     {
       "id": 14,
@@ -6404,7 +6487,8 @@
             "description": "Les ennemis ne doivent subir ni retrait PM, ni retrait PA, ni retrait PO, ni tentative de déplacement."
           }
         }
-      ]
+      ],
+      "guide": "https://www.dofuspourlesnoobs.com/grotte-du-bworker.html"
     },
     {
       "id": 38,
@@ -6483,7 +6567,8 @@
             "description": "Les alliés doivent achever au moins une marionnette du Père Fwetar avant d'achever ce dernier."
           }
         }
-      ]
+      ],
+      "guide": "https://www.dofuspourlesnoobs.com/maison-du-papa-nowel.html"
     },
     {
       "id": 22,
@@ -6565,7 +6650,8 @@
             "description": "Les combattants alliés ne doivent pas terminer leur tour en ligne ou en diagonale d'un ennemi."
           }
         }
-      ]
+      ],
+      "guide": "https://www.dofuspourlesnoobs.com/temple-du-grand-ougah.html"
     },
     {
       "id": 61,
@@ -6647,7 +6733,8 @@
             "description": "Les ennemis ne doivent subir aucune tentative de retrait de PM, de PA, de PO, ou de déplacement par les alliés."
           }
         }
-      ]
+      ],
+      "guide": "https://www.dofuspourlesnoobs.com/antichambre-des-gloursons.html"
     },
     {
       "id": 141,
@@ -6729,7 +6816,8 @@
             "description": "Aucun ennemi ne doit entrer dans l'état Nimpatience V."
           }
         }
-      ]
+      ],
+      "guide": "https://www.dofuspourlesnoobs.com/bastion-des-marteaux-aigris.html"
     },
     {
       "id": 104,
@@ -6800,7 +6888,8 @@
             "description": "Aucune invocation alliée ne doit être achevée par un ennemi."
           }
         }
-      ]
+      ],
+      "guide": "https://www.dofuspourlesnoobs.com/camp-du-comte-razof.html"
     },
     {
       "id": 60,
@@ -6860,7 +6949,8 @@
             "description": "Les alliés ne doivent pas recevoir de soin."
           }
         }
-      ]
+      ],
+      "guide": "https://www.dofuspourlesnoobs.com/cavernes-du-kolosso.html"
     },
     {
       "id": 62,
@@ -6939,7 +7029,8 @@
             "description": "Les ennemis dans l'état Zombi ne doivent pas être déplacés par les alliés."
           }
         }
-      ]
+      ],
+      "guide": "https://www.dofuspourlesnoobs.com/donjon-de-la-mine-de-sakaiuml.html"
     },
     {
       "id": 74,
@@ -7018,7 +7109,8 @@
             "description": "Les combattants ennemis ne doivent subir aucune tentative de dommages à distance."
           }
         }
-      ]
+      ],
+      "guide": "https://www.dofuspourlesnoobs.com/pyramide-dombre.html"
     },
     {
       "id": 73,
@@ -7100,7 +7192,8 @@
             "description": "Vaincre tous les monstres avec 4 personnages minimum, dont au moins un des compagnons éligibles à la réalisation de ce succès :\n• Grüt\n• Gobeuf\n• Turyé\n• Piggy Paupe"
           }
         }
-      ]
+      ],
+      "guide": "https://www.dofuspourlesnoobs.com/aquadocircme-de-merkator.html"
     },
     {
       "id": 117,
@@ -7168,7 +7261,8 @@
             "description": "Seuls les alliés sans aucune maladie peuvent occasionner des dommages aux ennemis."
           }
         }
-      ]
+      ],
+      "guide": "https://www.dofuspourlesnoobs.com/arbre-de-mort.html"
     },
     {
       "id": 165,
@@ -7236,7 +7330,8 @@
             "description": "Aucun ennemi autre que la Déchireuse ne doit subir les effets de l'Autel de la Chasse"
           }
         }
-      ]
+      ],
+      "guide": "https://www.dofuspourlesnoobs.com/autel-de-la-dechireuse.html"
     },
     {
       "id": 136,
@@ -7304,7 +7399,8 @@
             "description": "Les alliés ne doivent pas achever le Bonraphin et le Brâklotin."
           }
         }
-      ]
+      ],
+      "guide": "https://www.dofuspourlesnoobs.com/bataille-de-l-aurore-pourpre.html"
     },
     {
       "id": 107,
@@ -7386,7 +7482,8 @@
             "description": "Ilyzaelle doit être achevée avant l'apparition de la troisième vague de monstres."
           }
         }
-      ]
+      ],
+      "guide": "https://www.dofuspourlesnoobs.com/belvedere-d-ilyzaelle.html"
     },
     {
       "id": 110,
@@ -7468,7 +7565,8 @@
             "description": "Les ennemis ne doivent être achevés que lorsqu'ils se trouvent dans l'état Nimpatience III."
           }
         }
-      ]
+      ],
+      "guide": "https://www.dofuspourlesnoobs.com/brasserie-du-roi-dazak.html"
     },
     {
       "id": 164,
@@ -7536,7 +7634,8 @@
             "description": "Tuer Vénérable Endormi en dernier."
           }
         }
-      ]
+      ],
+      "guide": "https://www.dofuspourlesnoobs.com/breuil-du-venerable.html"
     },
     {
       "id": 103,
@@ -7607,7 +7706,8 @@
             "description": "Un ennemi ne doit pas être ressuscité plus de deux fois."
           }
         }
-      ]
+      ],
+      "guide": "https://www.dofuspourlesnoobs.com/chambre-de-tal-kasha.html"
     },
     {
       "id": 140,
@@ -7689,7 +7789,8 @@
             "description": "À la fin de son tour, Belladone désigne un combattant allié. Ce combattant doit se trouver en ligne de vue de Belladone au début du prochain tour de cette dernière. \nSi l'allié meurt alors qu'il est désigné, le challenge échoue."
           }
         }
-      ]
+      ],
+      "guide": "https://www.dofuspourlesnoobs.com/chambre-des-malefices.html"
     },
     {
       "id": 95,
@@ -7768,7 +7869,8 @@
             "description": "Vaincre tous les monstres avec 4 personnages minimum, dont au moins un des compagnons éligibles à la réalisation de ce succès :\n• Kloug\n• Klüme\n• Grizou\n• Laikteur"
           }
         }
-      ]
+      ],
+      "guide": "https://www.dofuspourlesnoobs.com/defi-du-chaloeil.html"
     },
     {
       "id": 71,
@@ -7850,7 +7952,8 @@
             "description": "Vaincre tous les monstres avec 4 personnages minimum, dont au moins un des compagnons éligibles à la réalisation de ce succès :\n• Inferno\n• Styx\n• Mandrin\n• Will Killson"
           }
         }
-      ]
+      ],
+      "guide": "https://www.dofuspourlesnoobs.com/donjon-du-comte-harebourg.html"
     },
     {
       "id": 118,
@@ -7918,7 +8021,8 @@
             "description": "Les alliés ne doivent pas achever les Armécréantes invoquées."
           }
         }
-      ]
+      ],
+      "guide": "https://www.dofuspourlesnoobs.com/fers-de-la-tyrannie.html"
     },
     {
       "id": 69,
@@ -8000,7 +8104,8 @@
             "description": "Vaincre tous les monstres avec 4 personnages minimum, dont au moins un des compagnons éligibles à la réalisation de ce succès :\n• Rapiat\n• Rapine\n• Ougicle\n• Hulkrap"
           }
         }
-      ]
+      ],
+      "guide": "https://www.dofuspourlesnoobs.com/forgefroide-de-missiz-frizz.html"
     },
     {
       "id": 70,
@@ -8082,7 +8187,8 @@
             "description": "Vaincre tous les monstres avec 4 personnages minimum, dont au moins un des compagnons éligibles à la réalisation de ce succès :\n• Mirh\n• Rekto Topi\n• Traçon\n• Logram"
           }
         }
-      ]
+      ],
+      "guide": "https://www.dofuspourlesnoobs.com/laboratoire-de-nileza.html"
     },
     {
       "id": 106,
@@ -8164,7 +8270,8 @@
             "description": "Chaque combattant allié doit être goulifié au moins une fois au cours du combat."
           }
         }
-      ]
+      ],
+      "guide": "https://www.dofuspourlesnoobs.com/manoir-des-katrepat.html"
     },
     {
       "id": 133,
@@ -8232,7 +8339,8 @@
             "description": "L'invocation \"Reine Amirukam\" doit être achevée par un allié avant que le Roi Imagami ne sorte de sa phase Lotus."
           }
         }
-      ]
+      ],
+      "guide": "https://www.dofuspourlesnoobs.com/memoire-d-orukam.html"
     },
     {
       "id": 87,
@@ -8300,7 +8408,8 @@
             "description": "Tous les ennemis doivent être achevés à la même heure."
           }
         }
-      ]
+      ],
+      "guide": "https://www.dofuspourlesnoobs.com/oeil-de-vortex.html"
     },
     {
       "id": 99,
@@ -8379,7 +8488,8 @@
             "description": "Un Grokillage ne doit subir des dommages que de la part du combattant auquel il est lié."
           }
         }
-      ]
+      ],
+      "guide": "https://www.dofuspourlesnoobs.com/palais-de-dantineacutea.html"
     },
     {
       "id": 76,
@@ -8458,7 +8568,8 @@
             "description": "Lorsqu'un allié occasionne des dommages, il doit se situer en ligne ou en diagonale de sa cible."
           }
         }
-      ]
+      ],
+      "guide": "https://www.dofuspourlesnoobs.com/palais-du-roi-nidas.html"
     },
     {
       "id": 135,
@@ -8526,7 +8637,8 @@
             "description": "Les ennemis doivent être achevés uniquement à l'aide des bras démoniaques."
           }
         }
-      ]
+      ],
+      "guide": "https://www.dofuspourlesnoobs.com/rituel-de-kabahal.html"
     },
     {
       "id": 68,
@@ -8608,7 +8720,8 @@
             "description": "Vaincre tous les monstres avec 4 personnages minimum, dont au moins un des compagnons éligibles à la réalisation de ce succès :\n• Kloug\n• Klüme\n• Grizou\n• Laikteur"
           }
         }
-      ]
+      ],
+      "guide": "https://www.dofuspourlesnoobs.com/salons-priveacutes-de-klime.html"
     },
     {
       "id": 114,
@@ -8690,7 +8803,8 @@
             "description": "Chaque ennemi doit être achevé soit durant la phase de Nouvelle Lune, soit durant la phase de Pleine Lune. \nLa Lunorbe ne doit jamais être utilisée pour accélérer le rythme du cycle lunaire."
           }
         }
-      ]
+      ],
+      "guide": "https://www.dofuspourlesnoobs.com/sanctuaire-de-torkelonia.html"
     },
     {
       "id": 119,
@@ -8758,7 +8872,8 @@
             "description": "Misère doit être achevée en premier, elle doit également rentrer dans l'état Collecte au moins une fois par tour."
           }
         }
-      ]
+      ],
+      "guide": "https://www.dofuspourlesnoobs.com/sentence-de-la-balance.html"
     },
     {
       "id": 134,
@@ -8837,7 +8952,8 @@
             "description": "L'invocation \"Roi Imagami\" doit être achevée par un allié avant que la Reine Amirukam ne sorte de sa phase Lotus."
           }
         }
-      ]
+      ],
+      "guide": "https://www.dofuspourlesnoobs.com/souvenir-d-imagiro.html"
     },
     {
       "id": 98,
@@ -8916,7 +9032,8 @@
             "description": "Vaincre tous les monstres avec 4 personnages minimum, dont au moins un des compagnons éligibles à la réalisation de ce succès :\n• Inferno\n• Styx\n• Mandrin\n• Will Killson"
           }
         }
-      ]
+      ],
+      "guide": "https://www.dofuspourlesnoobs.com/temple-de-koutoulou.html"
     },
     {
       "id": 111,
@@ -8995,7 +9112,8 @@
             "description": "Aucun Éclats du Kao ne doit être sur le terrain lorsqu'un combattant ennemi est achevé."
           }
         }
-      ]
+      ],
+      "guide": "https://www.dofuspourlesnoobs.com/temple-du-dieu-kao.html"
     },
     {
       "id": 108,
@@ -9077,7 +9195,8 @@
             "description": "Aucun ennemi ne doit entrer dans l'état Nécronyx avant la mort de Bethel."
           }
         }
-      ]
+      ],
+      "guide": "https://www.dofuspourlesnoobs.com/tour-de-bethel.html"
     },
     {
       "id": 109,
@@ -9159,7 +9278,8 @@
             "description": "Aucun ennemi (à l'exception de Solar) ne doit entrer dans l'état Necronyx avant la mort de Solar."
           }
         }
-      ]
+      ],
+      "guide": "https://www.dofuspourlesnoobs.com/tour-de-solar.html"
     },
     {
       "id": 67,
@@ -9241,7 +9361,8 @@
             "description": "Vaincre tous les monstres avec 4 personnages minimum, dont au moins un des compagnons éligibles à la réalisation de ce succès :\n• Haku\n• Manitou Zoth\n• Karotz\n• Grouillot\n• Phong Huss"
           }
         }
-      ]
+      ],
+      "guide": "https://www.dofuspourlesnoobs.com/transporteur-de-sylargh.html"
     },
     {
       "id": 83,
@@ -9320,7 +9441,8 @@
             "description": "Vaincre tous les monstres avec 4 personnages minimum, dont au moins un des compagnons éligibles à la réalisation de ce succès :\n• Grüt\n• Gobeuf\n• Turyé\n• Piggy Paupe"
           }
         }
-      ]
+      ],
+      "guide": "https://www.dofuspourlesnoobs.com/trone-de-la-cour-sombre.html"
     },
     {
       "id": 120,
@@ -9388,7 +9510,8 @@
             "description": "Aucune arme de Guerre ne doit être achevée ou déplacée par un allié."
           }
         }
-      ]
+      ],
+      "guide": "https://www.dofuspourlesnoobs.com/trone-de-sang.html"
     },
     {
       "id": 97,
@@ -9467,7 +9590,8 @@
             "description": "Les combattants alliés doivent terminer leur tour en ligne d'un combattant allié."
           }
         }
-      ]
+      ],
+      "guide": "https://www.dofuspourlesnoobs.com/vaisseau-du-capitaine-meno.html"
     },
     {
       "id": 84,
@@ -9538,7 +9662,8 @@
             "description": "La Malamibe doit toujours être achevée avant le début de son prochain tour."
           }
         }
-      ]
+      ],
+      "guide": "https://www.dofuspourlesnoobs.com/ventre-de-la-baleine.html"
     }
   ]
 }
