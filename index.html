@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Succès Donjons</title>
+  </head>
+  <body>
+    <!-- Affiché dans l'onglet quand l'outil est détaché dans la fenêtre flottante -->
+    <div id="detached-notice" hidden>
+      <p>L'outil est ouvert dans la fenêtre flottante.</p>
+      <p class="hint">Garde cet onglet ouvert : le fermer ferme aussi la fenêtre flottante.</p>
+      <button id="reattach-btn" type="button">Rattacher ici</button>
+    </div>
+
+    <div id="app">
+      <header class="topbar">
+        <h1>Succès Donjons</h1>
+        <button id="pip-btn" type="button" title="Ouvrir dans une fenêtre toujours au premier plan">
+          ⧉ Détacher
+        </button>
+      </header>
+      <p id="pip-unsupported" class="warning" hidden>
+        La fenêtre flottante nécessite Chrome ou Edge (version 116 ou plus récente).
+      </p>
+      <p id="pip-error" class="warning" hidden></p>
+      <main class="content">
+        <p class="placeholder">Le sommaire des donjons arrivera à l'étape 3.</p>
+      </main>
+    </div>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

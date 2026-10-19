@@ -1,0 +1,88 @@
+:root {
+  --bg: #1b1d22;
+  --bg-elevated: #25282f;
+  --border: #353943;
+  --text: #e6e6e6;
+  --text-muted: #9aa0ab;
+  --accent: #d9a441;
+  --accent-hover: #e8b95c;
+  --warning: #e06c5a;
+
+  color-scheme: dark;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  font-size: 14px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  height: 100%;
+  background: var(--bg);
+  color: var(--text);
+}
+
+button {
+  font: inherit;
+  color: var(--bg);
+  background: var(--accent);
+  border: none;
+  border-radius: 6px;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: var(--accent-hover);
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 8px 12px;
+  background: var(--bg-elevated);
+  border-bottom: 1px solid var(--border);
+}
+
+.topbar h1 {
+  margin: 0;
+  font-size: 16px;
+  color: var(--accent);
+}
+
+/* Inutile de proposer "Détacher" quand on est déjà dans la fenêtre flottante */
+.in-pip #pip-btn {
+  display: none;
+}
+
+.content {
+  flex: 1;
+  overflow-y: auto;
+  padding: 12px;
+}
+
+.placeholder,
+.hint {
+  color: var(--text-muted);
+}
+
+.warning {
+  margin: 8px 12px 0;
+  color: var(--warning);
+}
+
+#detached-notice {
+  padding: 24px;
+  text-align: center;
+}
