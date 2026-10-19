@@ -20,6 +20,7 @@
         <button id="pip-btn" type="button" class="icon-btn secondary"
           title="Détacher dans une fenêtre toujours au premier plan">⧉</button>
         <button id="pin-btn" type="button" class="icon-btn secondary pin-btn" hidden>📌</button>
+        <button id="settings-btn" type="button" class="icon-btn secondary" title="Paramètres : mise à jour, sauvegarde">☰</button>
         <button id="avatar-btn" type="button" class="avatar-btn"></button>
       </header>
       <p id="pip-unsupported" class="warning" hidden>
@@ -40,6 +41,9 @@
 
       <!-- Écran de gestion des personnages, affiché à la place de la vue principale -->
       <div class="view" id="characters-view" hidden></div>
+
+      <!-- Écran des paramètres : mise à jour des données, export/import -->
+      <div class="view" id="settings-view" hidden></div>
     </div>
 
     <script type="module" src="/src/main.js"></script>

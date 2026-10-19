@@ -128,3 +128,37 @@ export function deleteCharacter(id) {
   if (state.activeCharacterId === id) state.activeCharacterId = state.characters[0].id;
   save();
 }
+
+// ---- Export / import de la sauvegarde ----
+
+const EXPORT_FORMAT = 'dofus-success-save';
+
+/** Copie complète de la sauvegarde, prête à être enregistrée dans un fichier */
+export function exportState() {
+  return { format: EXPORT_FORMAT, exportedAt: new Date().toISOString(), state };
+}
+
+/** Résumé lisible d'un fichier de sauvegarde, ou une erreur s'il n'est pas valide */
+export function describeImport(data) {
+  const imported = data?.format === EXPORT_FORMAT ? data.state : null;
+  if (imported?.version !== VERSION || !Array.isArray(imported.characters) || !imported.done) {
+    throw new Error("Ce fichier n'est pas une sauvegarde de Succès Donjons.");
+  }
+  const doneCount = Object.values(imported.done).reduce((n, map) => n + Object.keys(map).length, 0);
+  return {
+    characters: imported.characters.map((c) => c.name),
+    doneCount,
+    notesCount: Object.keys(imported.notes ?? {}).length,
+    exportedAt: data.exportedAt,
+  };
+}
+
+/** Remplace toute la sauvegarde par celle du fichier (déjà vérifiée avec describeImport) */
+export function importState(data) {
+  describeImport(data);
+  try {
+    localStorage.setItem(STORAGE_KEY, JSON.stringify(data.state));
+  } catch {
+    throw new Error("Impossible d'enregistrer la sauvegarde dans le navigateur.");
+  }
+}

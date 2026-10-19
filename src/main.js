@@ -5,6 +5,7 @@ import { renderSummary } from './summary.js';
 import { renderAvatarButton, createCharactersView } from './characters.js';
 import { isTauri, setupPinButton } from './desktop.js';
 import { normalizeMechanic } from './mechanic-popover.js';
+import { createSettingsView } from './settings.js';
 
 const appEl = document.getElementById('app');
 const pipBtn = appEl.querySelector('#pip-btn');
@@ -35,16 +36,27 @@ if (isTauri()) {
 }
 
 const summaryEl = appEl.querySelector('#summary');
-const mainView = appEl.querySelector('#main-view');
-const charactersViewEl = appEl.querySelector('#characters-view');
+const views = {
+  main: appEl.querySelector('#main-view'),
+  characters: appEl.querySelector('#characters-view'),
+  settings: appEl.querySelector('#settings-view'),
+};
 const avatarBtn = appEl.querySelector('#avatar-btn');
 
+// Un seul écran visible à la fois : le sommaire, les personnages ou les paramètres
+let currentView = 'main';
+function showView(name) {
+  currentView = name;
+  for (const [key, el] of Object.entries(views)) el.hidden = key !== name;
+}
+
 try {
-  const [{ dungeons }, classes, mechanics] = await Promise.all([
+  const [data, classes, mechanics] = await Promise.all([
     loadDungeonData(),
     loadClasses(),
     loadMechanics(),
   ]);
+  const { dungeons } = data;
   for (const d of dungeons) d.mechanic = normalizeMechanic(mechanics[d.id]);
   const classById = new Map(classes.map((c) => [c.id, c]));
 
@@ -61,22 +73,21 @@ try {
     refreshProgress();
   };
 
-  // L'écran des personnages remplace la vue principale tant qu'il est ouvert
-  const showCharacters = (visible) => {
-    mainView.hidden = visible;
-    charactersViewEl.hidden = !visible;
-  };
-  const charactersView = createCharactersView(charactersViewEl, {
+  const charactersView = createCharactersView(views.characters, {
     classes,
     onChange: onCharacterChange,
-    onClose: () => showCharacters(false),
+    onClose: () => showView('main'),
   });
+  const settingsView = createSettingsView(views.settings, { data, onClose: () => showView('main') });
 
-  avatarBtn.addEventListener('click', () => {
-    if (!charactersViewEl.hidden) return showCharacters(false);
-    charactersView.open();
-    showCharacters(true);
-  });
+  // Les boutons du haut ouvrent leur écran, ou ramènent au sommaire s'il est déjà ouvert
+  const toggle = (name, view) => {
+    if (currentView === name) return showView('main');
+    view.open();
+    showView(name);
+  };
+  avatarBtn.addEventListener('click', () => toggle('characters', charactersView));
+  appEl.querySelector('#settings-btn').addEventListener('click', () => toggle('settings', settingsView));
   renderAvatarButton(avatarBtn, classById);
 } catch (err) {
   summaryEl.innerHTML = '<p class="warning"></p>';
