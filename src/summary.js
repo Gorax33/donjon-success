@@ -1,5 +1,6 @@
 // Sommaire : volets dépliables par tranche de niveau, donjons et leurs succès, recherche.
 import { bracketOf } from './data.js';
+import { isDone, setDone, countDone } from './progress.js';
 
 const OPEN_KEY = 'open-brackets';
 
@@ -46,13 +47,18 @@ function renderAchievement(achievement, dungeon) {
   const levelTag =
     achievement.level !== dungeon.level ? `<span class="tag">niv. ${achievement.level}</span>` : '';
   return `
-    <li class="achievement">
-      <div class="achievement-head">
-        <span class="achievement-name">${escapeHtml(label)}</span>
-        ${levelTag}
-        <span class="points">${achievement.points} pts</span>
-      </div>
-      ${detail ? `<div class="achievement-desc">${escapeHtml(detail)}</div>` : ''}
+    <li>
+      <label class="achievement">
+        <input type="checkbox" data-achievement-id="${achievement.id}" ${isDone(achievement.id) ? 'checked' : ''} />
+        <div class="achievement-body">
+          <div class="achievement-head">
+            <span class="achievement-name">${escapeHtml(label)}</span>
+            ${levelTag}
+            <span class="points">${achievement.points} pts</span>
+          </div>
+          ${detail ? `<div class="achievement-desc">${escapeHtml(detail)}</div>` : ''}
+        </div>
+      </label>
     </li>`;
 }
 
@@ -62,6 +68,7 @@ function renderDungeon(dungeon) {
       <summary>
         <span class="dungeon-name">${escapeHtml(dungeon.name)}</span>
         <span class="tag">niv. ${dungeon.level}</span>
+        <span class="dungeon-progress"></span>
       </summary>
       <ul class="achievements">
         ${dungeon.achievements.map((a) => renderAchievement(a, dungeon)).join('')}
@@ -99,6 +106,24 @@ export function renderSummary(container, searchInput, dungeons) {
 
   const bracketEls = [...container.querySelectorAll('.bracket')];
   const noResult = container.querySelector('.no-result');
+
+  // Compteur "3/5" et état terminé de chaque donjon
+  const dungeonById = new Map(dungeons.map((d) => [String(d.id), d]));
+  function updateDungeonProgress(dungeonEl) {
+    const dungeon = dungeonById.get(dungeonEl.dataset.dungeonId);
+    const total = dungeon.achievements.length;
+    const done = countDone(dungeon.achievements.map((a) => a.id));
+    dungeonEl.querySelector('.dungeon-progress').textContent = `${done}/${total}`;
+    dungeonEl.classList.toggle('complete', done === total);
+  }
+  container.querySelectorAll('.dungeon').forEach(updateDungeonProgress);
+
+  container.addEventListener('change', (e) => {
+    const id = e.target.dataset.achievementId;
+    if (!id) return;
+    setDone(Number(id), e.target.checked);
+    updateDungeonProgress(e.target.closest('.dungeon'));
+  });
 
   // Texte indexé par donjon : son nom + les noms de ses succès (qui contiennent les boss)
   const searchIndex = new Map(
