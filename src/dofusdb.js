@@ -112,8 +112,14 @@ export async function fetchDungeonData(onProgress = () => {}) {
             : null,
         };
       })
-      // Succès de victoire simple d'abord, puis l'ordre du jeu
-      .sort((x, y) => Number(!!x.challenge) - Number(!!y.challenge) || x.order - y.order)
+      // Par boss (niveau, pour les donjons à plusieurs boss), puis la victoire
+      // simple d'abord, puis l'ordre du jeu
+      .sort(
+        (x, y) =>
+          x.level - y.level ||
+          Number(!!x.challenge) - Number(!!y.challenge) ||
+          x.order - y.order,
+      )
       .map(({ order, ...a }) => a),
   }));
 

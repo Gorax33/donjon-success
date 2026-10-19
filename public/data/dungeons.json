@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-19T13:17:13.493Z",
+  "generatedAt": "2026-10-19T13:21:08.506Z",
   "source": "https://api.dofusdb.fr",
   "dungeons": [
     {
@@ -2316,6 +2316,17 @@
       "level": 100,
       "achievements": [
         {
+          "id": 6270,
+          "name": "Halouine (Spécial)",
+          "level": 90,
+          "points": 10,
+          "challenge": {
+            "id": 1267,
+            "name": "Rester planté là",
+            "description": "Les combattants alliés ne doivent pas être déplacés."
+          }
+        },
+        {
           "id": 1148,
           "name": "Potager d'Halouine",
           "level": 100,
@@ -2364,17 +2375,6 @@
             "id": 331,
             "name": "Duo",
             "description": "Vaincre tous les monstres avec 2 personnages maximum et en moins de 20 tours."
-          }
-        },
-        {
-          "id": 6270,
-          "name": "Halouine (Spécial)",
-          "level": 90,
-          "points": 10,
-          "challenge": {
-            "id": 1267,
-            "name": "Rester planté là",
-            "description": "Les combattants alliés ne doivent pas être déplacés."
           }
         }
       ]
@@ -3829,6 +3829,17 @@
       "level": 140,
       "achievements": [
         {
+          "id": 6202,
+          "name": "Chêne Mou (Spécial)",
+          "level": 130,
+          "points": 10,
+          "challenge": {
+            "id": 1037,
+            "name": "Enchaînemou",
+            "description": "Les alliés (hors invocations statiques) doivent terminer leur tour en ligne d'un ennemi."
+          }
+        },
+        {
           "id": 53,
           "name": "Clairière du Chêne Mou",
           "level": 140,
@@ -3866,17 +3877,6 @@
             "id": 76,
             "name": "Duo",
             "description": "Vaincre tous les monstres avec 2 personnages maximum et en moins de 20 tours."
-          }
-        },
-        {
-          "id": 6202,
-          "name": "Chêne Mou (Spécial)",
-          "level": 130,
-          "points": 10,
-          "challenge": {
-            "id": 1037,
-            "name": "Enchaînemou",
-            "description": "Les alliés (hors invocations statiques) doivent terminer leur tour en ligne d'un ennemi."
           }
         }
       ]
@@ -5015,13 +5015,6 @@
           "challenge": null
         },
         {
-          "id": 134,
-          "name": "Cavernes Nourricières",
-          "level": 190,
-          "points": 10,
-          "challenge": null
-        },
-        {
           "id": 748,
           "name": "Tengu Givrefoux (Premier)",
           "level": 170,
@@ -5064,6 +5057,13 @@
             "name": "Autonomie givrée",
             "description": "Les alliés (hors invocations statiques) doivent terminer leur tour à plus de 4 cases de tous les autres alliés."
           }
+        },
+        {
+          "id": 134,
+          "name": "Cavernes Nourricières",
+          "level": 190,
+          "points": 10,
+          "challenge": null
         },
         {
           "id": 5983,

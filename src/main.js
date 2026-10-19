@@ -1,5 +1,7 @@
 import './style.css';
 import { isPipSupported, openPip, closePip } from './pip.js';
+import { loadDungeonData } from './data.js';
+import { renderSummary } from './summary.js';
 
 const appEl = document.getElementById('app');
 const pipBtn = appEl.querySelector('#pip-btn');
@@ -23,4 +25,13 @@ if (isPipSupported()) {
 } else {
   pipBtn.hidden = true;
   appEl.querySelector('#pip-unsupported').hidden = false;
+}
+
+const summaryEl = appEl.querySelector('#summary');
+try {
+  const { dungeons } = await loadDungeonData();
+  renderSummary(summaryEl, appEl.querySelector('#search'), dungeons);
+} catch (err) {
+  summaryEl.innerHTML = '<p class="warning"></p>';
+  summaryEl.firstChild.textContent = err.message;
 }

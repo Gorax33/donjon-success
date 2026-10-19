@@ -86,3 +86,137 @@ button:hover {
   padding: 24px;
   text-align: center;
 }
+
+[hidden] {
+  display: none !important;
+}
+
+/* ---- Recherche ---- */
+
+.searchbar {
+  padding: 8px 12px;
+  border-bottom: 1px solid var(--border);
+}
+
+.searchbar input {
+  width: 100%;
+  font: inherit;
+  color: var(--text);
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 6px 10px;
+}
+
+.searchbar input:focus {
+  outline: none;
+  border-color: var(--accent);
+}
+
+.no-result {
+  color: var(--text-muted);
+  text-align: center;
+}
+
+/* ---- Volets ---- */
+
+summary {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  list-style: none;
+  user-select: none;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+/* Chevron qui pivote à l'ouverture */
+summary::before {
+  content: '▸';
+  color: var(--text-muted);
+  transition: transform 0.15s;
+}
+
+details[open] > summary::before {
+  transform: rotate(90deg);
+}
+
+.bracket {
+  margin-bottom: 6px;
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+
+.bracket > summary {
+  padding: 8px 10px;
+  font-weight: 600;
+}
+
+.bracket .count {
+  margin-left: auto;
+  font-weight: normal;
+  color: var(--text-muted);
+}
+
+.bracket-body {
+  padding: 0 6px 6px;
+}
+
+.dungeon > summary {
+  padding: 6px 8px;
+  border-radius: 6px;
+}
+
+.dungeon > summary:hover {
+  background: var(--bg);
+}
+
+.dungeon-name {
+  flex: 1;
+  min-width: 0;
+}
+
+.tag {
+  flex-shrink: 0;
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+/* ---- Succès ---- */
+
+.achievements {
+  list-style: none;
+  margin: 0;
+  padding: 0 8px 6px 26px;
+}
+
+.achievement {
+  padding: 4px 0;
+  border-top: 1px solid var(--border);
+}
+
+.achievement-head {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+}
+
+.achievement-name {
+  flex: 1;
+  color: var(--accent);
+}
+
+.points {
+  flex-shrink: 0;
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+.achievement-desc {
+  font-size: 12px;
+  color: var(--text-muted);
+}
