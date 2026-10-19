@@ -3,13 +3,18 @@ import { isPipSupported, openPip, closePip } from './pip.js';
 import { loadDungeonData, loadClasses } from './data.js';
 import { renderSummary } from './summary.js';
 import { renderAvatarButton, createCharactersView } from './characters.js';
+import { isTauri, setupPinButton } from './desktop.js';
 
 const appEl = document.getElementById('app');
 const pipBtn = appEl.querySelector('#pip-btn');
 const detachedNotice = document.getElementById('detached-notice');
 const pipError = appEl.querySelector('#pip-error');
 
-if (isPipSupported()) {
+if (isTauri()) {
+  // App de bureau : la fenêtre est native, le bouton sert d'épingle "toujours au premier plan"
+  setupPinButton(appEl.querySelector('#pin-btn'));
+  pipBtn.hidden = true;
+} else if (isPipSupported()) {
   pipBtn.addEventListener('click', async () => {
     pipError.hidden = true;
     try {

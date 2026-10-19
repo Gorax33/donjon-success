@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <!-- Source de l'icône de l'app : npx tauri icon src-tauri/app-icon.svg -->
+  <defs>
+    <linearGradient id="gold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f3c96a"/>
+      <stop offset="1" stop-color="#c8862a"/>
+    </linearGradient>
+  </defs>
+  <rect x="32" y="32" width="960" height="960" rx="200" fill="#1b1d22"/>
+  <rect x="32" y="32" width="960" height="960" rx="200" fill="none" stroke="#353943" stroke-width="24"/>
+  <!-- Anses -->
+  <path d="M312 300 H210 C210 470 300 540 380 545" fill="none" stroke="url(#gold)" stroke-width="44" stroke-linecap="round"/>
+  <path d="M712 300 H814 C814 470 724 540 644 545" fill="none" stroke="url(#gold)" stroke-width="44" stroke-linecap="round"/>
+  <!-- Coupe -->
+  <path d="M300 240 H724 V420 C724 560 630 640 512 640 C394 640 300 560 300 420 Z" fill="url(#gold)"/>
+  <!-- Pied -->
+  <rect x="472" y="630" width="80" height="110" fill="url(#gold)"/>
+  <rect x="360" y="730" width="304" height="70" rx="20" fill="url(#gold)"/>
+  <!-- Coche -->
+  <path d="M420 430 L490 500 L620 360" fill="none" stroke="#1b1d22" stroke-width="48" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

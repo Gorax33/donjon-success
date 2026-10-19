@@ -575,3 +575,16 @@ details[open] > summary::before {
   color: var(--done);
   border-color: var(--done);
 }
+
+/* ---- Épingle (app de bureau) ---- */
+
+.pin-btn {
+  opacity: 0.45;
+  filter: grayscale(1);
+}
+
+.pin-btn.pinned {
+  opacity: 1;
+  filter: none;
+  border-color: var(--accent);
+}
