@@ -1,6 +1,6 @@
 import './style.css';
 import { isPipSupported, openPip, closePip } from './pip.js';
-import { loadDungeonData, loadClasses, loadMechanics, loadMonsterData } from './data.js';
+import { loadDungeonData, loadClasses, loadMechanics, loadMonsterData, loadAccess } from './data.js';
 import { renderSummary } from './summary.js';
 import { renderAvatarButton, createCharactersView } from './characters.js';
 import { isTauri, setupPinButton } from './desktop.js';
@@ -88,7 +88,8 @@ try {
     showView('monsters');
     if (monstersTab) return;
     try {
-      monstersTab = renderMonsters(views.monsters, await loadMonsterData());
+      const [monsterData, access] = await Promise.all([loadMonsterData(), loadAccess()]);
+      monstersTab = renderMonsters(views.monsters, monsterData, access);
     } catch (err) {
       views.monsters.innerHTML = '<p class="warning"></p>';
       views.monsters.firstChild.textContent = err.message;

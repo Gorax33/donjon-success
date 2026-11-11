@@ -1,0 +1,428 @@
+{
+ "areas": {
+  "Île de Frigost": {
+   "summary": "Rejoignable par bateau depuis la baie de Cania ; niveau 100 conseillé, sans quête préalable.",
+   "steps": [
+    "Aller en [-34,-16] (baie de Cania) et parler au Capitaine Ardier pour embarquer vers le Port de givre.",
+    "Niveau 100 minimum d'après les guides (à vérifier pour Dofus 3).",
+    "Sur place, un Transporteur Frigostien et des zaaps relient ensuite les zones ; certaines zones tardives exigent des quêtes (voir zones)."
+   ],
+   "source": "https://www.gamosaurus.com/?p=172584",
+   "unknown": false
+  },
+  "Île de Sakaï": {
+   "summary": "Île voisine de Frigost, atteinte par un bateau ou le Transporteur Frigostien ; aucun zaap proche.",
+   "steps": [
+    "Prendre le bateau de l'île de Sakaï en [-51,-38] ou le Transporteur Frigostien en [-55,-41].",
+    "Le bateau du port de Madrestam est aussi cité par certains guides (à vérifier).",
+    "Les conditions de niveau/quête pour l'île ne sont pas précisées ; seul le donjon (Mine de Sakaï) vise le niveau 190."
+   ],
+   "source": "https://dofus.jeuxonline.info/article/13897/mine-sakai",
+   "unknown": false
+  },
+  "Île d'Otomaï": {
+   "summary": "Deux quêtes d'accès (« Le nouveau monde », « L'île des naufragés ») ; ensuite zaap ou montée de l'arbre Hakam.",
+   "steps": [
+    "Parler au capitaine Kradoc à Sufokia en [15,28] (quête « Le nouveau monde ») : combats contre des pirates, puis escale sur l'île des Naufragés.",
+    "Rapporter à Kradoc les ressources demandées sur l'île des Naufragés : il vous mène à Otomaï ; sauvegarder le zaap en [-46,18].",
+    "À pied : base de l'arbre Hakam en [-53,17], échelle puis tronc jusqu'au village de la Canopée, puis feuillage vers la cabane d'Otomaï.",
+    "Raccourci : transporteur brigandin si votre alliance détient le Village des Brigandins. Guides d'avant Dofus 3 (à vérifier)."
+   ],
+   "source": "https://dofus.jeuxonline.info/article/4734/ile-otomai",
+   "unknown": false
+  },
+  "Profondeurs de Sufokia": {
+   "summary": "On plonge depuis le palais du roi Talas à Sufokia ; les profondeurs 2 et 3 exigent du matériel d'exploration.",
+   "steps": [
+    "Aller au palais du roi Talas en [23,24], entrer dans le bâtiment et plonger dans l'eau : abysses de 3 domaines, 3 profondeurs chacun.",
+    "Les profondeurs 2 et 3 sont réservées à ceux qui ont le matériel d'exploration adéquat ; sans lui, on reste en profondeur 1.",
+    "Le matériel dépend du domaine (ex. Trithons : Accélérateur de Propulsion et Lest anti-tourbillon). Il vient surtout de quêtes (à vérifier).",
+    "Les montures terrestres ne passent pas : seul le Muldo, capturable sur place, suit sous l'eau. Infos d'avant Dofus 3 (à vérifier)."
+   ],
+   "source": "https://www.millenium.org/news/274251.html",
+   "unknown": false
+  },
+  "Archipel des Écailles": {
+   "summary": "Île de Crocuzko : le zaap de l'île s'ouvre après la quête « Perdu dans le temps » (info de l'époque Dofus 2).",
+   "steps": [
+    "Démarrer « Perdu dans le temps » auprès de Crokalcrolak (env. [5,-18]).",
+    "Retourner voir le Chronomage expert : il relie l'anomalie au zaap de l'île, ce qui y téléporte directement.",
+    "Info ancienne, non confirmée pour Dofus 3 : à vérifier."
+   ],
+   "source": "https://dofus.jeuxonline.info/article/14745/quetes-crocuzko",
+   "unknown": false
+  },
+  "Nimotopia": {
+   "summary": "Rejoindre Nimotopia en montant à bord du Muldobus, après avoir convaincu Agathe Mainate.",
+   "steps": [
+    "Aller voir Agathe Mainate devant le Muldobus, vers [-28,-31].",
+    "Répondre correctement à ses questions pour prouver que vous n'êtes pas un chassouilleur : elle vous laisse embarquer vers Nimotopia.",
+    "Une fois sur place, enregistrer le zaap. Guide possiblement ancien : à vérifier."
+   ],
+   "source": "https://dofus.jeuxonline.info/article/14275/quetes-nimotopia",
+   "unknown": false
+  },
+  "Îlots de la mer d'Asse": {
+   "summary": "L'île de Kartonpath se rejoint par la mine en [14,14] près de Sufokia ; zaap du Rivage Sufokien en [10,22] (à vérifier).",
+   "steps": [
+    "Prendre le zaap du Rivage Sufokien en [10,22], puis aller à la mine en [14,14] : c'est le chemin rapide cité par un guide du donjon.",
+    "Le donjon du Théâtre de Dramak est en [21,7] sur l'île ; île prévue pour les niveaux 90-110 ; aucun bateau n'est cité.",
+    "Aucune quête d'accès confirmée ; guides d'avant Dofus 3 : confirmer en jeu."
+   ],
+   "source": "https://dofus.jeuxonline.info/article/11585/theatre-dramak",
+   "unknown": false
+  },
+  "Enutrosor": {
+   "summary": "Dimension divine : quêtes d'intro à la Tour des Voyageurs [-22,-24], puis chasse au portail.",
+   "steps": [
+    "Aller à la Tour des Voyageurs en [-22,-24] (à pied depuis le zaap [-20,-20] ou via la Potion de Voyageur Dimensionnel).",
+    "Faire la quête « Voyage, voyage » (niveau 100-200) auprès du Sergent Zlatzom devant la tour.",
+    "Enchaîner « La porte d'Enutrosor » : Gladis lance une chasse au portail depuis une console, puis entrer dans le portail trouvé."
+   ],
+   "source": "https://dofus.jeuxonline.info/article/14144/quetes-enutrosor",
+   "unknown": false
+  },
+  "Srambad": {
+   "summary": "Dimension divine atteinte par la Tour des Voyageurs et une chasse au portail ; quêtes d'accès précises à vérifier.",
+   "steps": [
+    "Rejoindre la Tour des Voyageurs en [-22,-24] (zaap [-20,-20] ou Potion de Voyageur Dimensionnel).",
+    "Lancer la chasse aux portails depuis la console de la tour, puis franchir le portail de Srambad.",
+    "Quête Fanfouille à finir pour obtenir le crochet rouillé en butin (utile pour les cambriolages) ; prérequis exacts à vérifier."
+   ],
+   "source": "https://dofus.jeuxonline.info/article/14043/dimensions-divines",
+   "unknown": false
+  },
+  "Xélorium": {
+   "summary": "Dimension divine via la Tour des Voyageurs ; les quêtes « Passé » demandent d'avoir fini d'autres dimensions.",
+   "steps": [
+    "Aller à la Tour des Voyageurs en [-22,-24] et lancer la chasse au portail du Xélorium depuis la console.",
+    "Les quêtes du Xélorium Passé demandent d'avoir terminé les quêtes principales de Pandora, Srambad et Enutrosor (d'après une source, à vérifier).",
+    "La partie Présent (seconde partie) serait réservée au niveau 160 et plus (à vérifier)."
+   ],
+   "source": "https://dofus.jeuxonline.info/article/14043/dimensions-divines",
+   "unknown": false
+  },
+  "Ecaflipus": {
+   "summary": "Dimension divine : chasse au portail depuis la Tour des Voyageurs, introduction par le succès Errances Félines.",
+   "steps": [
+    "Rejoindre la Tour des Voyageurs en [-22,-24] (zaap [-20,-20] ou Potion de Voyageur Dimensionnel).",
+    "Lancer la chasse aux portails depuis la console ; le portail à trouver est tiré par le système.",
+    "Les quêtes d'introduction sont celles du succès Errances Félines (niveaux 100 à 200) ; détails à vérifier en jeu."
+   ],
+   "source": "https://www.next-stage.fr/2025/12/portail-ecaflipus-quetes-acces-astuces-dofus.html",
+   "unknown": true
+  },
+  "Osavora": {
+   "summary": "Dimension divine récente (Dofus 3.2) : niveau 50 requis, accès via une altération débloquée par chasse légendaire.",
+   "steps": [
+    "Être au moins niveau 50 et passer par la Tour des Voyageurs, qui a désormais un téléporteur unique pour tous les étages.",
+    "Faire une chasse au trésor légendaire pour débloquer définitivement l'altération d'accès à Osavora.",
+    "Quêtes saisonnières et offrande du Titan Gargandyas : détails des étapes non confirmés, à vérifier."
+   ],
+   "source": "https://www.breakflip.com/actualites/dofus/nouvelle-dimension-nouveau-dofus-titan-gargandyas-tout-savoir-sur-osavora-la-nouvelle-dimension-osamodas-68007",
+   "unknown": false
+  },
+  "Dimensions des Cavaliers": {
+   "summary": "Zones de l'Éliocalypse (chapitre Résonance), niveau 200, lancées depuis le Rêve du Monde des Douze.",
+   "steps": [
+    "Avoir fini la quête « Quatre contre un » du prologue de l'Éliocalypse.",
+    "Entrer dans le Rêve du Monde des Douze via l'entrée des Songes Infinis et parler à Draconiros.",
+    "Les quêtes du chapitre Résonance ouvrent ensuite chaque domaine ; détails de l'accès à chaque zone à vérifier."
+   ],
+   "source": "https://dofus.jeuxonline.info/article/14681/quetes-eliocalypse-chapitre-1-resonance",
+   "unknown": false
+  },
+  "Dimension Obscure": {
+   "summary": "Dimension liée à la Pyramide d'Ombre, accessible depuis la forêt d'Amakna ; mode d'accès exact non confirmé.",
+   "steps": [
+    "Le donjon de la Pyramide d'Ombre se trouve en [6,13] dans la Dimension Obscure, depuis la même position en Forêt d'Amakna.",
+    "Zaap le plus proche : Bord de la Forêt Maléfique [-1,13]. Prérequis et lien avec cette zone à vérifier."
+   ],
+   "source": "https://dofus.jeuxonline.info/article/14653/pyramide-ombre",
+   "unknown": true
+  },
+  "Wukin et Wukang": {
+   "summary": "Royaume d'Encre et de Papier : s'y rend via Daoh dans un temple du Wukin ou du Wukang.",
+   "steps": [
+    "Aller au Temple du Wukin (Aerdala, vers [20,-40]) ou du Wukang (Feudala, vers [15,-31]) ; le Wukin est conseillé la première fois.",
+    "Répondre aux questions de Daoh pour recevoir le Symbole de l'Iroru, qui ouvre le passage.",
+    "Niveau conseillé 180-200 ; prérequis de quêtes (Pandala, Grobe, Requiem pour un Yokai) divergents selon les sources, à vérifier."
+   ],
+   "source": "https://www.next-stage.fr/2026/05/royaume-dencre-dofus-acces-reponses-daoh.html",
+   "unknown": true
+  },
+  "Cauchemar des Ravageurs": {
+   "summary": "Accès par le Port des Ravageurs, la quête du Gardien de Pandamonium puis la Statue en [43,-58] (info 2021, à vérifier).",
+   "steps": [
+    "Niveau 200 environ ; rejoindre le Port des Ravageurs (bateau depuis Brakmar depuis la 2.62).",
+    "Faire la quête du Gardien de Pandamonium : parler aux aventuriers du port (coût en kamas) et obtenir le Rêve d'Harmonie via un étage de songe.",
+    "Aller en [43,-58], parler à la Statue puis regarder ses yeux pour être téléporté dans la zone."
+   ],
+   "source": "https://www.gamosaurus.com/jeux/dofus/dofus-2-62-aller-dans-la-nouvelle-zone-cauchemar-des-ravageurs",
+   "unknown": false
+  },
+  "Labyrinthe du Dragon Cochon": {
+   "summary": "Souterrain de l'Antre du Dragon Cochon ; accès via la clef du donjon, détails non confirmés.",
+   "steps": [
+    "L'Antre du Dragon Cochon est en [-1,33] dans le Territoire des Porcos ; zaap de la Plaine des Scarafeuilles [-1,24].",
+    "Il faut la clef de l'Antre (à crafter ou obtenir en butin) ; le trousseau ne suffirait pas selon les sources. Lien exact avec le Labyrinthe à vérifier."
+   ],
+   "source": "https://dofus.jeuxonline.info/article/13762/antre-dragon-cochon",
+   "unknown": true
+  },
+  "Île des Wabbits": {
+   "summary": "Bateau du port de Madrestam, après avoir obtenu la potion Wabbit (accès définitif à l'île).",
+   "steps": [
+    "Potion Wabbit : donner une aile de scarafeuille de chaque couleur à l'assistant d'Otomaï en [-2,-4].",
+    "Prendre le bateau du capitaine Lily au port de Madrestam en [9,-2] (payant), puis utiliser le zaap de l'île.",
+    "Les potions de rappel ne marchent pas sur l'île. Le Chemin du Wa Wabbit se suit à pied jusqu'au château (à vérifier pour Dofus 3)."
+   ],
+   "source": "https://www.gamosaurus.com/?p=172592",
+   "unknown": false
+  },
+  "Île de Moon": {
+   "summary": "Quête de départ puis canon avec ticket ; ailes en bois et casque à équiper.",
+   "steps": [
+    "Terminer la quête « Partir un jour sans retour », lancée en [11,10].",
+    "Acheter un ticket auprès du PNJ de la carte du canon.",
+    "Équiper les ailes en bois et le casque (craftables) avant de monter dans le canon. Détails à vérifier en jeu."
+   ],
+   "source": "https://www.dofuspourlesnoobs.com/village-kanniboul.html",
+   "unknown": false
+  },
+  "Île de Pandala": {
+   "summary": "Bateau depuis Madrestam (100 kamas), à condition d'avoir fini la quête « Le réveil de Pandala ».",
+   "steps": [
+    "Terminer la quête « Le réveil de Pandala ».",
+    "Prendre le bateau au port de Madrestam en [10,-5] (environ 100 kamas l'aller-retour).",
+    "Une fois le zaap du village de Pandala connu, on peut s'y téléporter directement."
+   ],
+   "source": "https://www.dofuspourlesnoobs.com/quetes-de-pandala.html",
+   "unknown": false
+  },
+  "Île de Grobe": {
+   "summary": "Bateau du Nocher de Grobe, sur l'île principale de Pandala en [27,-27].",
+   "steps": [
+    "Se rendre à Pandala (voir Île de Pandala), par exemple via le zaap du village en [20,-29].",
+    "Parler au Nocher de Grobe en [27,-27] pour embarquer.",
+    "Source datant de la mise à jour 2.57 : à vérifier pour Dofus 3."
+   ],
+   "source": "https://dofus.jeuxonline.info/article/14908/quetes-ile-grobe-dofus-dorigami-pandala-partie-2",
+   "unknown": false
+  },
+  "Île du Minotoror": {
+   "summary": "Bateau de Nikos Monote dans la baie de Cania (100 kamas, aller simple) ou transporteur Brigandin.",
+   "steps": [
+    "Parler à Nikos Monote dans la Baie de Cania (coordonnées variables selon les sources, vers [-36,9]) et payer 100 kamas.",
+    "Autre option : le Transporteur Brigandin. Coordonnées exactes à vérifier en jeu."
+   ],
+   "source": "https://www.gamosaurus.com/?p=173172",
+   "unknown": false
+  },
+  "Archipel de Valonia": {
+   "summary": "Bateau à Madrestam, dirigeable à Amakna ou téléportation gratuite pour la classe Forgelance ; zaap ensuite.",
+   "steps": [
+    "Bateau : capitaine Isabello Tissier au port de Madrestam [10,-3], 100 kamas, arrivée au sud d'Albuera.",
+    "Dirigeable : Freddy Rigeable près du village d'Amakna [-2,4], 10 kamas, arrivée au nord-ouest près du temple Forgelance.",
+    "Forgelance : l'Envoyée des Douze en [6,-19], après la quête « Dévotion à la Lance Originelle ».",
+    "Zaap de l'archipel en [39,-82], utilisable après une première arrivée sur place."
+   ],
+   "source": "https://www.dofuspourlesnoobs.com/quetes-de-l-archipel-de-valonia.html",
+   "unknown": false
+  },
+  "Atoll des Possédés": {
+   "summary": "Bateau-démon Voh'Râss' sur l'île de Grobe en [41,-45], trajet gratuit.",
+   "steps": [
+    "Aller sur l'île de Grobe (voir Île de Grobe), puis en [41,-45].",
+    "Parler à Voh'Râss' et choisir « Embarquer pour l'Atoll »."
+   ],
+   "source": "https://www.dofuspourlesnoobs.com/quetes-du-pandamonium.html",
+   "unknown": false
+  },
+  "Saharach": {
+   "summary": "Bateau au port de Madrestam, en [12,-6], à destination de Saharach ; niveau conseillé autour de 70-100.",
+   "steps": [
+    "Aller au port de Madrestam en [12,-6] et monter à bord du bateau pour Saharach (nom du PNJ et prix non précisés par le guide).",
+    "Le village de Sarakech sert de départ aux quêtes ; zaap de l'île en [15,-58] une fois découvert.",
+    "Après la quête « Le fou rit et rôde », des chars à voile relient Sarakech au Territoire Cacterre. Guide ancien (à vérifier)."
+   ],
+   "source": "https://dofus.jeuxonline.info/article/14708/guide-progression-dofus-niveaux-51-100",
+   "unknown": false
+  }
+ },
+ "zones": {
+  "99": {
+   "summary": "Souterrains d'Astrub : entrée dans la cité d'Astrub, en [6,-19].",
+   "steps": [
+    "Entrer par la bouche en [6,-19] ; les Milirats d'égoutant y abondent. Source d'avant Dofus 3 (à vérifier en jeu)."
+   ],
+   "source": "https://www.gamosaurus.com/jeux/dofus/dofus-toutes-les-mines-dastrub"
+  },
+  "100": {
+   "summary": "Égouts d'Astrub : bouche d'égout en [5,-17], ou par l'échelle au fond de la Mine d'Astrub ([1,-17]).",
+   "steps": [
+    "En surface : bouche d'égout sur le côté gauche de la carte [5,-17].",
+    "Autre accès : descendre au fond de la Mine d'Astrub (entrée en [1,-17]) et prendre les barreaux d'échelle. À vérifier en jeu."
+   ],
+   "source": "https://dofus.jeuxonline.info/article/1985/quetes-astrub-dofus-argente"
+  },
+  "319": {
+   "summary": "Labyrinthe du Minotoror : donjon à clé, au centre de l'île.",
+   "steps": [
+    "Il faut une clé du labyrinthe (trousseau ou craft).",
+    "Pour atteindre le Minotoror, récupérer les reliques du Déminoboule et du Mominotor, salle n°13."
+   ],
+   "source": "https://dofus.jeuxonline.info/article/13877/labyrinthe-minotoror-salle-minotot"
+  },
+  "461": {
+   "summary": "Arche d'Otomaï : zone de l'île d'Otomaï ; point d'entrée précis non confirmé par les sources autorisées.",
+   "steps": [
+    "Atteindre d'abord Otomaï (voir la région) ; aucune source autorisée consultée ne décrit l'entrée de l'arche : à vérifier en jeu."
+   ],
+   "source": "https://dofus.jeuxonline.info/article/4734/ile-otomai",
+   "unknown": true
+  },
+  "464": {
+   "summary": "Tronc de l'arbre Hakam : labyrinthe à gravir depuis la base de l'arbre en [-53,17], jusqu'au village de la Canopée.",
+   "steps": [
+    "Prendre l'échelle à la base de l'arbre en [-53,17], puis suivre les passages et escaliers du tronc vers la Canopée (zaap à enregistrer)."
+   ],
+   "source": "https://www.dofuspourlesnoobs.com/chemin-vers-otomai.html"
+  },
+  "472": {
+   "summary": "Feuillage de l'arbre Hakam : partie haute du labyrinthe, au-dessus du village de la Canopée.",
+   "steps": [
+    "Depuis la Canopée, continuer vers le haut par le tronc jusqu'au feuillage ; éviter la descente vers le donjon Canopée du Kimbo."
+   ],
+   "source": "https://www.dofuspourlesnoobs.com/chemin-vers-otomai.html"
+  },
+  "798": {
+   "summary": "Laboratoires abandonnés : sous-sol de l'île, nécessitant la quête « Intrusion chez les wabbits ».",
+   "steps": [
+    "Terminer la quête « Intrusion chez les wabbits » ; sans elle, les galeries restent fermées (à vérifier pour Dofus 3)."
+   ],
+   "source": "https://www.gamosaurus.com/?p=220914"
+  },
+  "817": {
+   "summary": "Galeries abandonnées : sous-sol de l'île, nécessitant la quête « Intrusion chez les wabbits ».",
+   "steps": [
+    "Terminer la quête « Intrusion chez les wabbits » avant d'y entrer (à vérifier pour Dofus 3)."
+   ],
+   "source": "https://www.gamosaurus.com/?p=220914"
+  },
+  "821": {
+   "summary": "Zone de niveau 150 : sa quête « Crache test » demande d'avoir fait « Voyage, voyage ».",
+   "steps": [
+    "Faire « Voyage, voyage » à la Tour des Voyageurs avant de lancer les quêtes de la Carrière Aurifère."
+   ],
+   "source": "https://dofus.jeuxonline.info/article/14144/quetes-enutrosor"
+  },
+  "822": {
+   "summary": "Zone de niveau 200 : une quête dépend de « La pelle de la phorrée » (Carrière Aurifère).",
+   "steps": [
+    "Faire d'abord les quêtes de la Carrière Aurifère.",
+    "Certains succès passent par le donjon du roi Nidas."
+   ],
+   "source": "https://dofus.jeuxonline.info/article/14144/quetes-enutrosor"
+  },
+  "834": {
+   "summary": "Le Roc des Salbatroces s'atteint en bateau depuis la Bourgade, après trois quêtes (niveau 180).",
+   "steps": [
+    "Depuis la Bourgade, le Capitaine Pol Ouatnos en [-84,-40] emmène au Roc.",
+    "Quêtes liées (succès « C'est assez ») : Ponctions Létales, Grand corps malade, Qui dit Baume (départ vers [-84,-60] à [-84,-57]).",
+    "Ne pas finir le donjon du Ventre de la Baleine avant la 3e quête (à vérifier pour Dofus 3)."
+   ],
+   "source": "https://dofus.jeuxonline.info/article/14693/quetes-roc-salbatroces"
+  },
+  "861": {
+   "summary": "Ancienne Sufokia (Ville submergée, profondeur 2) : plonger depuis [23,24] avec le matériel d'exploration.",
+   "steps": [
+    "Plonger depuis le palais du roi Talas en [23,24] ; les profondeurs 2 et 3 demandent le matériel d'exploration adéquat (à vérifier)."
+   ],
+   "source": "https://www.millenium.org/news/274251.html"
+  },
+  "862": {
+   "summary": "Vestiges engloutis (Ville submergée, profondeur 3) : plonger depuis [23,24] avec le matériel d'exploration.",
+   "steps": [
+    "Même plongée que les autres abysses ; matériel d'exploration requis pour la profondeur 3 (objets exacts à vérifier)."
+   ],
+   "source": "https://www.millenium.org/news/274251.html"
+  },
+  "864": {
+   "summary": "Faille des Trithons (profondeur 2) : matériel d'exploration requis après la plongée en [23,24].",
+   "steps": [
+    "Un guide cite l'Accélérateur de Propulsion et le Lest anti-tourbillon pour les profondeurs 2 et 3 des Trithons (à vérifier)."
+   ],
+   "source": "https://dofus.jeuxonline.info/article/14658/palais-dantinea"
+  },
+  "865": {
+   "summary": "Tréfonds des Trithons (profondeur 3) : même matériel d'exploration que la profondeur 2.",
+   "steps": [
+    "Accélérateur de Propulsion et Lest anti-tourbillon cités par un guide pour atteindre les profondeurs 2 et 3 (à vérifier)."
+   ],
+   "source": "https://dofus.jeuxonline.info/article/14658/palais-dantinea"
+  },
+  "867": {
+   "summary": "Fosse de R'lyugluglu (profondeur 2) : matériel d'exploration requis après la plongée en [23,24].",
+   "steps": [
+    "Le matériel exact pour ce domaine n'est pas précisé par les sources autorisées : à vérifier en jeu."
+   ],
+   "source": "https://www.millenium.org/news/274251.html"
+  },
+  "868": {
+   "summary": "Abîme de R'lyugluglu (profondeur 3) : matériel d'exploration requis après la plongée en [23,24].",
+   "steps": [
+    "Le matériel exact pour ce domaine n'est pas précisé par les sources autorisées : à vérifier en jeu."
+   ],
+   "source": "https://www.millenium.org/news/274251.html"
+  },
+  "881": {
+   "summary": "Pyramide Maudite : accès par un téléporteur, portes élémentaires verrouillées à l'intérieur.",
+   "steps": [
+    "Utiliser le téléporteur en [9,-72] (selon une source jeuxonline, à vérifier).",
+    "À l'intérieur, des portes élémentaires sont fermées par défaut."
+   ],
+   "source": "https://dofus.jeuxonline.info/article/14282"
+  },
+  "969": {
+   "summary": "Pandamonium : escalier bloqué tant qu'on n'a pas un Signe des Possédés.",
+   "steps": [
+    "Combattre des Possédés au Port des Ravageurs : le Signe des Possédés tombe à environ 15 % de base.",
+    "Avec le signe, monter l'escalier en [41,-56] ; le Gardien du Pandamonium l'explique."
+   ],
+   "source": "https://www.dofuspourlesnoobs.com/quetes-du-pandamonium.html"
+  },
+  "1025": {
+   "summary": "Souterrains d'Albuera : trois sorties sur l'île, n'importe laquelle donne accès.",
+   "steps": [
+    "Entrées : à la colonie [38,-77], au nord-est [38,-83] ou au nord-ouest [35,-82]."
+   ],
+   "source": "https://www.dofuspourlesnoobs.com/quetes-de-l-archipel-de-valonia.html"
+  },
+  "1027": {
+   "summary": "Galeries d'Ereboria : sur l'île d'Ereboria, atteinte en bateau depuis la colonie.",
+   "steps": [
+    "Prendre le bateau de gauche au port de la colonie [36,-76] vers Ereboria, puis parler à Martin Soafren."
+   ],
+   "source": "https://www.dofuspourlesnoobs.com/quetes-de-l-archipel-de-valonia.html"
+  },
+  "1029": {
+   "summary": "Ephedrya : île séparée, atteinte en bateau depuis la colonie.",
+   "steps": [
+    "Prendre le bateau de droite au port de la colonie [38,-76], puis parler à Selma Reen."
+   ],
+   "source": "https://www.dofuspourlesnoobs.com/quetes-de-l-archipel-de-valonia.html"
+  }
+ },
+ "dopeuls": {
+  "summary": "Un Dopeul par temple de classe, à affronter seul, une fois par jour ; temples dans Amakna, Sufokia, Valonia, Saharach.",
+  "steps": [
+   "Dans le temple de sa classe, parler au PNJ pour lancer le combat ; quête répétable environ une fois par jour (guide Forgelance, à vérifier).",
+   "Temples d'Amakna : Cra [0,3], Iop [1,3], Xelor [3,1], Enutrof [-1,-4], Feca [12,5], Eniripsa [7,1], Osamodas [8,2], Pandawa [4,-2].",
+   "Autres : Ecaflip [1,-5], Sacrieur [-3,-4], Sadida [-1,-9], Sram [-4,0], Zobal [1,-8], Roublard [10,16], Steamer [26,22], Eliotrope [16,33].",
+   "Hors Amakna : Forgelance [33,-84], Huppermage [38,-21], Ouginak [8,-67]. Récompenses et refonte Dofus 3 : à vérifier."
+  ],
+  "source": "https://www.millenium.org/guide/420312.html",
+  "unknown": false
+ }
+}

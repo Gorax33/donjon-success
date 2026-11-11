@@ -77,6 +77,8 @@ export function resetDungeonData() {
 }
 export const loadClasses = () => loadJson('data/classes.json');
 export const loadMonsterData = () => loadJson('data/monsters.json');
+// Explications d'accès aux zones difficiles, rédigées à la main : { areas, zones, dopeuls }
+export const loadAccess = () => loadJson('data/access.json').catch(() => ({}));
 
 // Donjons dont le boss a une mécanique à connaître : { [dungeonId]: { summary, details: [] } }.
 // Fichier rédigé à la main (d'après les guides Dofus pour les Noobs), non régénéré.

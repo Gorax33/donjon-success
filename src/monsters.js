@@ -30,11 +30,24 @@ function saveSelected(id) {
   }
 }
 
+// Bloc d'explication d'accès : { summary, steps, source, unknown }
+function accessBlock(title, info) {
+  if (!info) return '';
+  return `
+    <div class="m-access-block">
+      <strong>${title}</strong>
+      <p>${escapeHtml(info.summary)}${info.unknown ? ' <em>(à vérifier)</em>' : ''}</p>
+      ${info.steps?.length ? `<ol>${info.steps.map((s) => `<li>${escapeHtml(s)}</li>`).join('')}</ol>` : ''}
+      ${info.source ? `<a href="${escapeHtml(info.source)}" target="_blank" rel="noopener">Source</a>` : ''}
+    </div>`;
+}
+
 /**
- * Affiche l'onglet Monstres dans `viewEl` à partir de `data` (public/data/monsters.json).
+ * Affiche l'onglet Monstres dans `viewEl` à partir de `data` (public/data/monsters.json)
+ * et des explications d'accès `access` (public/data/access.json : areas, zones, dopeuls).
  * Renvoie { refreshProgress } à appeler après un changement de personnage.
  */
-export function renderMonsters(viewEl, data) {
+export function renderMonsters(viewEl, data, access = {}) {
   const { categories, monsters, zones } = data;
   const achievementById = new Map(categories.flatMap((c) => c.achievements.map((a) => [a.id, a])));
   const categoryOf = new Map(categories.flatMap((c) => c.achievements.map((a) => [a.id, c])));
@@ -94,6 +107,15 @@ export function renderMonsters(viewEl, data) {
       z.indoor && !isDungeon ? '<span class="badge-zone indoor" title="Zone en intérieur ou en souterrain : /travel ne mène pas à l\'intérieur">🕳 Souterrain</span>' : '',
     ].join('');
     const coords = `[${z.x},${z.y}]`;
+    // Explications d'accès (hors donjon : l'onglet Donjons s'en charge)
+    const zoneAccess = isDungeon ? null : access.zones?.[zoneId];
+    const areaAccess = isDungeon ? null : access.areas?.[z.area];
+    const accessDetails = zoneAccess || areaAccess
+      ? `<details class="m-access"><summary>ℹ️ Accès</summary>
+           ${accessBlock('Cette zone', zoneAccess)}
+           ${accessBlock(`Rejoindre ${escapeHtml(z.area)}`, areaAccess)}
+         </details>`
+      : '';
     return `
       <div class="m-zone">
         <span class="m-zone-name">📍 ${escapeHtml(z.name)} <small>${escapeHtml(z.area)}</small></span>
@@ -101,7 +123,20 @@ export function renderMonsters(viewEl, data) {
           ? `<button type="button" class="zone-copy" data-command="${escapeHtml(command)}" title="Copier : ${escapeHtml(command)}">${coords} 📋</button>`
           : `<span class="zone-coords">${coords}</span>`}
         ${badges}
+        ${accessDetails}
       </div>`;
+  }
+
+  // Monstre sans zone dans les données : les Dopeuls, expliqués à part
+  function noZoneLine(monster) {
+    if (monster.name.startsWith('Dopeul') && access.dopeuls) {
+      return `
+        <div class="m-zone">
+          <span class="m-zone-name">📍 Temples de classe</span>
+          <details class="m-access"><summary>ℹ️ Accès</summary>${accessBlock('Combattre un Dopeul', access.dopeuls)}</details>
+        </div>`;
+    }
+    return '<div class="m-zone"><span class="m-zone-name">📍 Zone non renseignée</span></div>';
   }
 
   function monsterRow(a, monsterId) {
@@ -118,7 +153,7 @@ export function renderMonsters(viewEl, data) {
           <span class="m-name">${escapeHtml(m.name)} <small>${levels}</small></span>
           ${dungeonOnly ? '<span class="badge-zone dungeon-only" title="Ce monstre ne se trouve qu\'en donjon">Donjon uniquement</span>' : ''}
         </label>
-        ${first ? zoneLine(first) : '<div class="m-zone"><span class="m-zone-name">📍 Zone non renseignée</span></div>'}
+        ${first ? zoneLine(first) : noZoneLine(m)}
         ${others.length
           ? `<details class="m-more"><summary>+ ${others.length} autre${others.length > 1 ? 's' : ''} zone${others.length > 1 ? 's' : ''}</summary>${others.map(zoneLine).join('')}</details>`
           : ''}
@@ -136,6 +171,9 @@ export function renderMonsters(viewEl, data) {
         .join('')}</ul>`;
     } else {
       body = `<p class="m-desc">${escapeHtml(a.description)}</p>`;
+      if (a.name.startsWith('Dopeul') && access.dopeuls) {
+        body += `<details class="m-access"><summary>ℹ️ Où le combattre</summary>${accessBlock('Combattre un Dopeul', access.dopeuls)}</details>`;
+      }
     }
     const check = keys.length
       ? `<input type="checkbox" class="m-ach-check" title="Valider tout le succès" />`

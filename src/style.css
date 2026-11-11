@@ -1217,3 +1217,41 @@ details[open] > summary::before {
 .m-more .m-zone {
   margin-left: 0;
 }
+
+/* ---- Explications d'accès aux zones ---- */
+
+.m-access {
+  flex-basis: 100%;
+  font-size: 12px;
+}
+
+.m-access > summary {
+  display: inline-flex;
+  color: var(--accent);
+}
+
+.m-access > summary::before {
+  font-size: 10px;
+}
+
+.m-access-block {
+  margin: 4px 0 6px;
+  padding: 6px 8px;
+  background: var(--bg);
+  border-left: 2px solid var(--accent);
+  border-radius: 4px;
+}
+
+.m-access-block p {
+  margin: 2px 0;
+}
+
+.m-access-block ol {
+  margin: 2px 0;
+  padding-left: 18px;
+}
+
+.m-access-block a {
+  color: var(--accent);
+  font-size: 11px;
+}
