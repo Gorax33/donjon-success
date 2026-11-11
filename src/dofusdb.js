@@ -12,7 +12,7 @@ async function getJson(url) {
 }
 
 // Récupère toutes les pages d'un endpoint (`filter` : critères en plus, ex. "categoryId=9")
-async function fetchAll(endpoint, select, filter = '') {
+export async function fetchAll(endpoint, select, filter = '') {
   const fields = select.map((f) => `$select[]=${f}`).join('&');
   const items = [];
   for (let skip = 0; ; skip += PAGE_SIZE) {
@@ -25,7 +25,7 @@ async function fetchAll(endpoint, select, filter = '') {
 }
 
 // Récupère des éléments par identifiant, par lots
-async function fetchByIds(endpoint, ids, select) {
+export async function fetchByIds(endpoint, ids, select) {
   const fields = select.map((f) => `$select[]=${f}`).join('&');
   const items = [];
   for (let i = 0; i < ids.length; i += PAGE_SIZE) {
@@ -60,7 +60,7 @@ const regionOf = (areaId) => (CONTINENT_AREAS.has(areaId) ? 'continent' : areaId
 // Zaap le plus proche de l'entrée d'un donjon (distance en cartes, déplacements en croix),
 // parmi ceux de la même région. Aucun (île sans zaap, dimension…) : null, seul /travel
 // sera proposé. `entrance` et chaque zaap ont { x, y, areaId }.
-function nearestZaap(entrance, zaaps) {
+export function nearestZaap(entrance, zaaps) {
   const region = regionOf(entrance.areaId);
   const distance = (z) => Math.abs(z.x - entrance.x) + Math.abs(z.y - entrance.y);
   return zaaps

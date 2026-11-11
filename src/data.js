@@ -76,6 +76,7 @@ export function resetDungeonData() {
   }
 }
 export const loadClasses = () => loadJson('data/classes.json');
+export const loadMonsterData = () => loadJson('data/monsters.json');
 
 // Donjons dont le boss a une mécanique à connaître : { [dungeonId]: { summary, details: [] } }.
 // Fichier rédigé à la main (d'après les guides Dofus pour les Noobs), non régénéré.

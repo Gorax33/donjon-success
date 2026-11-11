@@ -2,39 +2,9 @@
 import { assetUrl, bracketOf, escapeHtml } from './data.js';
 import { isDone, setDone, setManyDone, countDone, getNote, setNote } from './progress.js';
 import { setupMechanicPopover } from './mechanic-popover.js';
+import { travelCommand, copyText, flashCopied, normalize } from './travel.js';
 
 const OPEN_KEY = 'open-brackets';
-
-// Commande à coller dans le chat du jeu : téléportation au zaap le plus proche puis
-// autopilote jusqu'à l'entrée. Sans zaap utilisable (île, dimension…) : /travel seul.
-function travelCommand({ entrance, zaap }) {
-  if (!entrance) return null;
-  const travel = `/travel ${entrance.x},${entrance.y}`;
-  if (!zaap) return travel;
-  const toZaap = `/zaap ${zaap.x},${zaap.y}`;
-  return zaap.x === entrance.x && zaap.y === entrance.y ? toZaap : `${toZaap}; ${travel}`;
-}
-
-// Copie dans le presse-papiers du document de l'élément (la fenêtre flottante en est un autre)
-async function copyText(text, fromEl) {
-  const win = fromEl.ownerDocument.defaultView;
-  try {
-    await win.navigator.clipboard.writeText(text);
-  } catch {
-    // Repli si l'API presse-papiers est refusée
-    const area = fromEl.ownerDocument.createElement('textarea');
-    area.value = text;
-    fromEl.ownerDocument.body.append(area);
-    area.select();
-    fromEl.ownerDocument.execCommand('copy');
-    area.remove();
-  }
-}
-
-// Minuscules et sans accents : "Épave" trouve "epave"
-function normalize(text) {
-  return text.normalize('NFD').replace(/\p{Diacritic}/gu, '').toLowerCase();
-}
 
 function loadOpenBrackets() {
   try {
@@ -267,12 +237,7 @@ export function renderSummary(container, searchInput, statsEl, dungeons) {
     if (!btn) return;
     e.preventDefault();
     await copyText(btn.dataset.command, btn);
-    btn.textContent = '✓';
-    btn.classList.add('copied');
-    setTimeout(() => {
-      btn.textContent = '📋';
-      btn.classList.remove('copied');
-    }, 1200);
+    flashCopied(btn, '📋');
   });
 
   container.addEventListener('change', (e) => {

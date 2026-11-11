@@ -28,6 +28,11 @@
       </p>
       <p id="pip-error" class="warning" hidden></p>
 
+      <nav class="tabs">
+        <button type="button" class="tab active" data-tab="main">🏰 Donjons</button>
+        <button type="button" class="tab" data-tab="monsters">👾 Monstres</button>
+      </nav>
+
       <!-- Vue principale : recherche et sommaire -->
       <div class="view" id="main-view">
         <div class="searchbar">
@@ -37,6 +42,11 @@
         <main class="content" id="summary">
           <p class="placeholder">Chargement des donjons…</p>
         </main>
+      </div>
+
+      <!-- Onglet Monstres : succès de la catégorie Monstres du jeu -->
+      <div class="view" id="monsters-view" hidden>
+        <p class="placeholder">Chargement des monstres…</p>
       </div>
 
       <!-- Écran de gestion des personnages, affiché à la place de la vue principale -->
