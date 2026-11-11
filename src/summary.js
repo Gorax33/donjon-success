@@ -231,7 +231,7 @@ export function renderSummary(container, searchInput, statsEl, dungeons) {
     });
   });
 
-  // Bouton de copie de la commande /zaap + /travel (sans plier/déplier le donjon)
+  // Bouton de copie de la commande /travel (sans plier/déplier le donjon)
   container.addEventListener('click', async (e) => {
     const btn = e.target.closest('.copy-btn');
     if (!btn) return;

@@ -93,10 +93,8 @@ export function renderMonsters(viewEl, data, access = {}) {
   function zoneLine(zoneId) {
     const z = zones[zoneId];
     const isDungeon = !!z.dungeon;
-    // Souterrain hors donjon : /travel ne mène pas à l'intérieur, on donne le zaap le plus proche
-    const command = z.indoor && !isDungeon
-      ? z.zaap ? `/zaap ${z.zaap.x},${z.zaap.y}` : null
-      : travelCommand({ entrance: { x: z.x, y: z.y }, zaap: z.zaap });
+    // Souterrain hors donjon : /travel ne mène pas à l'intérieur, pas de commande
+    const command = z.indoor && !isDungeon ? null : travelCommand({ entrance: { x: z.x, y: z.y } });
     const badges = [
       // Nom du donjon seulement s'il diffère du nom de la zone (sinon simple « Donjon »)
       isDungeon
@@ -120,8 +118,7 @@ export function renderMonsters(viewEl, data, access = {}) {
     const distance = z.zaap ? Math.abs(z.zaap.x - z.x) + Math.abs(z.zaap.y - z.y) : 0;
     const zaapLine = z.zaap
       ? `<div class="m-zaap">🌀 Zaap : ${escapeHtml(z.zaap.name || 'zaap')}
-           <button type="button" class="zone-copy" data-command="/zaap ${z.zaap.x},${z.zaap.y}"
-             title="Copier : /zaap ${z.zaap.x},${z.zaap.y}">[${z.zaap.x},${z.zaap.y}] 📋</button>
+           <span class="zone-coords">[${z.zaap.x},${z.zaap.y}]</span>
            <small>${distance ? `à ${distance} carte${distance > 1 ? 's' : ''}` : 'sur place'}</small>
          </div>`
       : `<div class="m-zaap none">🌀 Pas de zaap proche${zoneAccess || areaAccess ? ' : voir ℹ️ Accès' : ''}</div>`;
