@@ -116,6 +116,15 @@ export function renderMonsters(viewEl, data, access = {}) {
            ${accessBlock(`Rejoindre ${escapeHtml(z.area)}`, areaAccess)}
          </details>`
       : '';
+    // Zaap le plus proche (associé à la zone par le jeu, sinon le plus proche accessible à pied)
+    const distance = z.zaap ? Math.abs(z.zaap.x - z.x) + Math.abs(z.zaap.y - z.y) : 0;
+    const zaapLine = z.zaap
+      ? `<div class="m-zaap">🌀 Zaap : ${escapeHtml(z.zaap.name || 'zaap')}
+           <button type="button" class="zone-copy" data-command="/zaap ${z.zaap.x},${z.zaap.y}"
+             title="Copier : /zaap ${z.zaap.x},${z.zaap.y}">[${z.zaap.x},${z.zaap.y}] 📋</button>
+           <small>${distance ? `à ${distance} carte${distance > 1 ? 's' : ''}` : 'sur place'}</small>
+         </div>`
+      : `<div class="m-zaap none">🌀 Pas de zaap proche${zoneAccess || areaAccess ? ' : voir ℹ️ Accès' : ''}</div>`;
     return `
       <div class="m-zone">
         <span class="m-zone-name">📍 ${escapeHtml(z.name)} <small>${escapeHtml(z.area)}</small></span>
@@ -123,6 +132,7 @@ export function renderMonsters(viewEl, data, access = {}) {
           ? `<button type="button" class="zone-copy" data-command="${escapeHtml(command)}" title="Copier : ${escapeHtml(command)}">${coords} 📋</button>`
           : `<span class="zone-coords">${coords}</span>`}
         ${badges}
+        ${zaapLine}
         ${accessDetails}
       </div>`;
   }
@@ -176,7 +186,7 @@ export function renderMonsters(viewEl, data, access = {}) {
       }
     }
     const check = keys.length
-      ? `<input type="checkbox" class="m-ach-check" title="Valider tout le succès" />`
+      ? `<input type="checkbox" class="m-ach-check" title="Valider tout le succès (ou Ctrl+clic sur la carte)" />`
       : '<span class="m-auto" title="Se valide tout seul quand les succès listés sont obtenus">auto</span>';
     return `
       <article class="m-ach" data-ach-id="${a.id}">
@@ -202,7 +212,7 @@ export function renderMonsters(viewEl, data, access = {}) {
         ${categories
           .map(
             (c) => `
-          <button type="button" class="m-cat" data-cat-id="${c.id}">
+          <button type="button" class="m-cat" data-cat-id="${c.id}" title="Ctrl+clic : valider toute la catégorie">
             <span class="m-cat-name">${escapeHtml(c.name)}</span>
             <span class="m-cat-pct"></span>
             <span class="bar"><span></span></span>
@@ -310,7 +320,42 @@ export function renderMonsters(viewEl, data, access = {}) {
 
   // ---- Interactions ----
 
+  // Valide tout le succès d'une carte, ou décoche tout s'il était complet
+  // (case globale ou Ctrl+clic). Sans effet sur un méta-succès, qui se valide seul.
+  function toggleWholeCard(card) {
+    const a = achievementById.get(Number(card.dataset.achId));
+    const keys = keysOf(a);
+    if (!keys.length) return;
+    const done = countDone(keys) < keys.length;
+    setManyDone(keys, done);
+    for (const input of card.querySelectorAll('[data-key]')) input.checked = done;
+  }
+
+  // Valide toute une catégorie, ou décoche tout si elle était à 100 %. Les cases du
+  // panneau affiché sont remises à jour (qu'il montre cette catégorie ou une recherche).
+  function toggleWholeCategory(categoryId) {
+    const c = categories.find((cat) => cat.id === categoryId);
+    const keys = c.achievements.flatMap(keysOf);
+    const done = countDone(keys) < keys.length;
+    setManyDone(keys, done);
+    for (const input of panelEl.querySelectorAll('[data-key]')) input.checked = isDone(input.dataset.key);
+  }
+
   viewEl.addEventListener('click', async (e) => {
+    // Ctrl+clic (Cmd+clic sur Mac) n'importe où sur une carte : tout le succès d'un coup ;
+    // sur une catégorie de gauche : toute la catégorie. Les liens, boutons de copie et
+    // volets gardent leur comportement normal.
+    if ((e.ctrlKey || e.metaKey) && !e.target.closest('a, .zone-copy, summary')) {
+      const card = e.target.closest('.m-ach');
+      const catBtn = e.target.closest('.m-cat');
+      if (card || catBtn) {
+        e.preventDefault();
+        if (card) toggleWholeCard(card);
+        else toggleWholeCategory(Number(catBtn.dataset.catId));
+        updateStates();
+        return;
+      }
+    }
     const cat = e.target.closest('.m-cat');
     if (cat) {
       searchInput.value = '';
@@ -340,13 +385,7 @@ export function renderMonsters(viewEl, data, access = {}) {
     if (e.target.dataset.key) {
       setDone(e.target.dataset.key, e.target.checked);
     } else if (e.target.classList.contains('m-ach-check')) {
-      // Case globale : valide tout le succès, ou décoche tout s'il était complet
-      const card = e.target.closest('.m-ach');
-      const a = achievementById.get(Number(card.dataset.achId));
-      const keys = keysOf(a);
-      const done = countDone(keys) < keys.length;
-      setManyDone(keys, done);
-      for (const input of card.querySelectorAll('[data-key]')) input.checked = done;
+      toggleWholeCard(e.target.closest('.m-ach'));
     } else {
       return;
     }

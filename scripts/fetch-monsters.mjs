@@ -56,15 +56,24 @@ const subareas = await fetchByIds('subareas', zoneIds, [
 ]);
 
 const zaapHints = await fetchAll('hints', ['x', 'y', 'subareaId', 'mapId'], 'categoryId=9&gfx=410');
-// Sous-zones des zaaps, pour connaître leur zone (Amakna, Frigost…)
+// Sous-zones des zaaps : leur zone (Amakna, Frigost…) et leur nom, affiché avec le zaap
 const zaapSubareas = await fetchByIds(
   'subareas',
   [...new Set(zaapHints.map((z) => z.subareaId))].filter((id) => !zoneIds.includes(id)),
-  ['id', 'areaId'],
+  ['id', 'areaId', 'name'],
 );
 const areaIdOfSubarea = new Map([...subareas, ...zaapSubareas].map((s) => [s.id, s.areaId]));
-const zaaps = zaapHints.map((z) => ({ x: z.x, y: z.y, mapId: z.mapId, areaId: areaIdOfSubarea.get(z.subareaId) }));
+const nameOfSubarea = new Map([...subareas, ...zaapSubareas].map((s) => [s.id, s.name.fr]));
+const zaaps = zaapHints.map((z) => ({
+  x: z.x,
+  y: z.y,
+  mapId: z.mapId,
+  areaId: areaIdOfSubarea.get(z.subareaId),
+  name: nameOfSubarea.get(z.subareaId) ?? '',
+}));
 const zaapByMapId = new Map(zaaps.map((z) => [z.mapId, z]));
+const zaapAt = (x, y) => zaaps.find((z) => z.x === x && z.y === y);
+const zaapOut = (z) => (z ? { x: z.x, y: z.y, name: zaapAt(z.x, z.y)?.name ?? z.name ?? '' } : null);
 
 const areas = await fetchByIds('areas', [...new Set(subareas.map((s) => s.areaId))], ['id', 'name']);
 const areaName = new Map(areas.map((a) => [a.id, a.name.fr]));
@@ -101,7 +110,7 @@ for (const s of subareas) {
       y: dungeon.entrance.y,
       indoor: true,
       dungeon: { id: dungeon.id, name: dungeon.name },
-      zaap: dungeon.zaap,
+      zaap: zaapOut(dungeon.zaap),
     };
     continue;
   }
@@ -131,7 +140,7 @@ for (const s of subareas) {
     y: center.posY,
     indoor,
     dungeon: s.dungeonId > 0 ? { id: s.dungeonId, name: dungeonName.get(s.dungeonId) ?? '' } : null,
-    zaap: zaap ? { x: zaap.x, y: zaap.y } : null,
+    zaap: zaapOut(zaap),
   };
 }
 

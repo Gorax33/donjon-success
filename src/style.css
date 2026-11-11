@@ -1255,3 +1255,22 @@ details[open] > summary::before {
   color: var(--accent);
   font-size: 11px;
 }
+
+/* ---- Zaap le plus proche d'une zone ---- */
+
+.m-zaap {
+  display: flex;
+  flex-basis: 100%;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2px 6px;
+  color: var(--text-muted);
+}
+
+.m-zaap small {
+  font-size: 11px;
+}
+
+.m-zaap.none {
+  font-style: italic;
+}
