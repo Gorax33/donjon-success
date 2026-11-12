@@ -8,7 +8,7 @@ Petit outil pour suivre les succès de tous les donjons de **Dofus 3**, personna
 - Statistiques globales et par tranche, notes par donjon
 - ⚙️ sur les boss qui ont une mécanique à connaître (explication au survol, épinglable au clic)
 - 📖 lien vers le guide du donjon sur Dofus pour les Noobs
-- 📋 copie de la commande `/travel X,Y` vers l'entrée, à coller dans le chat du jeu (zaap le plus proche indiqué)
+- 📋 copie de l'itinéraire `/zaap X,Y; /travel X,Y` vers l'entrée, à coller dans le chat du jeu (nom du zaap affiché)
 
 ## Utilisation (Mac ou Windows)
 

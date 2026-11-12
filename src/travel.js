@@ -1,10 +1,13 @@
 // Outils partagés par les onglets Donjons et Monstres : commande de trajet, copie, recherche.
 
-// Commande à coller dans le chat du jeu : autopilote jusqu'à la destination.
-// (Le zaap le plus proche est seulement affiché à titre indicatif, sans commande /zaap.)
-export function travelCommand({ entrance }) {
+// Commande à coller dans le chat du jeu : téléportation au zaap le plus proche puis
+// autopilote jusqu'à la destination. Sans zaap utilisable (île, dimension…) : /travel seul.
+export function travelCommand({ entrance, zaap }) {
   if (!entrance) return null;
-  return `/travel ${entrance.x},${entrance.y}`;
+  const travel = `/travel ${entrance.x},${entrance.y}`;
+  if (!zaap) return travel;
+  const toZaap = `/zaap ${zaap.x},${zaap.y}`;
+  return zaap.x === entrance.x && zaap.y === entrance.y ? toZaap : `${toZaap}; ${travel}`;
 }
 
 // Copie dans le presse-papiers du document de l'élément (la fenêtre flottante en est un autre)
